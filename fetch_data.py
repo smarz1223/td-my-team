@@ -19,7 +19,7 @@ import sys
 import time
 import unicodedata
 import urllib.request
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, time as dtime
 
 import openpyxl
 
@@ -299,6 +299,44 @@ def fan_pts_from_stats(rec, kind):
     return sum(to_num(rec.get(k)) * wt for k, wt in w.items())
 
 
+def toi_minutes(v):
+    """Yahoo 'mm:ss' arrives from Google as a time or duration read as h:mm.
+    Returns minutes, or None if blank."""
+    if v is None or v == "":
+        return None
+    if isinstance(v, timedelta):
+        return v.total_seconds() / 3600.0
+    if isinstance(v, dtime):
+        return v.hour + v.minute / 60.0 + v.second / 3600.0
+    if isinstance(v, datetime):
+        return v.hour + v.minute / 60.0 + v.second / 3600.0
+    if isinstance(v, (int, float)):
+        return float(v) * 24.0 if float(v) < 5 else float(v)
+    m = re.match(r"^\s*(\d+):(\d{1,2})", str(v))
+    if m:
+        return int(m.group(1)) + int(m.group(2)) / 60.0
+    return None
+
+
+def stat_line(rec, kind, per_game_source, gp):
+    """Per-game stat line. per_game_source=True when the tab already holds averages.
+    Goalie TOI* is always a season total in Yahoo's tables."""
+    if gp <= 0:
+        return None
+    keys = SKATER_WEIGHTS if kind == "skater" else GOALIE_WEIGHTS
+    div = 1.0 if per_game_source else gp
+    line = {k: to_num(rec.get(k)) / div for k in keys}
+    if kind == "skater":
+        toi = toi_minutes(rec.get("TOI/G*"))
+        line["TOI"] = toi
+    else:
+        ga_tot, sv_tot = line["GA"] * gp, line["SV"] * gp
+        line["SVP"] = sv_tot / (sv_tot + ga_tot) if (sv_tot + ga_tot) > 0 else None
+        toi = toi_minutes(rec.get("TOI*"))
+        line["GAA"] = (ga_tot * 60.0 / toi) if toi else None
+    return line
+
+
 # ----------------------------------------------------------------------------
 # MAIN
 # ----------------------------------------------------------------------------
@@ -390,6 +428,7 @@ def main():
                     "gp": gp,
                     "ppg": ppg if gp > 0 else None,
                     "own": to_own(rec.get("% Ros")),
+                    "stats": stat_line(rec, kind, True, gp),
                 }
     if scoring_mismatch:
         health["warnings"].append(
@@ -406,7 +445,8 @@ def main():
             gp = to_num(rec.get("GP*"))
             pts = fan_pts_from_stats(rec, kind)
             pl = get_player(p)
-            pl["forme"] = {"gp": gp, "pts": pts, "ppg": pts / gp if gp > 0 else None}
+            pl["forme"] = {"gp": gp, "pts": pts, "ppg": pts / gp if gp > 0 else None,
+                           "stats": stat_line(rec, kind, False, gp)}
 
     roster_count = sum(1 for p in players.values() if p["on_roster"])
     if roster_count == 0:
@@ -439,6 +479,7 @@ def main():
                     "key": p["key"], "name": p["name"], "team": p["team"], "pos": p["pos"],
                     "tag": p["tag"], "own": to_own(rec.get("% Ros")),
                     "gp": gp, "ppg": ppg, "total": total,
+                    "stats": stat_line(rec, kind, pos != "G", gp),
                 })
             fa[w][pos] = out
 
@@ -471,20 +512,21 @@ def main():
                 "members": [r["key"] for r in pool],
             }
 
-    # ---- comparisons -------------------------------------------------------
+    # ---- comparisons (per eligible position + all forwards) ---------------
     def compare(pl, w, ppg, gp):
+        """Returns {pos: {base, gap, pts}} for every eligible position with a line,
+        plus 'FWD' for forwards. The site picks the one matching the row it shows."""
         if ppg is None or not gp:
-            return None, None
-        eligible = [p for p in pl["pos"] if baselines[w].get(p, {}).get("ppg") is not None]
-        res_pos = res_fwd = None
-        if eligible:
-            bp = max(eligible, key=lambda p: baselines[w][p]["ppg"])
-            base = baselines[w][bp]["ppg"]
-            res_pos = {"base": base, "vs": bp, "gap": ppg - base, "pts": (ppg - base) * gp}
-        if pl["group"] == "F" and baselines[w]["FWD"]["ppg"] is not None:
-            base = baselines[w]["FWD"]["ppg"]
-            res_fwd = {"base": base, "vs": "FWD", "gap": ppg - base, "pts": (ppg - base) * gp}
-        return res_pos, res_fwd
+            return {}
+        out = {}
+        keys = [p for p in pl["pos"] if p in POSITIONS]
+        if pl["group"] == "F":
+            keys.append("FWD")
+        for k in keys:
+            base = baselines[w].get(k, {}).get("ppg")
+            if base is not None:
+                out[k] = {"base": base, "gap": ppg - base, "pts": (ppg - base) * gp}
+        return out
 
     out_players = []
     for pl in players.values():
@@ -495,20 +537,12 @@ def main():
             status = "Injured" if pl["tag"] in INJURED_TAGS else "Active"
         else:
             status = "Cut"
-
         status = STATUS_ALIASES.get(status.lower(), "Active")
-        if status == "Injured":
-            section = "IR"
-        elif status == "Cut":
-            section = "CUT"
-        else:
-            section = pl["pos"][0]
 
         forme = None
         if pl["forme"] and pl["forme"]["gp"] > 0:
             f = dict(pl["forme"])
-            f["vs_pos"], f["vs_fwd"] = compare(pl, "season", f["ppg"], f["gp"])
-            f["small"] = f["gp"] < SMALL_SAMPLE_STARTS
+            f["cmp"] = compare(pl, "season", f["ppg"], f["gp"])
             forme = f
 
         overall = None
@@ -520,28 +554,36 @@ def main():
                     overall[w] = None
                     continue
                 o = dict(o)
-                o["vs_pos"], o["vs_fwd"] = compare(pl, w, o["ppg"], o["gp"])
+                o["cmp"] = compare(pl, w, o["ppg"], o["gp"])
                 overall[w] = o
 
-        flags, trend = [], None
+        # flags per comparison key (row-level: Tkachuk can be flagged at LW, not RW)
+        flags_by = {}
+        l30 = overall.get("l30") if overall else None
+        if l30:
+            for k, c in l30["cmp"].items():
+                fl = []
+                if c["gap"] < 0:
+                    fl.append("poor")
+                if c["pts"] < REPLACE_PTS:
+                    fl.append("replace")
+                flags_by[k] = fl
+        trend = None
         if overall:
-            l30, ssn = overall.get("l30"), overall.get("season")
-            if l30 and l30.get("vs_pos"):
-                if l30["vs_pos"]["gap"] < 0:
-                    flags.append("poor")
-                if l30["vs_pos"]["pts"] < REPLACE_PTS:
-                    flags.append("replace")
+            ssn = overall.get("season")
             if l30 and ssn and l30.get("ppg") is not None and ssn.get("ppg"):
                 trend = l30["ppg"] / ssn["ppg"] - 1
-        if forme and forme["small"]:
-            flags.append("small")
+        pflags = []
+        if forme and forme["gp"] < SMALL_SAMPLE_STARTS:
+            pflags.append("small")
         if not forme and pl["on_roster"]:
-            flags.append("nostarts")
+            pflags.append("nostarts")
 
         out_players.append({
             "key": pl["key"], "name": pl["name"], "team": pl["team"], "pos": pl["pos"],
-            "group": pl["group"], "tag": pl["tag"], "status": status, "section": section,
-            "forme": forme, "overall": overall, "trend": trend, "flags": flags,
+            "group": pl["group"], "tag": pl["tag"], "status": status,
+            "forme": forme, "overall": overall, "trend": trend,
+            "flags_by": flags_by, "pflags": pflags,
         })
 
     # possible name mismatches: a Cut player sharing a last name + group with a roster player
@@ -557,17 +599,29 @@ def main():
                     f"Team log '{p['name']}' may be the same player as roster '{hits[0]}'. "
                     "If so, add a row to a 'Name Fixes' tab.")
 
-    # ---- waiver wire -------------------------------------------------------
+    # ---- waiver wire (C, LW, RW, F, D, G) ---------------------------------
     active = [p for p in out_players if p["status"] == "Active" and p["overall"]]
     waiver = {w: {} for w in WINDOWS}
     for w in WINDOWS:
-        for pos in POSITIONS:
-            b = baselines[w][pos]
-            mine = [p for p in active if pos in p["pos"]
+        for wpos in POSITIONS + ["F"]:
+            bkey = "FWD" if wpos == "F" else wpos
+            b = baselines[w][bkey]
+            if wpos == "F":
+                seen, src = set(), []
+                for p in ("C", "LW", "RW"):
+                    for r in fa[w].get(p, []):
+                        if r["key"] not in seen:
+                            seen.add(r["key"])
+                            src.append(r)
+                elig = lambda p: p["group"] == "F"
+            else:
+                src = fa[w].get(wpos, [])
+                elig = lambda p, wp=wpos: wp in p["pos"]
+            mine = [p for p in active if elig(p)
                     and p["overall"].get(w) and p["overall"][w]["ppg"] is not None]
             weakest = min(mine, key=lambda p: p["overall"][w]["ppg"]) if mine else None
             rows_ = []
-            for r in sorted(fa[w].get(pos, []), key=lambda r: r["ppg"], reverse=True):
+            for r in sorted(src, key=lambda r: r["ppg"], reverse=True):
                 reasons = []
                 if r["own"] < b["floor"]:
                     reasons.append(f"under {int(round(b['floor'] * 100))}% owned")
@@ -585,47 +639,7 @@ def main():
                     "excluded": reasons,
                     "upgrade": upgrade,
                 })
-            waiver[w][pos] = rows_
-
-    # ---- briefs (front page stories) ---------------------------------------
-    briefs = []
-    fm = [p for p in out_players if p["forme"] and p["forme"]["vs_pos"] and not p["forme"]["small"]]
-    if fm:
-        best = max(fm, key=lambda p: p["forme"]["vs_pos"]["pts"])
-        f = best["forme"]
-        briefs.append({
-            "kind": "lead",
-            "head": f"{best['name']} carries the club",
-            "deck": (f"{f['ppg']:.1f} points a game in {int(f['gp'])} starts for you, "
-                     f"{f['vs_pos']['pts']:+.0f} points over a replacement {f['vs_pos']['vs']}."),
-        })
-    l30s = [p for p in active if p["overall"].get("l30") and p["overall"]["l30"].get("vs_pos")]
-    if l30s:
-        worst = min(l30s, key=lambda p: p["overall"]["l30"]["vs_pos"]["pts"])
-        o = worst["overall"]["l30"]
-        if o["vs_pos"]["pts"] < 0:
-            briefs.append({
-                "kind": "drag",
-                "head": f"{worst['name']} is the biggest drag",
-                "deck": (f"Over the last 30 days: {o['ppg']:.1f} points a game, "
-                         f"{o['vs_pos']['pts']:+.0f} points against a replacement {o['vs_pos']['vs']}."),
-            })
-    ups = [(pos, r) for pos, rows_ in waiver["l30"].items() for r in rows_ if r["upgrade"]]
-    if ups:
-        pos, r = max(ups, key=lambda t: t[1]["upgrade"]["gain"])
-        briefs.append({
-            "kind": "wire",
-            "head": f"{r['name']} is on the wire",
-            "deck": (f"{r['ppg']:.1f} points a game over the last 30 days, "
-                     f"{r['upgrade']['gain']:+.1f} a game better than {r['upgrade']['over']}. "
-                     f"Owned in {r['own'] * 100:.0f}% of leagues."),
-        })
-    else:
-        briefs.append({
-            "kind": "wire",
-            "head": "Nothing on the wire beats your roster",
-            "deck": "No qualified free agent tops your weakest player at any position over the last 30 days.",
-        })
+            waiver[w][wpos] = rows_
 
     # ---- health ------------------------------------------------------------
     now_utc = datetime.now(timezone.utc)
@@ -663,7 +677,6 @@ def main():
         "baselines": baselines,
         "players": out_players,
         "waiver": waiver,
-        "briefs": briefs,
         "health": health,
     }
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)

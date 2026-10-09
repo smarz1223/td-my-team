@@ -1,4 +1,4 @@
-# td-my-team SPEC (v1.0, 2026-10-09)
+# td-my-team SPEC (v1.1, 2026-10-09)
 
 Personal fantasy hockey analysis for Marz's Type Disgusting team ("Soft Dump in Corner").
 Masthead: **The Morning Soft Dump**
@@ -113,49 +113,60 @@ Windows: Season, L30, L14.
 
 ## 7. Comparisons
 
-For each player, in each lens/window:
+Every comparison is computed against every eligible line, and the site shows the one matching the row:
 
-- **vs Pos:** toughest (highest) baseline among his eligible positions.
-- **vs FWD:** forwards only, combined forward baseline.
-- PPG gap = his PPG minus baseline PPG.
-- Pts over replacement = PPG gap x GP.
+- **Position mode:** a multi-position player gets one row per eligible position (Tkachuk shows under LW and under RW). Each row is measured against that position's line.
+- **All forwards mode:** forwards collapse to one row each (Pos "F") measured against the FWD line. D and G unchanged.
+- PPG gap = his PPG minus line PPG. Pts over replacement = PPG gap x GP.
 
-| Lens | Windows | Baseline used |
+| Lens | Windows | Line used |
 |---|---|---|
 | FOR ME | Team log (whole stint) | Season |
 | OVERALL | Season, L30, L14 | Matching window |
 
-- FOR ME with fewer than 5 starts: grayed out, "SMALL SAMPLE" stamp.
+## 8. Notes column (flags)
 
-## 8. Flags and trend (OVERALL only)
+Flags are row-level (per comparison), so a player can be flagged at LW but not RW.
 
-| Flag | Rule |
-|---|---|
-| Poor Performer | L30 PPG below L30 vs Pos baseline |
-| Replace? | L30 pts over replacement below -50 |
-| Trend | L30 PPG / Season PPG - 1. Up arrow above +15%, down arrow below -15% |
+| Note | Rule | Slicer? |
+|---|---|---|
+| Replace? | OVERALL L30 pts over replacement below -50 | Yes |
+| Poor performer | OVERALL L30 PPG below the row's line | Yes |
+| Small sample | Fewer than 5 starts for me (FOR ME cells grayed) | No |
+| No starts yet | On roster, not in team log | No |
 
-## 9. Pages
+Trend column: L30 PPG / Season PPG - 1, arrows beyond +/-15%.
 
-1. **Front Page:** one roster table, two column groups (FOR ME, OVERALL). Sections in order: C, LW, RW, D, G, Injured, then "CUT FROM THE ROSTER" (FOR ME only). Multi-position players listed once, under their first listed position. Table scrolls sideways on mobile.
-2. **Waiver Wire:** free agents by position (C, LW, RW, D, G) and window (Season, L30, L14). Pool members marked with a star; rows failing the ownership or GP cutoff grayed with the reason. "Upgrade over" names my weakest Active player eligible at that position, measured in the SAME window, and the PPG gain (shown only when positive).
-3. **Front page stories:** three auto-generated briefs: best FOR ME performer (5+ starts), biggest OVERALL L30 drag, best L30 waiver upgrade.
-4. **Compare toggle:** box score switches forwards between "Their position" and "All forwards" baselines.
+## 9. Pages and controls
 
-### Press room notes (health box, footer, both pages)
+All page buttons and slicers sit in one panel at the top. Tables redraw in place.
 
-- Sheet pull date. Warn if older than 2 days.
-- Row count per tab. Warn on empty or missing tab.
-- Unmatched names list.
-- Warn if any Season tab shows GP above 82 (stale prior-season link).
+**My Team**
+- View: vs Replacement (GP, PPG, +/- PPG, +/- Pts for For me, Season, L30, L14) or Stat line (one window at a time, separate Skaters and Goalies tables).
+- Compare forwards to: Position or All forwards.
+- Stat line only: Window (For me, Season, L30, L14) and Stats as (raw stats or fantasy points by category).
+- Slicers (multi-select): Position (C, LW, RW, D, G, Forwards, Skaters; union), Status (Active, Injured, Cut; Cut off by default), Flags (Poor performer, Replace?; must match all picked). Clear slicers button.
+- Replacement line table above, collapsible.
 
-## 10. Look and feel: 1990s newspaper sports section
+**Waiver Wire**
+- Position (C, LW, RW, Forwards, D, G), Window (Season, L30, L14), Stats as (raw / fantasy pts), Show disqualified (off by default; when on, the reason shows next to the name).
+- Columns: pool star, player, pos, team, own %, GP, PPG, +/- line, per-game stats, Upgrade over.
+- Skater stats: G, A, +/-, PIM, PPP, SOG, TOI/G. Goalie stats: W, GA, SV, SHO, SV% (SV / (SV + GA)), GAA (GA x 60 / TOI). Team log has no TOI, so For me goalie GAA is blank.
+- Upgrade over = my weakest Active player eligible at the position, same window, PPG gain (positive only).
 
-- Newsprint off-white background, ink black text, one faded red accent
-- Masthead "The Morning Soft Dump" in blackletter (UnifrakturCook), ears left and right, double-rule dateline
-- Headlines, nav, and agate stat tables: Archivo (condensed widths, Franklin Gothic feel). Body and decks: Old Standard TT
-- Palette: newsprint #e7e2d4, shade #d8d0bc, ink #24211b, soft ink #5f594c, spot red #a3291f (negatives and flags)
-- Flags and SMALL SAMPLE as small all-caps stamps
+**All tables**
+- Click any column header to sort; click again to reverse.
+- +/- columns: diverging color, red (worst) to white (0) to green (best), scaled to the largest absolute value in that column of the rows shown.
+- Stat and PPG columns: 3-color scale (min red, median white, max green) within the rows shown. More fantasy points = greener. In raw mode GA and GAA are reversed (lower is greener). PIM high = green (it scores points).
+
+**Data check bar:** red bar at the top, only when a warning exists (stale pull, missing/empty tab, unreadable name, possible name mismatch, scoring mismatch, GP over 82 on a Season tab).
+
+## 10. Look and feel
+
+- Function over form. Light, clean tables; sticky header row and player column.
+- Blades of Steel (NES) accent only: navy title bar, pixel font (Press Start 2P) for the title and page buttons, red pixel drop shadow, rink-line stripe (blue lines, red center line), pixel stick-and-puck icon.
+- Body and tables: Segoe UI / Calibri system font.
+- Palette: navy #0e2557, NES blue #2350c4, red #d42a1e, ice #f5f8fc, gridlines #d3d9e3. Scale colors: green 99,190,123 / red 248,105,107.
 
 ## 11. Repo files
 
@@ -170,7 +181,7 @@ For each player, in each lens/window:
 
 ## 12. Out of scope (decided)
 
-No snapshots, no This Week page, no "since dropped" tracking, no Day by Day, no Player Detail page, no Yahoo API or cookies.
+No snapshots, no This Week page, no "since dropped" tracking, no Day by Day, no Player Detail page, no headlines or stories, no newspaper theme, no tab-count footer, no Yahoo API or cookies.
 
 ## 13. Safety rules in the code
 
