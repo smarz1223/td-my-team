@@ -46,7 +46,7 @@ button{font:inherit; color:inherit}
 
 /* ---------- title bar (Blades of Steel) ---------- */
 .titlebar{background:var(--navy); color:#fff; padding:calc(10px + env(safe-area-inset-top,0px)) 16px 10px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
-.titlebar h1{margin:0; font-family:var(--pixel); font-weight:400; font-size:clamp(13px, 2.4vw, 20px); letter-spacing:1px; color:#eaf0ff; text-shadow:3px 3px 0 var(--red); display:flex; align-items:center; gap:12px}
+.titlebar h1{margin:0; flex:1 1 auto; font-family:var(--pixel); font-weight:400; font-size:clamp(13px, 2.4vw, 20px); letter-spacing:1px; color:#eaf0ff; text-shadow:3px 3px 0 var(--red); display:flex; align-items:center; gap:12px}
 .titlebar h1 svg{width:28px; height:28px; flex:none}
 .meta{font-size:12.5px; color:#c9d4f0; text-align:right}
 .meta b{color:#fff}
@@ -63,8 +63,13 @@ button{font:inherit; color:inherit}
 .btns button{border:1px solid #b8c2d3; background:#fff; padding:3px 9px; border-radius:2px; cursor:pointer; font-size:13px; line-height:1.3}
 .btns button:hover{border-color:var(--blue)}
 .btns button[aria-pressed="true"]{background:var(--blue); border-color:var(--blue); color:#fff}
-.pages button{font-family:var(--pixel); font-size:10px; padding:7px 10px}
-.pages button[aria-pressed="true"]{background:var(--navy); border-color:var(--navy)}
+#pages .btns{gap:6px}
+#pages button{font-family:var(--pixel); font-size:10px; padding:8px 11px; background:transparent; color:#c9d4f0; border:2px solid #3a5290; border-radius:0}
+#pages button:hover{border-color:#fff; color:#fff}
+#pages button[aria-pressed="true"]{background:#fff; color:var(--navy); border-color:#fff; box-shadow:3px 3px 0 var(--red)}
+tr.mine td{background:#e6eeff}
+tr.mine td.name{background:#d6e2fc}
+.tag.mine{color:var(--blue)}
 .clear{border:0; background:none; color:var(--blue); text-decoration:underline; cursor:pointer; font-size:12.5px; padding:3px 0}
 
 main{padding:10px 16px 30px}
@@ -121,6 +126,7 @@ h2.tt{font-size:13px; margin:12px 0 4px; color:var(--soft)}
     <rect x="11" y="1" width="2" height="9" fill="#c9a26b"/><rect x="9" y="10" width="4" height="2" fill="#c9a26b"/><rect x="5" y="12" width="6" height="2" fill="#eaf0ff"/>
     <rect x="1" y="12" width="3" height="1" fill="#111"/><rect x="0" y="13" width="5" height="1" fill="#333"/><rect x="1" y="14" width="3" height="1" fill="#111"/>
   </svg>The Morning Soft Dump</h1>
+  <nav id="pages" aria-label="Pages"></nav>
   <div class="meta"><b id="m-team"></b><br><span id="m-pull"></span></div>
 </header>
 <div class="rink" aria-hidden="true"></div>
@@ -167,7 +173,7 @@ const LINE_ROWS = [["C","C"],["LW","LW"],["RW","RW"],["FWD","Forwards"],["D","D"
 const S = {
   page:"team", view:"rep", vs:"pos", win:"l30", as:"raw",
   pos:new Set(), status:new Set(["Active","Injured"]), flags:new Set(),
-  wpos:"C", wwin:"l30", wshow:false,
+  wpos:"C", wwin:"l30", wshow:false, wmine:true, wtot:"pg",
   sort:{}  // table id -> {col, dir}
 };
 
@@ -212,7 +218,7 @@ function colStats(vals){
 /* ============ generic sortable grid ============
    cols: [{key, label, get(row)->sortable value, html(row, stats)->cell html, cls, group, color:"div"|"scale"|null, dir}]
 */
-function renderGrid(id, cols, rows, defSort){
+function renderGrid(id, cols, rows, defSort, rowCls){
   const st = S.sort[id] || defSort || {col:null, dir:-1};
   if (st.col){
     const c = cols.find(c=>c.key===st.col);
@@ -250,7 +256,8 @@ function renderGrid(id, cols, rows, defSort){
   h += `</thead><tbody>`;
   if (!rows.length) h += `<tr><td class="l empty" colspan="${cols.length}">No rows match these slicers.</td></tr>`;
   for (const r of rows){
-    h += `<tr>`;
+    const rc = rowCls ? rowCls(r) : "";
+    h += rc ? `<tr class="${rc}">` : `<tr>`;
     for (const c of cols){
       const v = c.get(r);
       let style = "";
@@ -294,6 +301,7 @@ function teamRows(){
     return true;
   });
 }
+const totalFp = b => (b && b.gp && isNum(b.ppg)) ? b.ppg * b.gp : null;
 const lens = (r, w) => w === "forme" ? r.p.forme : (r.p.overall ? r.p.overall[w] : null);
 const cmpOf = (r, w) => { const b = lens(r,w); return b && b.cmp ? b.cmp[r.key] : null; };
 
@@ -333,6 +341,7 @@ function repCols(){
     cols.push(
       {key:w+"gp", group:WIN[w], label:"GP", first:true, get:r=>{const b=lens(r,w); return b&&b.gp?b.gp:null;}, html:r=>{const b=lens(r,w); return b&&b.gp?f0(b.gp):"";}, dimIf},
       {key:w+"ppg", group:WIN[w], label:"PPG", get:r=>{const b=lens(r,w); return b&&b.gp?b.ppg:null;}, html:r=>{const b=lens(r,w); return b&&b.gp?f1(b.ppg):"";}, dimIf},
+      {key:w+"fp", group:WIN[w], label:"Total FP", color:"scale", get:r=>totalFp(lens(r,w)), html:r=>f0(totalFp(lens(r,w))), dimIf},
       {key:w+"gap", group:WIN[w], label:"+/- PPG", color:"div", get:r=>{const c=cmpOf(r,w); return c?c.gap:null;}, html:r=>{const c=cmpOf(r,w); return c?sg(c.gap):"";}, dimIf},
       {key:w+"pts", group:WIN[w], label:"+/- Pts", color:"div", get:r=>{const c=cmpOf(r,w); return c?c.pts:null;}, html:r=>{const c=cmpOf(r,w); return c?sg(c.pts,0):"";}, dimIf},
     );
@@ -344,27 +353,31 @@ function repCols(){
   return cols;
 }
 
-function statVal(line, k){
+const NO_TOTAL = new Set(["SVP","GAA"]);
+function statVal(line, k, gp, totals){
   if (!line) return null;
-  const v = line[k];
+  let v = line[k];
   if (!isNum(v)) return null;
+  if (totals && !NO_TOTAL.has(k)) v = v * (gp || 0);
   if (S.as === "pts" && W[k] !== undefined) return v * W[k];
   return v;
 }
-function statFmt(k, v){
+function statFmt(k, v, totals){
   if (!isNum(v)) return "";
   if (k === "TOI") return toi(v);
   if (k === "SVP") return svp(v);
   if (k === "GAA") return f2(v);
   if (S.as === "pts" && W[k] !== undefined) return f1(v);
-  return f2(v);
+  return totals ? f0(v) : f2(v);
 }
-function statCols(defs, getLine){
+function statCols(defs, getLine, getGp, totals){
   return defs.map(([k,label]) => {
     const lowerBetter = (S.as === "raw" && k === "GA") || k === "GAA";
-    const lbl = (S.as === "pts" && W[k] !== undefined) ? label + " pts" : label;
+    let lbl = (S.as === "pts" && W[k] !== undefined) ? label + " pts" : label;
+    if (k === "TOI" && totals) lbl = "TOI";
     return {key:"st"+k, label:lbl, color:"scale", dir: lowerBetter ? -1 : 1,
-      get:r=>statVal(getLine(r), k), html:r=>statFmt(k, statVal(getLine(r), k))};
+      get:r=>statVal(getLine(r), k, getGp ? getGp(r) : 0, totals),
+      html:r=>statFmt(k, statVal(getLine(r), k, getGp ? getGp(r) : 0, totals), totals)};
   });
 }
 
@@ -381,17 +394,18 @@ function renderTeam(){
       ...baseCols(),
       {key:"gp", label:"GP", first:true, get:r=>{const b=lens(r,w); return b&&b.gp?b.gp:null;}, html:r=>{const b=lens(r,w); return b&&b.gp?f0(b.gp):"";}},
       {key:"ppg", label:"PPG", color:"scale", get:r=>{const b=lens(r,w); return b&&b.gp?b.ppg:null;}, html:r=>{const b=lens(r,w); return b&&b.gp?f1(b.ppg):"";}},
+      {key:"fp", label:"Total FP", color:"scale", get:r=>totalFp(lens(r,w)), html:r=>f0(totalFp(lens(r,w)))},
       {key:"gap", label:"+/- PPG", color:"div", get:r=>{const c=cmpOf(r,w); return c?c.gap:null;}, html:r=>{const c=cmpOf(r,w); return c?sg(c.gap):"";}},
     ];
     const notes = {key:"notes", label:"Notes", cls:"l", first:true, get:r=>(r.p.flags_by[r.key]||[]).length*10 + r.p.pflags.length, html:notesHtml};
     const sub = S.as === "pts" ? "fantasy points per game by category" : "per game";
     const sk = rows.filter(r => r.p.group !== "G"), gl = rows.filter(r => r.p.group === "G");
     if (sk.length || !gl.length){
-      const sc = statCols(SK_STATS, line); sc[0].first = true;
+      const sc = statCols(SK_STATS, line, null, false); sc[0].first = true;
       blocks.push(`<h2 class="tt">Skaters, ${WIN[w]}, ${sub}</h2>` + wrap(renderGrid("team-sk", [...common, ...sc, notes], sk, {col:"pos", dir:1})));
     }
     if (gl.length){
-      const gc = statCols(G_STATS, line); gc[0].first = true;
+      const gc = statCols(G_STATS, line, null, false); gc[0].first = true;
       blocks.push(`<h2 class="tt">Goalies, ${WIN[w]}, ${sub}</h2>` + wrap(renderGrid("team-g", [...common, ...gc, notes], gl, {col:"ppg", dir:-1})));
     }
   }
@@ -422,6 +436,20 @@ function renderLine(){
 }
 
 /* ============ waiver wire ============ */
+function myWireRows(w, wp, b){
+  return DATA.players.filter(p => {
+    if (p.status === "Cut" || !p.overall || !p.overall[w] || !p.overall[w].gp) return false;
+    if (wp === "F") return p.group === "F";
+    return p.pos.includes(wp);
+  }).map(p => {
+    const o = p.overall[w];
+    return {mine:true, key:p.key, name:p.name, team:p.team, pos:p.pos, tag:p.tag, own:o.own,
+      gp:o.gp, ppg:o.ppg, total:o.ppg*o.gp, stats:o.stats, status:p.status,
+      gap: (b.ppg!==null && isNum(o.ppg)) ? o.ppg - b.ppg : null,
+      pool:false, excluded:[], upgrade:null};
+  });
+}
+
 function renderWire(){
   const w = S.wwin, wp = S.wpos;
   const bkey = wp === "F" ? "FWD" : wp;
@@ -429,26 +457,33 @@ function renderWire(){
   let rows = (DATA.waiver[w][wp] || []);
   const hidden = rows.filter(r => r.excluded.length).length;
   if (!S.wshow) rows = rows.filter(r => !r.excluded.length);
+  const mine = S.wmine ? myWireRows(w, wp, b) : [];
+  rows = rows.concat(mine);
+  const totals = S.wtot === "tot";
   const posName = wp === "F" ? "Forwards" : wp;
   document.getElementById("wireline").innerHTML =
     `<b>${WIN[w]} replacement line, ${posName}:</b> ${b.ppg===null ? "n/a" : f1(b.ppg)+" PPG"} from ${b.n} free agent${b.n===1?"":"s"}${b.early?" (early season, min "+b.min_gp+" GP)":""}.` +
-    (S.wshow ? "" : ` ${hidden} disqualified hidden.`);
+    (S.wshow ? "" : ` ${hidden} disqualified hidden.`) + (S.wmine ? ` ${mine.length} of your players shown (blue rows).` : "");
   const isG = wp === "G";
+  const sc = statCols(isG ? G_STATS : SK_STATS, r => r.stats, r => r.gp, totals); sc[0].first = true;
   const cols = [
     {key:"pool", label:"\u2605", get:r=>r.pool?1:0, html:r=>r.pool?`<span class="star" title="Counts toward the replacement line">&#9733;</span>`:""},
     {key:"name", label:"Player", cls:"name l", get:r=>r.name,
-      html:r=>esc(r.name)+(r.tag?`<span class="tag ${r.tag==="DTD"?"grey":"red"}">${esc(r.tag)}</span>`:"")+(r.excluded.length?` <span class="why">${esc(r.excluded.join(", "))}</span>`:"")},
+      html:r=>esc(r.name)+(r.mine?`<span class="tag mine">Mine</span>`:"")+(r.tag?`<span class="tag ${r.tag==="DTD"?"grey":"red"}">${esc(r.tag)}</span>`:"")+(r.excluded.length?` <span class="why">${esc(r.excluded.join(", "))}</span>`:"")},
     {key:"pos", label:"Pos", cls:"l", get:r=>r.pos.join(","), html:r=>esc(r.pos.join(", "))},
     {key:"team", label:"Team", cls:"l", get:r=>r.team, html:r=>esc(r.team)},
-    {key:"own", label:"Own", get:r=>r.own, html:r=>Math.round(r.own*100)+"%"},
+    {key:"own", label:"Own", get:r=>r.own, html:r=>isNum(r.own)?Math.round(r.own*100)+"%":""},
     {key:"gp", label:"GP", get:r=>r.gp, html:r=>f0(r.gp)},
     {key:"ppg", label:"PPG", color:"scale", get:r=>r.ppg, html:r=>f1(r.ppg)},
+    {key:"fp", label:"Total FP", color:"scale", get:r=>r.total, html:r=>f0(r.total)},
     {key:"gap", label:"+/- Line", color:"div", get:r=>r.gap, html:r=>sg(r.gap)},
-    ...statCols(isG ? G_STATS : SK_STATS, r => r.stats).map((c,i)=> i===0 ? Object.assign(c,{first:true}) : c),
+    ...sc,
     {key:"up", label:"Upgrade over", cls:"l", first:true, get:r=>r.upgrade?r.upgrade.gain:null,
       html:r=>r.upgrade?`${esc(r.upgrade.over)} <b>${sg(r.upgrade.gain)}</b>`:""},
   ];
-  document.getElementById("wire-tables").innerHTML = `<div class="wrap">${renderGrid("wire", cols, rows, {col:"ppg", dir:-1})}</div>`;
+  document.getElementById("wire-tables").innerHTML =
+    `<h2 class="tt">${posName}, ${WIN[w]}, ${totals ? "totals" : "per game"}${S.as==="pts" ? ", fantasy points by category" : ""}</h2>` +
+    `<div class="wrap">${renderGrid("wire", cols, rows, {col:"ppg", dir:-1}, r => r.mine ? "mine" : "")}</div>`;
 }
 
 /* ============ controls ============ */
@@ -459,7 +494,8 @@ function btns(group, items, isOn, extraCls=""){
 function slicer(label, inner){ return `<div class="slicer"><span>${label}</span>${inner}</div>`; }
 
 function renderPanel(){
-  let h = slicer("Page", btns("page", [["team","My Team"],["wire","Waiver Wire"]], v=>S.page===v, "pages"));
+  document.getElementById("pages").innerHTML = btns("page", [["team","My Team"],["wire","Waiver Wire"]], v=>S.page===v, "pages");
+  let h = "";
   if (S.page === "team"){
     h += slicer("View", btns("view", [["rep","vs Replacement"],["stat","Stat line"]], v=>S.view===v));
     h += slicer("Compare forwards to", btns("vs", [["pos","Position"],["fwd","All forwards"]], v=>S.vs===v));
@@ -474,7 +510,9 @@ function renderPanel(){
   } else {
     h += slicer("Position", btns("wpos", [["C","C"],["LW","LW"],["RW","RW"],["F","Forwards"],["D","D"],["G","G"]], v=>S.wpos===v));
     h += slicer("Window", btns("wwin", [["season","Season"],["l30","Last 30"],["l14","Last 14"]], v=>S.wwin===v));
+    h += slicer("Show", btns("wtot", [["pg","Per game"],["tot","Totals"]], v=>S.wtot===v));
     h += slicer("Stats as", btns("as", [["raw","Stats"],["pts","Fantasy pts"]], v=>S.as===v));
+    h += slicer("My team", btns("wmine", [["1","Show my team"]], v=>S.wmine));
     h += slicer("Disqualified", btns("wshow", [["1","Show"]], v=>S.wshow));
   }
   document.getElementById("panel").innerHTML = h;
@@ -511,6 +549,8 @@ document.addEventListener("click", e => {
   else if (g === "wpos") S.wpos = v;
   else if (g === "wwin") S.wwin = v;
   else if (g === "wshow") S.wshow = !S.wshow;
+  else if (g === "wmine") S.wmine = !S.wmine;
+  else if (g === "wtot") S.wtot = v;
   else if (g === "clear"){ S.pos.clear(); S.flags.clear(); S.status = new Set(["Active","Injured"]); }
   renderAll();
 });

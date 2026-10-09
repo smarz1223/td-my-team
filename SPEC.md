@@ -1,4 +1,4 @@
-# td-my-team SPEC (v1.1, 2026-10-09)
+# td-my-team SPEC (v1.2, 2026-10-09)
 
 Personal fantasy hockey analysis for Marz's Type Disgusting team ("Soft Dump in Corner").
 Masthead: **The Morning Soft Dump**
@@ -139,7 +139,9 @@ Trend column: L30 PPG / Season PPG - 1, arrows beyond +/-15%.
 
 ## 9. Pages and controls
 
-All page buttons and slicers sit in one panel at the top. Tables redraw in place.
+Page buttons (My Team, Waiver Wire) sit in the navy title bar. Slicers sit in one panel below it. Tables redraw in place.
+
+**Total FP** column (PPG x GP) appears next to PPG on every table (each lens group on My Team vs Replacement).
 
 **My Team**
 - View: vs Replacement (GP, PPG, +/- PPG, +/- Pts for For me, Season, L30, L14) or Stat line (one window at a time, separate Skaters and Goalies tables).
@@ -149,7 +151,8 @@ All page buttons and slicers sit in one panel at the top. Tables redraw in place
 - Replacement line table above, collapsible.
 
 **Waiver Wire**
-- Position (C, LW, RW, Forwards, D, G), Window (Season, L30, L14), Stats as (raw / fantasy pts), Show disqualified (off by default; when on, the reason shows next to the name).
+- Position (C, LW, RW, Forwards, D, G), Window (Season, L30, L14), Show (Per game / Totals; totals = per game x GP, SV% and GAA unchanged), Stats as (raw / fantasy pts), Show my team (on by default), Show disqualified (off by default; when on, the reason shows next to the name).
+- My team rows: my Active and Injured players eligible at the selected position (Forwards = all my forwards) with GP in that window, blue rows with a "Mine" tag, measured against the same line. Included in sorting and color scales. No Upgrade over value.
 - Columns: pool star, player, pos, team, own %, GP, PPG, +/- line, per-game stats, Upgrade over.
 - Skater stats: G, A, +/-, PIM, PPP, SOG, TOI/G. Goalie stats: W, GA, SV, SHO, SV% (SV / (SV + GA)), GAA (GA x 60 / TOI). Team log has no TOI, so For me goalie GAA is blank.
 - Upgrade over = my weakest Active player eligible at the position, same window, PPG gain (positive only).
