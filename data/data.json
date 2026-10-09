@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-10-09T17:40:39+00:00",
- "generated_et": "2026-10-09 13:40",
+ "generated_utc": "2026-10-09T17:48:07+00:00",
+ "generated_et": "2026-10-09 13:48",
  "pull_date": "2026-10-09",
- "source": "Type_Disgusting_Team_Log_26-27__4_.xlsx",
+ "source": "published Google Sheet",
  "team_name": "Soft Dump in Corner",
  "season": "2026-27",
  "config": {
@@ -692,7 +692,7 @@
     "season": {
      "gp": 5.0,
      "ppg": 30.7,
-     "own": 0.89,
+     "own": 0.9,
      "stats": {
       "G": 0.6,
       "A": 0.4,
@@ -718,7 +718,7 @@
     "l30": {
      "gp": 5.0,
      "ppg": 30.7,
-     "own": 0.89,
+     "own": 0.9,
      "stats": {
       "G": 0.6,
       "A": 0.4,
@@ -744,7 +744,7 @@
     "l14": {
      "gp": 5.0,
      "ppg": 30.7,
-     "own": 0.89,
+     "own": 0.9,
      "stats": {
       "G": 0.6,
       "A": 0.4,
@@ -2535,7 +2535,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 3.0,
      "ppg": 28.29,
      "total": 84.87,
@@ -2653,7 +2653,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.41,
+     "own": 0.42,
      "gp": 4.0,
      "ppg": 25.0,
      "total": 100.0,
@@ -2917,7 +2917,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 5.0,
      "ppg": 20.2,
      "total": 101.0,
@@ -3330,7 +3330,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.58,
+     "own": 0.59,
      "gp": 4.0,
      "ppg": 28.55,
      "total": 114.2,
@@ -3360,7 +3360,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 3.0,
      "ppg": 28.29,
      "total": 84.87,
@@ -3478,7 +3478,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.41,
+     "own": 0.42,
      "gp": 4.0,
      "ppg": 25.0,
      "total": 100.0,
@@ -3979,7 +3979,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.43,
+     "own": 0.44,
      "gp": 4.0,
      "ppg": 17.5,
      "total": 70.0,
@@ -4041,7 +4041,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.58,
+     "own": 0.59,
      "gp": 4.0,
      "ppg": 28.55,
      "total": 114.2,
@@ -4478,7 +4478,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 5.0,
      "ppg": 20.2,
      "total": 101.0,
@@ -4711,7 +4711,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.43,
+     "own": 0.44,
      "gp": 4.0,
      "ppg": 17.5,
      "total": 70.0,
@@ -4770,7 +4770,7 @@
       "D"
      ],
      "tag": null,
-     "own": 0.02,
+     "own": 0.03,
      "gp": 4.0,
      "ppg": 23.5,
      "total": 94.0,
@@ -4854,7 +4854,7 @@
       "D"
      ],
      "tag": null,
-     "own": 0.07,
+     "own": 0.08,
      "gp": 4.0,
      "ppg": 20.0,
      "total": 80.0,
@@ -5139,7 +5139,7 @@
       "D"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 5.0,
      "ppg": 15.8,
      "total": 79.0,
@@ -5510,7 +5510,7 @@
       "G"
      ],
      "tag": null,
-     "own": 0.05,
+     "own": 0.06,
      "gp": 1.0,
      "ppg": 39.0,
      "total": 39.0,
@@ -5591,7 +5591,7 @@
       "G"
      ],
      "tag": null,
-     "own": 0.37,
+     "own": 0.38,
      "gp": 3.0,
      "ppg": 30.666666666666668,
      "total": 92.0,
@@ -6199,7 +6199,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.58,
+     "own": 0.59,
      "gp": 4.0,
      "ppg": 28.55,
      "total": 114.2,
@@ -6229,7 +6229,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 3.0,
      "ppg": 28.29,
      "total": 84.87,
@@ -6405,7 +6405,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.41,
+     "own": 0.42,
      "gp": 4.0,
      "ppg": 25.0,
      "total": 100.0,
@@ -6987,7 +6987,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 5.0,
      "ppg": 20.2,
      "total": 101.0,
@@ -7481,7 +7481,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.43,
+     "own": 0.44,
      "gp": 4.0,
      "ppg": 17.5,
      "total": 70.0,
@@ -7544,7 +7544,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 3.0,
      "ppg": 28.29,
      "total": 84.87,
@@ -7662,7 +7662,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.41,
+     "own": 0.42,
      "gp": 4.0,
      "ppg": 25.0,
      "total": 100.0,
@@ -7926,7 +7926,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 5.0,
      "ppg": 20.2,
      "total": 101.0,
@@ -8339,7 +8339,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.58,
+     "own": 0.59,
      "gp": 4.0,
      "ppg": 28.55,
      "total": 114.2,
@@ -8369,7 +8369,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 3.0,
      "ppg": 28.29,
      "total": 84.87,
@@ -8487,7 +8487,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.41,
+     "own": 0.42,
      "gp": 4.0,
      "ppg": 25.0,
      "total": 100.0,
@@ -8988,7 +8988,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.43,
+     "own": 0.44,
      "gp": 4.0,
      "ppg": 17.5,
      "total": 70.0,
@@ -9050,7 +9050,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.58,
+     "own": 0.59,
      "gp": 4.0,
      "ppg": 28.55,
      "total": 114.2,
@@ -9487,7 +9487,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 5.0,
      "ppg": 20.2,
      "total": 101.0,
@@ -9720,7 +9720,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.43,
+     "own": 0.44,
      "gp": 4.0,
      "ppg": 17.5,
      "total": 70.0,
@@ -9779,7 +9779,7 @@
       "D"
      ],
      "tag": null,
-     "own": 0.02,
+     "own": 0.03,
      "gp": 4.0,
      "ppg": 23.5,
      "total": 94.0,
@@ -9863,7 +9863,7 @@
       "D"
      ],
      "tag": null,
-     "own": 0.07,
+     "own": 0.08,
      "gp": 4.0,
      "ppg": 20.0,
      "total": 80.0,
@@ -10148,7 +10148,7 @@
       "D"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 5.0,
      "ppg": 15.8,
      "total": 79.0,
@@ -10519,7 +10519,7 @@
       "G"
      ],
      "tag": null,
-     "own": 0.05,
+     "own": 0.06,
      "gp": 1.0,
      "ppg": 39.0,
      "total": 39.0,
@@ -10600,5016 +10600,7 @@
       "G"
      ],
      "tag": null,
-     "own": 0.37,
-     "gp": 3.0,
-     "ppg": 30.666666666666668,
-     "total": 92.0,
-     "stats": {
-      "W": 0.6666666666666666,
-      "GA": 2.6666666666666665,
-      "SV": 30.666666666666668,
-      "SHO": 0.0,
-      "SVP": 0.92,
-      "GAA": 2.617943823288792
-     },
-     "gap": 6.866666666666667,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Brandon Bussi",
-      "gain": 21.71666666666667
-     }
-    },
-    {
-     "key": "colten ellis|G",
-     "name": "Colten Ellis",
-     "team": "BUF",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 1.0,
-     "ppg": 28.0,
-     "total": 28.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 2.0,
-      "SV": 18.0,
-      "SHO": 0.0,
-      "SVP": 0.9,
-      "GAA": 1.8643190056965304
-     },
-     "gap": 4.199999999999999,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "pyotr kochetkov|G",
-     "name": "Pyotr Kochetkov",
-     "team": "CAR",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.29,
-     "gp": 2.0,
-     "ppg": 27.0,
-     "total": 54.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 2.0,
-      "SV": 17.0,
-      "SHO": 0.0,
-      "SVP": 0.8947368421052632,
-      "GAA": 1.9536019536019538
-     },
-     "gap": 3.1999999999999993,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "adin hill|G",
-     "name": "Adin Hill",
-     "team": "VGK",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.14,
-     "gp": 2.0,
-     "ppg": 27.0,
-     "total": 54.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 2.5,
-      "SV": 19.5,
-      "SHO": 0.0,
-      "SVP": 0.8863636363636364,
-      "GAA": 2.406417112299465
-     },
-     "gap": 3.1999999999999993,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "joey daccord|G",
-     "name": "Joey Daccord",
-     "team": "SEA",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.49,
-     "gp": 3.0,
-     "ppg": 25.666666666666668,
-     "total": 77.0,
-     "stats": {
-      "W": 0.6666666666666666,
-      "GA": 2.3333333333333335,
-      "SV": 24.0,
-      "SHO": 0.0,
-      "SVP": 0.9113924050632911,
-      "GAA": 2.635156331695075
-     },
-     "gap": 1.8666666666666671,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Brandon Bussi",
-      "gain": 16.71666666666667
-     }
-    },
-    {
-     "key": "carter hart|G",
-     "name": "Carter Hart",
-     "team": "VGK",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.85,
-     "gp": 3.0,
-     "ppg": 21.666666666666668,
-     "total": 65.0,
-     "stats": {
-      "W": 0.6666666666666666,
-      "GA": 2.6666666666666665,
-      "SV": 21.666666666666668,
-      "SHO": 0.0,
-      "SVP": 0.8904109589041096,
-      "GAA": 2.7024490944918833
-     },
-     "gap": -2.133333333333333,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Brandon Bussi",
-      "gain": 12.716666666666669
-     }
-    },
-    {
-     "key": "joseph woll|G",
-     "name": "Joseph Woll",
-     "team": "PHI",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.21,
-     "gp": 3.0,
-     "ppg": 20.666666666666668,
-     "total": 62.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 2.6666666666666665,
-      "SV": 34.0,
-      "SHO": 0.0,
-      "SVP": 0.9272727272727272,
-      "GAA": 2.610587382160986
-     },
-     "gap": -3.133333333333333,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Brandon Bussi",
-      "gain": 11.716666666666669
-     }
-    },
-    {
-     "key": "arturs silovs|G",
-     "name": "Arturs Silovs",
-     "team": "PIT",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.37,
-     "gp": 3.0,
-     "ppg": 20.333333333333332,
-     "total": 61.0,
-     "stats": {
-      "W": 0.6666666666666666,
-      "GA": 3.3333333333333335,
-      "SV": 20.333333333333332,
-      "SHO": 0.3333333333333333,
-      "SVP": 0.8591549295774648,
-      "GAA": 3.378061368114854
-     },
-     "gap": -3.4666666666666686,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Brandon Bussi",
-      "gain": 11.383333333333333
-     }
-    },
-    {
-     "key": "leevi merilainen|G",
-     "name": "Leevi Meriläinen",
-     "team": "VAN",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 3.0,
-     "ppg": 17.666666666666668,
-     "total": 53.0,
-     "stats": {
-      "W": 0.3333333333333333,
-      "GA": 1.0,
-      "SV": 16.0,
-      "SHO": 0.0,
-      "SVP": 0.9411764705882353,
-      "GAA": 1.6262611052552325
-     },
-     "gap": -6.133333333333333,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Brandon Bussi",
-      "gain": 8.716666666666669
-     }
-    },
-    {
-     "key": "sergei murashov|G",
-     "name": "Sergei Murashov",
-     "team": "PIT",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.26,
-     "gp": 1.0,
-     "ppg": 17.0,
-     "total": 17.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 3.0,
-      "SV": 32.0,
-      "SHO": 0.0,
-      "SVP": 0.9142857142857143,
-      "GAA": 3.1367993029334884
-     },
-     "gap": -6.800000000000001,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "charlie lindgren|G",
-     "name": "Charlie Lindgren",
-     "team": "WSH",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.04,
-     "gp": 1.0,
-     "ppg": 17.0,
-     "total": 17.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 2.0,
-      "SV": 27.0,
-      "SHO": 0.0,
-      "SVP": 0.9310344827586207,
-      "GAA": 2.0833333333333335
-     },
-     "gap": -6.800000000000001,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "casey desmith|G",
-     "name": "Casey DeSmith",
-     "team": "DAL",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.07,
-     "gp": 1.0,
-     "ppg": 14.0,
-     "total": 14.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 2.0,
-      "SV": 24.0,
-      "SHO": 0.0,
-      "SVP": 0.9230769230769231,
-      "GAA": 2.0547945205479454
-     },
-     "gap": -9.8,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "sebastian cossa|G",
-     "name": "Sebastian Cossa",
-     "team": "UTA",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.06,
-     "gp": 2.0,
-     "ppg": 11.5,
-     "total": 23.0,
-     "stats": {
-      "W": 0.5,
-      "GA": 2.0,
-      "SV": 11.5,
-      "SHO": 0.0,
-      "SVP": 0.8518518518518519,
-      "GAA": 3.1641397495056034
-     },
-     "gap": -12.3,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "michael dipietro|G",
-     "name": "Michael DiPietro",
-     "team": "BOS",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 1.0,
-     "ppg": 11.0,
-     "total": 11.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 3.0,
-      "SV": 26.0,
-      "SHO": 0.0,
-      "SVP": 0.896551724137931,
-      "GAA": 3.109703426432479
-     },
-     "gap": -12.8,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "akira schmid|G",
-     "name": "Akira Schmid",
-     "team": "FLA",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.06,
-     "gp": 1.0,
-     "ppg": 8.0,
-     "total": 8.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 4.0,
-      "SV": 28.0,
-      "SHO": 0.0,
-      "SVP": 0.875,
-      "GAA": 3.7954665260938323
-     },
-     "gap": -15.8,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "samuel ersson|G",
-     "name": "Samuel Ersson",
-     "team": "OTT",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 2.0,
-     "ppg": 7.0,
-     "total": 14.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 2.5,
-      "SV": 19.5,
-      "SHO": 0.0,
-      "SVP": 0.8863636363636364,
-      "GAA": 3.849443969204448
-     },
-     "gap": -16.8,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "philipp grubauer|G",
-     "name": "Philipp Grubauer",
-     "team": "SEA",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.04,
-     "gp": 2.0,
-     "ppg": 7.0,
-     "total": 14.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 1.5,
-      "SV": 14.5,
-      "SHO": 0.0,
-      "SVP": 0.90625,
-      "GAA": 2.2756005056890016
-     },
-     "gap": -16.8,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "dan vladar|G",
-     "name": "Dan Vladar",
-     "team": "PHI",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.5,
-     "gp": 2.0,
-     "ppg": 6.5,
-     "total": 13.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 5.0,
-      "SV": 31.5,
-      "SHO": 0.0,
-      "SVP": 0.863013698630137,
-      "GAA": 5.124555160142349
-     },
-     "gap": -17.3,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "semyon varlamov|G",
-     "name": "Semyon Varlamov",
-     "team": "NYI",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 1.0,
-     "ppg": 4.0,
-     "total": 4.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 3.0,
-      "SV": 19.0,
-      "SHO": 0.0,
-      "SVP": 0.8636363636363636,
-      "GAA": 3.028603477285474
-     },
-     "gap": -19.8,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ville husso|G",
-     "name": "Ville Husso",
-     "team": "ANA",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 1.0,
-     "ppg": 2.0,
-     "total": 2.0,
-     "stats": {
-      "W": 0.0,
-      "GA": 0.0,
-      "SV": 2.0,
-      "SHO": 0.0,
-      "SVP": 1.0,
-      "GAA": 0.0
-     },
-     "gap": -21.8,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    }
-   ],
-   "F": [
-    {
-     "key": "vasily podkolzin|F",
-     "name": "Vasily Podkolzin",
-     "team": "EDM",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.79,
-     "gp": 4.0,
-     "ppg": 39.25,
-     "total": 157.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.5,
-      "+/-": 1.5,
-      "PIM": 0.0,
-      "PPP": 0.75,
-      "SOG": 4.0,
-      "TOI": 18.733333333333334
-     },
-     "gap": 9.596499999999999,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 24.85
-     }
-    },
-    {
-     "key": "filip hallander|F",
-     "name": "Filip Hallander",
-     "team": "EDM",
-     "pos": [
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 2.0,
-     "ppg": 30.5,
-     "total": 61.0,
-     "stats": {
-      "G": 0.5,
-      "A": 1.0,
-      "+/-": 2.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 1.5,
-      "TOI": 10.283333333333333
-     },
-     "gap": 0.8464999999999989,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "cole perfetti|F",
-     "name": "Cole Perfetti",
-     "team": "WPG",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.58,
-     "gp": 4.0,
-     "ppg": 28.55,
-     "total": 114.2,
-     "stats": {
-      "G": 0.75,
-      "A": 0.75,
-      "+/-": -0.24,
-      "PIM": 0.0,
-      "PPP": 1.0,
-      "SOG": 3.0,
-      "TOI": 18.316666666666666
-     },
-     "gap": -1.1035000000000004,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 14.15
-     }
-    },
-    {
-     "key": "pierre-luc dubois|F",
-     "name": "Pierre-Luc Dubois",
-     "team": "WSH",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.33,
-     "gp": 3.0,
-     "ppg": 28.29,
-     "total": 84.87,
-     "stats": {
-      "G": 0.33,
-      "A": 1.0,
-      "+/-": 1.0,
-      "PIM": 2.0,
-      "PPP": 0.0,
-      "SOG": 1.67,
-      "TOI": 16.116666666666667
-     },
-     "gap": -1.363500000000002,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 13.889999999999999
-     }
-    },
-    {
-     "key": "jaden schwartz|F",
-     "name": "Jaden Schwartz",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.04,
-     "gp": 4.0,
-     "ppg": 28.25,
-     "total": 113.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 0.5,
-      "PPP": 0.25,
-      "SOG": 2.25,
-      "TOI": 13.533333333333333
-     },
-     "gap": -1.403500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "elias pettersson|F",
-     "name": "Elias Pettersson",
-     "team": "VAN",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.78,
-     "gp": 5.0,
-     "ppg": 27.2,
-     "total": 136.0,
-     "stats": {
-      "G": 0.4,
-      "A": 1.2,
-      "+/-": 0.6,
-      "PIM": 0.0,
-      "PPP": 0.6,
-      "SOG": 1.6,
-      "TOI": 20.033333333333335
-     },
-     "gap": -2.453500000000002,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 12.799999999999999
-     }
-    },
-    {
-     "key": "victor olofsson|F",
-     "name": "Victor Olofsson",
-     "team": "VGK",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": "O",
-     "own": 0.07,
-     "gp": 4.0,
-     "ppg": 25.75,
-     "total": 103.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.25,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 2.25,
-      "TOI": 13.133333333333333
-     },
-     "gap": -3.903500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "thomas novak|F",
-     "name": "Thomas Novak",
-     "team": "PIT",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.26,
-     "gp": 4.0,
-     "ppg": 25.25,
-     "total": 101.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 2.0,
-      "TOI": 15.3
-     },
-     "gap": -4.403500000000001,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 10.85
-     }
-    },
-    {
-     "key": "mathieu olivier|F",
-     "name": "Mathieu Olivier",
-     "team": "CBJ",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.07,
-     "gp": 2.0,
-     "ppg": 25.25,
-     "total": 50.5,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 1.0,
-      "PIM": 3.5,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 14.95
-     },
-     "gap": -4.403500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jared mccann|F",
-     "name": "Jared McCann",
-     "team": "SEA",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.41,
-     "gp": 4.0,
-     "ppg": 25.0,
-     "total": 100.0,
-     "stats": {
-      "G": 0.25,
-      "A": 1.0,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 3.75,
-      "TOI": 15.8
-     },
-     "gap": -4.653500000000001,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 10.6
-     }
-    },
-    {
-     "key": "brayden schenn|F",
-     "name": "Brayden Schenn",
-     "team": "NYI",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.19,
-     "gp": 4.0,
-     "ppg": 24.63,
-     "total": 98.52,
-     "stats": {
-      "G": 0.25,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 2.25,
-      "PPP": 0.25,
-      "SOG": 2.0,
-      "TOI": 15.25
-     },
-     "gap": -5.023500000000002,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "matthew poitras|F",
-     "name": "Matthew Poitras",
-     "team": "BOS",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 2.0,
-     "ppg": 24.5,
-     "total": 49.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 1.5,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 10.65
-     },
-     "gap": -5.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "artturi lehkonen|F",
-     "name": "Artturi Lehkonen",
-     "team": "COL",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.67,
-     "gp": 4.0,
-     "ppg": 24.25,
-     "total": 97.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.25,
-      "+/-": 1.0,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 1.5,
-      "TOI": 18.4
-     },
-     "gap": -5.403500000000001,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 9.85
-     }
-    },
-    {
-     "key": "charlie coyle|F",
-     "name": "Charlie Coyle",
-     "team": "CBJ",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 2.0,
-     "ppg": 23.5,
-     "total": 47.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.5,
-      "+/-": 1.0,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 0.5,
-      "TOI": 17.233333333333334
-     },
-     "gap": -6.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "kent johnson|F",
-     "name": "Kent Johnson",
-     "team": "CBJ",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.05,
-     "gp": 2.0,
-     "ppg": 23.5,
-     "total": 47.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 3.0,
-      "TOI": 16.05
-     },
-     "gap": -6.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "tyler toffoli|F",
-     "name": "Tyler Toffoli",
-     "team": "SJ",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.14,
-     "gp": 4.0,
-     "ppg": 23.0,
-     "total": 92.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.5,
-      "PPP": 0.25,
-      "SOG": 2.75,
-      "TOI": 13.45
-     },
-     "gap": -6.653500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ben kindel|F",
-     "name": "Ben Kindel",
-     "team": "PIT",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.14,
-     "gp": 3.0,
-     "ppg": 22.8,
-     "total": 68.4,
-     "stats": {
-      "G": 0.67,
-      "A": 0.67,
-      "+/-": -0.32,
-      "PIM": 0.0,
-      "PPP": 0.33,
-      "SOG": 3.0,
-      "TOI": 17.5
-     },
-     "gap": -6.8535,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "paul cotter|F",
-     "name": "Paul Cotter",
-     "team": "VAN",
-     "pos": [
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.36,
-     "gp": 5.0,
-     "ppg": 22.8,
-     "total": 114.0,
-     "stats": {
-      "G": 0.8,
-      "A": 0.4,
-      "+/-": 0.6,
-      "PIM": 0.0,
-      "PPP": 0.2,
-      "SOG": 1.4,
-      "TOI": 15.1
-     },
-     "gap": -6.8535,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 8.4
-     }
-    },
-    {
-     "key": "cole sillinger|F",
-     "name": "Cole Sillinger",
-     "team": "CBJ",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 2.0,
-     "ppg": 22.5,
-     "total": 45.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 1.0,
-      "PIM": 2.0,
-      "PPP": 0.0,
-      "SOG": 2.5,
-      "TOI": 14.35
-     },
-     "gap": -7.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "parker kelly|F",
-     "name": "Parker Kelly",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.05,
-     "gp": 4.0,
-     "ppg": 22.5,
-     "total": 90.0,
-     "stats": {
-      "G": 0.25,
-      "A": 1.0,
-      "+/-": 1.0,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 1.25,
-      "TOI": 13.216666666666667
-     },
-     "gap": -7.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "viktor arvidsson|F",
-     "name": "Viktor Arvidsson",
-     "team": "DET",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 3.0,
-     "ppg": 22.12,
-     "total": 66.36,
-     "stats": {
-      "G": 0.67,
-      "A": 0.33,
-      "+/-": -0.32,
-      "PIM": 0.67,
-      "PPP": 0.67,
-      "SOG": 2.67,
-      "TOI": 18.333333333333332
-     },
-     "gap": -7.5335,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jake debrusk|F",
-     "name": "Jake DeBrusk",
-     "team": "VAN",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.16,
-     "gp": 3.0,
-     "ppg": 22.02,
-     "total": 66.06,
-     "stats": {
-      "G": 0.67,
-      "A": 0.33,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 2.67,
-      "TOI": 16.633333333333333
-     },
-     "gap": -7.6335000000000015,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "logan stankoven|F",
-     "name": "Logan Stankoven",
-     "team": "CAR",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.64,
-     "gp": 5.0,
-     "ppg": 21.6,
-     "total": 108.0,
-     "stats": {
-      "G": 0.8,
-      "A": 0.0,
-      "+/-": 0.4,
-      "PIM": 0.4,
-      "PPP": 0.2,
-      "SOG": 2.8,
-      "TOI": 18.016666666666666
-     },
-     "gap": -8.0535,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 7.200000000000001
-     }
-    },
-    {
-     "key": "nick robertson|F",
-     "name": "Nick Robertson",
-     "team": "PIT",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.08,
-     "gp": 4.0,
-     "ppg": 21.0,
-     "total": 84.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.0,
-      "+/-": 0.75,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 1.75,
-      "TOI": 13.083333333333334
-     },
-     "gap": -8.653500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jordan eberle|F",
-     "name": "Jordan Eberle",
-     "team": "SEA",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.18,
-     "gp": 4.0,
-     "ppg": 21.0,
-     "total": 84.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.75,
-      "SOG": 1.75,
-      "TOI": 16.2
-     },
-     "gap": -8.653500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ville koivunen|F",
-     "name": "Ville Koivunen",
-     "team": "PIT",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 3.0,
-     "ppg": 20.94,
-     "total": 62.82000000000001,
-     "stats": {
-      "G": 0.33,
-      "A": 0.33,
-      "+/-": 1.67,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 1.33,
-      "TOI": 13.816666666666666
-     },
-     "gap": -8.7135,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jackson blake|F",
-     "name": "Jackson Blake",
-     "team": "CAR",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.47,
-     "gp": 5.0,
-     "ppg": 20.6,
-     "total": 103.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.0,
-      "+/-": 0.0,
-      "PIM": 0.4,
-      "PPP": 0.8,
-      "SOG": 2.8,
-      "TOI": 18.2
-     },
-     "gap": -9.0535,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 6.200000000000001
-     }
-    },
-    {
-     "key": "marco kasper|F",
-     "name": "Marco Kasper",
-     "team": "DET",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": "IR",
-     "own": 0.03,
-     "gp": 1.0,
-     "ppg": 20.5,
-     "total": 20.5,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 5.0,
-      "PPP": 0.0,
-      "SOG": 4.0,
-      "TOI": 10.833333333333334
-     },
-     "gap": -9.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ryan leonard|F",
-     "name": "Ryan Leonard",
-     "team": "WSH",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.32,
-     "gp": 3.0,
-     "ppg": 20.37,
-     "total": 61.11,
-     "stats": {
-      "G": 0.67,
-      "A": 0.0,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.33,
-      "SOG": 2.67,
-      "TOI": 13.383333333333333
-     },
-     "gap": -9.2835,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.970000000000001
-     }
-    },
-    {
-     "key": "jack roslovic|F",
-     "name": "Jack Roslovic",
-     "team": "TOR",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.22,
-     "gp": 5.0,
-     "ppg": 20.2,
-     "total": 101.0,
-     "stats": {
-      "G": 0.4,
-      "A": 0.4,
-      "+/-": 0.6,
-      "PIM": 0.4,
-      "PPP": 0.2,
-      "SOG": 2.6,
-      "TOI": 16.633333333333333
-     },
-     "gap": -9.453500000000002,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.799999999999999
-     }
-    },
-    {
-     "key": "nazem kadri|F",
-     "name": "Nazem Kadri",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.67,
-     "gp": 4.0,
-     "ppg": 19.75,
-     "total": 79.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.75,
-      "+/-": 0.75,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 3.0,
-      "TOI": 17.933333333333334
-     },
-     "gap": -9.903500000000001,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.35
-     }
-    },
-    {
-     "key": "shane pinto|F",
-     "name": "Shane Pinto",
-     "team": "OTT",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 4.0,
-     "ppg": 19.5,
-     "total": 78.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 1.5,
-      "PPP": 0.25,
-      "SOG": 2.25,
-      "TOI": 19.45
-     },
-     "gap": -10.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "will cuylle|F",
-     "name": "Will Cuylle",
-     "team": "NYR",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.42,
-     "gp": 5.0,
-     "ppg": 19.15,
-     "total": 95.75,
-     "stats": {
-      "G": 0.0,
-      "A": 0.6,
-      "+/-": -0.19,
-      "PIM": 2.6,
-      "PPP": 0.4,
-      "SOG": 2.8,
-      "TOI": 15.15
-     },
-     "gap": -10.503500000000003,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 4.749999999999998
-     }
-    },
-    {
-     "key": "jesper boqvist|F",
-     "name": "Jesper Boqvist",
-     "team": "NJ",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 1.0,
-     "ppg": 19.0,
-     "total": 19.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 9.816666666666666
-     },
-     "gap": -10.653500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "nicolas roy|F",
-     "name": "Nicolas Roy",
-     "team": "COL",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.06,
-     "gp": 4.0,
-     "ppg": 19.0,
-     "total": 76.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": 0.75,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 12.816666666666666
-     },
-     "gap": -10.653500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "taylor hall|F",
-     "name": "Taylor Hall",
-     "team": "CAR",
-     "pos": [
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.1,
-     "gp": 5.0,
-     "ppg": 19.0,
-     "total": 95.0,
-     "stats": {
-      "G": 0.4,
-      "A": 0.4,
-      "+/-": 0.0,
-      "PIM": 1.6,
-      "PPP": 0.2,
-      "SOG": 2.0,
-      "TOI": 14.066666666666666
-     },
-     "gap": -10.653500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "adam klapka|F",
-     "name": "Adam Klapka",
-     "team": "CGY",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 4.0,
-     "ppg": 18.93,
-     "total": 75.72,
-     "stats": {
-      "G": 0.25,
-      "A": 0.0,
-      "+/-": -0.74,
-      "PIM": 6.75,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 10.383333333333333
-     },
-     "gap": -10.723500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "josh anderson|F",
-     "name": "Josh Anderson",
-     "team": "MTL",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 4.0,
-     "ppg": 18.75,
-     "total": 75.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 0.25,
-      "PIM": 1.5,
-      "PPP": 0.0,
-      "SOG": 2.5,
-      "TOI": 12.983333333333333
-     },
-     "gap": -10.903500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "frank nazar|F",
-     "name": "Frank Nazar",
-     "team": "CHI",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.13,
-     "gp": 5.0,
-     "ppg": 18.65,
-     "total": 93.25,
-     "stats": {
-      "G": 0.4,
-      "A": 0.2,
-      "+/-": -0.99,
-      "PIM": 4.4,
-      "PPP": 0.2,
-      "SOG": 1.8,
-      "TOI": 18.833333333333332
-     },
-     "gap": -11.003500000000003,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "zachary bolduc|F",
-     "name": "Zachary Bolduc",
-     "team": "MTL",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 4.0,
-     "ppg": 18.5,
-     "total": 74.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.0,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 1.75,
-      "TOI": 13.133333333333333
-     },
-     "gap": -11.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "alex laferriere|F",
-     "name": "Alex Laferriere",
-     "team": "LA",
-     "pos": [
-      "C",
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.45,
-     "gp": 3.0,
-     "ppg": 18.32,
-     "total": 54.96,
-     "stats": {
-      "G": 0.33,
-      "A": 0.67,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 1.67,
-      "TOI": 16.466666666666665
-     },
-     "gap": -11.3335,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.92
-     }
-    },
-    {
-     "key": "fedor svechkov|F",
-     "name": "Fedor Svechkov",
-     "team": "COL",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 4.0,
-     "ppg": 18.25,
-     "total": 73.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 1.25,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 13.833333333333334
-     },
-     "gap": -11.403500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "blake coleman|F",
-     "name": "Blake Coleman",
-     "team": "MIN",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.16,
-     "gp": 4.0,
-     "ppg": 18.05,
-     "total": 72.2,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": -0.49,
-      "PIM": 0.5,
-      "PPP": 0.75,
-      "SOG": 2.75,
-      "TOI": 14.833333333333334
-     },
-     "gap": -11.6035,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "mason mctavish|F",
-     "name": "Mason McTavish",
-     "team": "STL",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.2,
-     "gp": 4.0,
-     "ppg": 17.75,
-     "total": 71.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 3.25,
-      "TOI": 15.333333333333334
-     },
-     "gap": -11.903500000000001,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.3499999999999996
-     }
-    },
-    {
-     "key": "kaapo kakko|F",
-     "name": "Kaapo Kakko",
-     "team": "SEA",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 4.0,
-     "ppg": 17.75,
-     "total": 71.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.75,
-      "+/-": 0.75,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 0.75,
-      "TOI": 14.55
-     },
-     "gap": -11.903500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ridly greig|F",
-     "name": "Ridly Greig",
-     "team": "OTT",
-     "pos": [
-      "C",
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 2.0,
-     "ppg": 17.5,
-     "total": 35.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.5,
-      "+/-": 0.0,
-      "PIM": 3.0,
-      "PPP": 0.0,
-      "SOG": 2.5,
-      "TOI": 16.0
-     },
-     "gap": -12.153500000000001,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "bobby mcmann|F",
-     "name": "Bobby McMann",
-     "team": "SEA",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.43,
-     "gp": 4.0,
-     "ppg": 17.5,
-     "total": 70.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 3.75,
-      "TOI": 16.583333333333332
-     },
-     "gap": -12.153500000000001,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.0999999999999996
-     }
-    },
-    {
-     "key": "roope hintz|F",
-     "name": "Roope Hintz",
-     "team": "DAL",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.84,
-     "gp": 4.0,
-     "ppg": 17.0,
-     "total": 68.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 2.25,
-      "TOI": 15.866666666666667
-     },
-     "gap": -12.653500000000001,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 2.5999999999999996
-     }
-    }
-   ]
-  },
-  "l14": {
-   "C": [
-    {
-     "key": "pierre-luc dubois|F",
-     "name": "Pierre-Luc Dubois",
-     "team": "WSH",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.33,
-     "gp": 3.0,
-     "ppg": 28.29,
-     "total": 84.87,
-     "stats": {
-      "G": 0.33,
-      "A": 1.0,
-      "+/-": 1.0,
-      "PIM": 2.0,
-      "PPP": 0.0,
-      "SOG": 1.67,
-      "TOI": 16.116666666666667
-     },
-     "gap": 3.0580952380952375,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 13.889999999999999
-     }
-    },
-    {
-     "key": "jaden schwartz|F",
-     "name": "Jaden Schwartz",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.04,
-     "gp": 4.0,
-     "ppg": 28.25,
-     "total": 113.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 0.5,
-      "PPP": 0.25,
-      "SOG": 2.25,
-      "TOI": 13.533333333333333
-     },
-     "gap": 3.0180952380952384,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "elias pettersson|F",
-     "name": "Elias Pettersson",
-     "team": "VAN",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.78,
-     "gp": 5.0,
-     "ppg": 27.2,
-     "total": 136.0,
-     "stats": {
-      "G": 0.4,
-      "A": 1.2,
-      "+/-": 0.6,
-      "PIM": 0.0,
-      "PPP": 0.6,
-      "SOG": 1.6,
-      "TOI": 20.033333333333335
-     },
-     "gap": 1.9680952380952377,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 12.799999999999999
-     }
-    },
-    {
-     "key": "thomas novak|F",
-     "name": "Thomas Novak",
-     "team": "PIT",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.26,
-     "gp": 4.0,
-     "ppg": 25.25,
-     "total": 101.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 2.0,
-      "TOI": 15.3
-     },
-     "gap": 0.018095238095238386,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 10.85
-     }
-    },
-    {
-     "key": "jared mccann|F",
-     "name": "Jared McCann",
-     "team": "SEA",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.41,
-     "gp": 4.0,
-     "ppg": 25.0,
-     "total": 100.0,
-     "stats": {
-      "G": 0.25,
-      "A": 1.0,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 3.75,
-      "TOI": 15.8
-     },
-     "gap": -0.2319047619047616,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 10.6
-     }
-    },
-    {
-     "key": "brayden schenn|F",
-     "name": "Brayden Schenn",
-     "team": "NYI",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.19,
-     "gp": 4.0,
-     "ppg": 24.63,
-     "total": 98.52,
-     "stats": {
-      "G": 0.25,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 2.25,
-      "PPP": 0.25,
-      "SOG": 2.0,
-      "TOI": 15.25
-     },
-     "gap": -0.6019047619047626,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "matthew poitras|F",
-     "name": "Matthew Poitras",
-     "team": "BOS",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 2.0,
-     "ppg": 24.5,
-     "total": 49.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 1.5,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 10.65
-     },
-     "gap": -0.7319047619047616,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "charlie coyle|F",
-     "name": "Charlie Coyle",
-     "team": "CBJ",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 2.0,
-     "ppg": 23.5,
-     "total": 47.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.5,
-      "+/-": 1.0,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 0.5,
-      "TOI": 17.233333333333334
-     },
-     "gap": -1.7319047619047616,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ben kindel|F",
-     "name": "Ben Kindel",
-     "team": "PIT",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.14,
-     "gp": 3.0,
-     "ppg": 22.8,
-     "total": 68.4,
-     "stats": {
-      "G": 0.67,
-      "A": 0.67,
-      "+/-": -0.32,
-      "PIM": 0.0,
-      "PPP": 0.33,
-      "SOG": 3.0,
-      "TOI": 17.5
-     },
-     "gap": -2.431904761904761,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "cole sillinger|F",
-     "name": "Cole Sillinger",
-     "team": "CBJ",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 2.0,
-     "ppg": 22.5,
-     "total": 45.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 1.0,
-      "PIM": 2.0,
-      "PPP": 0.0,
-      "SOG": 2.5,
-      "TOI": 14.35
-     },
-     "gap": -2.7319047619047616,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "parker kelly|F",
-     "name": "Parker Kelly",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.05,
-     "gp": 4.0,
-     "ppg": 22.5,
-     "total": 90.0,
-     "stats": {
-      "G": 0.25,
-      "A": 1.0,
-      "+/-": 1.0,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 1.25,
-      "TOI": 13.216666666666667
-     },
-     "gap": -2.7319047619047616,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "logan stankoven|F",
-     "name": "Logan Stankoven",
-     "team": "CAR",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.64,
-     "gp": 5.0,
-     "ppg": 21.6,
-     "total": 108.0,
-     "stats": {
-      "G": 0.8,
-      "A": 0.0,
-      "+/-": 0.4,
-      "PIM": 0.4,
-      "PPP": 0.2,
-      "SOG": 2.8,
-      "TOI": 18.016666666666666
-     },
-     "gap": -3.63190476190476,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 7.200000000000001
-     }
-    },
-    {
-     "key": "marco kasper|F",
-     "name": "Marco Kasper",
-     "team": "DET",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": "IR",
-     "own": 0.03,
-     "gp": 1.0,
-     "ppg": 20.5,
-     "total": 20.5,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 5.0,
-      "PPP": 0.0,
-      "SOG": 4.0,
-      "TOI": 10.833333333333334
-     },
-     "gap": -4.731904761904762,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jack roslovic|F",
-     "name": "Jack Roslovic",
-     "team": "TOR",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.22,
-     "gp": 5.0,
-     "ppg": 20.2,
-     "total": 101.0,
-     "stats": {
-      "G": 0.4,
-      "A": 0.4,
-      "+/-": 0.6,
-      "PIM": 0.4,
-      "PPP": 0.2,
-      "SOG": 2.6,
-      "TOI": 16.633333333333333
-     },
-     "gap": -5.031904761904762,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.799999999999999
-     }
-    },
-    {
-     "key": "nazem kadri|F",
-     "name": "Nazem Kadri",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.67,
-     "gp": 4.0,
-     "ppg": 19.75,
-     "total": 79.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.75,
-      "+/-": 0.75,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 3.0,
-      "TOI": 17.933333333333334
-     },
-     "gap": -5.481904761904762,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.35
-     }
-    },
-    {
-     "key": "shane pinto|F",
-     "name": "Shane Pinto",
-     "team": "OTT",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 4.0,
-     "ppg": 19.5,
-     "total": 78.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 1.5,
-      "PPP": 0.25,
-      "SOG": 2.25,
-      "TOI": 19.45
-     },
-     "gap": -5.731904761904762,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jesper boqvist|F",
-     "name": "Jesper Boqvist",
-     "team": "NJ",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 1.0,
-     "ppg": 19.0,
-     "total": 19.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 9.816666666666666
-     },
-     "gap": -6.231904761904762,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "nicolas roy|F",
-     "name": "Nicolas Roy",
-     "team": "COL",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.06,
-     "gp": 4.0,
-     "ppg": 19.0,
-     "total": 76.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": 0.75,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 12.816666666666666
-     },
-     "gap": -6.231904761904762,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "frank nazar|F",
-     "name": "Frank Nazar",
-     "team": "CHI",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.13,
-     "gp": 5.0,
-     "ppg": 18.65,
-     "total": 93.25,
-     "stats": {
-      "G": 0.4,
-      "A": 0.2,
-      "+/-": -0.99,
-      "PIM": 4.4,
-      "PPP": 0.2,
-      "SOG": 1.8,
-      "TOI": 18.833333333333332
-     },
-     "gap": -6.581904761904763,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "alex laferriere|F",
-     "name": "Alex Laferriere",
-     "team": "LA",
-     "pos": [
-      "C",
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.45,
-     "gp": 3.0,
-     "ppg": 18.32,
-     "total": 54.96,
-     "stats": {
-      "G": 0.33,
-      "A": 0.67,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 1.67,
-      "TOI": 16.466666666666665
-     },
-     "gap": -6.911904761904761,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.92
-     }
-    },
-    {
-     "key": "fedor svechkov|F",
-     "name": "Fedor Svechkov",
-     "team": "COL",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 4.0,
-     "ppg": 18.25,
-     "total": 73.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 1.25,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 13.833333333333334
-     },
-     "gap": -6.981904761904762,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "blake coleman|F",
-     "name": "Blake Coleman",
-     "team": "MIN",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.16,
-     "gp": 4.0,
-     "ppg": 18.05,
-     "total": 72.2,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": -0.49,
-      "PIM": 0.5,
-      "PPP": 0.75,
-      "SOG": 2.75,
-      "TOI": 14.833333333333334
-     },
-     "gap": -7.181904761904761,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "mason mctavish|F",
-     "name": "Mason McTavish",
-     "team": "STL",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.2,
-     "gp": 4.0,
-     "ppg": 17.75,
-     "total": 71.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 3.25,
-      "TOI": 15.333333333333334
-     },
-     "gap": -7.481904761904762,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.3499999999999996
-     }
-    },
-    {
-     "key": "ridly greig|F",
-     "name": "Ridly Greig",
-     "team": "OTT",
-     "pos": [
-      "C",
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 2.0,
-     "ppg": 17.5,
-     "total": 35.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.5,
-      "+/-": 0.0,
-      "PIM": 3.0,
-      "PPP": 0.0,
-      "SOG": 2.5,
-      "TOI": 16.0
-     },
-     "gap": -7.731904761904762,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "roope hintz|F",
-     "name": "Roope Hintz",
-     "team": "DAL",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.84,
-     "gp": 4.0,
-     "ppg": 17.0,
-     "total": 68.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 2.25,
-      "TOI": 15.866666666666667
-     },
-     "gap": -8.231904761904762,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 2.5999999999999996
-     }
-    }
-   ],
-   "LW": [
-    {
-     "key": "vasily podkolzin|F",
-     "name": "Vasily Podkolzin",
-     "team": "EDM",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.79,
-     "gp": 4.0,
-     "ppg": 39.25,
-     "total": 157.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.5,
-      "+/-": 1.5,
-      "PIM": 0.0,
-      "PPP": 0.75,
-      "SOG": 4.0,
-      "TOI": 18.733333333333334
-     },
-     "gap": 9.930526315789471,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 24.85
-     }
-    },
-    {
-     "key": "filip hallander|F",
-     "name": "Filip Hallander",
-     "team": "EDM",
-     "pos": [
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 2.0,
-     "ppg": 30.5,
-     "total": 61.0,
-     "stats": {
-      "G": 0.5,
-      "A": 1.0,
-      "+/-": 2.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 1.5,
-      "TOI": 10.283333333333333
-     },
-     "gap": 1.1805263157894714,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "cole perfetti|F",
-     "name": "Cole Perfetti",
-     "team": "WPG",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.58,
-     "gp": 4.0,
-     "ppg": 28.55,
-     "total": 114.2,
-     "stats": {
-      "G": 0.75,
-      "A": 0.75,
-      "+/-": -0.24,
-      "PIM": 0.0,
-      "PPP": 1.0,
-      "SOG": 3.0,
-      "TOI": 18.316666666666666
-     },
-     "gap": -0.7694736842105279,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 14.15
-     }
-    },
-    {
-     "key": "pierre-luc dubois|F",
-     "name": "Pierre-Luc Dubois",
-     "team": "WSH",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.33,
-     "gp": 3.0,
-     "ppg": 28.29,
-     "total": 84.87,
-     "stats": {
-      "G": 0.33,
-      "A": 1.0,
-      "+/-": 1.0,
-      "PIM": 2.0,
-      "PPP": 0.0,
-      "SOG": 1.67,
-      "TOI": 16.116666666666667
-     },
-     "gap": -1.0294736842105294,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 13.889999999999999
-     }
-    },
-    {
-     "key": "jaden schwartz|F",
-     "name": "Jaden Schwartz",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.04,
-     "gp": 4.0,
-     "ppg": 28.25,
-     "total": 113.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 0.5,
-      "PPP": 0.25,
-      "SOG": 2.25,
-      "TOI": 13.533333333333333
-     },
-     "gap": -1.0694736842105286,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "victor olofsson|F",
-     "name": "Victor Olofsson",
-     "team": "VGK",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": "O",
-     "own": 0.07,
-     "gp": 4.0,
-     "ppg": 25.75,
-     "total": 103.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.25,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 2.25,
-      "TOI": 13.133333333333333
-     },
-     "gap": -3.5694736842105286,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "thomas novak|F",
-     "name": "Thomas Novak",
-     "team": "PIT",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.26,
-     "gp": 4.0,
-     "ppg": 25.25,
-     "total": 101.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 2.0,
-      "TOI": 15.3
-     },
-     "gap": -4.069473684210529,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 10.85
-     }
-    },
-    {
-     "key": "jared mccann|F",
-     "name": "Jared McCann",
-     "team": "SEA",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.41,
-     "gp": 4.0,
-     "ppg": 25.0,
-     "total": 100.0,
-     "stats": {
-      "G": 0.25,
-      "A": 1.0,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 3.75,
-      "TOI": 15.8
-     },
-     "gap": -4.319473684210529,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 10.6
-     }
-    },
-    {
-     "key": "brayden schenn|F",
-     "name": "Brayden Schenn",
-     "team": "NYI",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.19,
-     "gp": 4.0,
-     "ppg": 24.63,
-     "total": 98.52,
-     "stats": {
-      "G": 0.25,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 2.25,
-      "PPP": 0.25,
-      "SOG": 2.0,
-      "TOI": 15.25
-     },
-     "gap": -4.68947368421053,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "artturi lehkonen|F",
-     "name": "Artturi Lehkonen",
-     "team": "COL",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.67,
-     "gp": 4.0,
-     "ppg": 24.25,
-     "total": 97.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.25,
-      "+/-": 1.0,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 1.5,
-      "TOI": 18.4
-     },
-     "gap": -5.069473684210529,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 9.85
-     }
-    },
-    {
-     "key": "kent johnson|F",
-     "name": "Kent Johnson",
-     "team": "CBJ",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.05,
-     "gp": 2.0,
-     "ppg": 23.5,
-     "total": 47.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 3.0,
-      "TOI": 16.05
-     },
-     "gap": -5.819473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "tyler toffoli|F",
-     "name": "Tyler Toffoli",
-     "team": "SJ",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.14,
-     "gp": 4.0,
-     "ppg": 23.0,
-     "total": 92.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.5,
-      "PPP": 0.25,
-      "SOG": 2.75,
-      "TOI": 13.45
-     },
-     "gap": -6.319473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "paul cotter|F",
-     "name": "Paul Cotter",
-     "team": "VAN",
-     "pos": [
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.36,
-     "gp": 5.0,
-     "ppg": 22.8,
-     "total": 114.0,
-     "stats": {
-      "G": 0.8,
-      "A": 0.4,
-      "+/-": 0.6,
-      "PIM": 0.0,
-      "PPP": 0.2,
-      "SOG": 1.4,
-      "TOI": 15.1
-     },
-     "gap": -6.519473684210528,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 8.4
-     }
-    },
-    {
-     "key": "parker kelly|F",
-     "name": "Parker Kelly",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.05,
-     "gp": 4.0,
-     "ppg": 22.5,
-     "total": 90.0,
-     "stats": {
-      "G": 0.25,
-      "A": 1.0,
-      "+/-": 1.0,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 1.25,
-      "TOI": 13.216666666666667
-     },
-     "gap": -6.819473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "viktor arvidsson|F",
-     "name": "Viktor Arvidsson",
-     "team": "DET",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 3.0,
-     "ppg": 22.12,
-     "total": 66.36,
-     "stats": {
-      "G": 0.67,
-      "A": 0.33,
-      "+/-": -0.32,
-      "PIM": 0.67,
-      "PPP": 0.67,
-      "SOG": 2.67,
-      "TOI": 18.333333333333332
-     },
-     "gap": -7.199473684210528,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jake debrusk|F",
-     "name": "Jake DeBrusk",
-     "team": "VAN",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.16,
-     "gp": 3.0,
-     "ppg": 22.02,
-     "total": 66.06,
-     "stats": {
-      "G": 0.67,
-      "A": 0.33,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 2.67,
-      "TOI": 16.633333333333333
-     },
-     "gap": -7.299473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "marco kasper|F",
-     "name": "Marco Kasper",
-     "team": "DET",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": "IR",
-     "own": 0.03,
-     "gp": 1.0,
-     "ppg": 20.5,
-     "total": 20.5,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 5.0,
-      "PPP": 0.0,
-      "SOG": 4.0,
-      "TOI": 10.833333333333334
-     },
-     "gap": -8.819473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "nazem kadri|F",
-     "name": "Nazem Kadri",
-     "team": "COL",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.67,
-     "gp": 4.0,
-     "ppg": 19.75,
-     "total": 79.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.75,
-      "+/-": 0.75,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 3.0,
-      "TOI": 17.933333333333334
-     },
-     "gap": -9.569473684210529,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.35
-     }
-    },
-    {
-     "key": "will cuylle|F",
-     "name": "Will Cuylle",
-     "team": "NYR",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.42,
-     "gp": 5.0,
-     "ppg": 19.15,
-     "total": 95.75,
-     "stats": {
-      "G": 0.0,
-      "A": 0.6,
-      "+/-": -0.19,
-      "PIM": 2.6,
-      "PPP": 0.4,
-      "SOG": 2.8,
-      "TOI": 15.15
-     },
-     "gap": -10.16947368421053,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 4.749999999999998
-     }
-    },
-    {
-     "key": "jesper boqvist|F",
-     "name": "Jesper Boqvist",
-     "team": "NJ",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 1.0,
-     "ppg": 19.0,
-     "total": 19.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 9.816666666666666
-     },
-     "gap": -10.319473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "taylor hall|F",
-     "name": "Taylor Hall",
-     "team": "CAR",
-     "pos": [
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.1,
-     "gp": 5.0,
-     "ppg": 19.0,
-     "total": 95.0,
-     "stats": {
-      "G": 0.4,
-      "A": 0.4,
-      "+/-": 0.0,
-      "PIM": 1.6,
-      "PPP": 0.2,
-      "SOG": 2.0,
-      "TOI": 14.066666666666666
-     },
-     "gap": -10.319473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "zachary bolduc|F",
-     "name": "Zachary Bolduc",
-     "team": "MTL",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 4.0,
-     "ppg": 18.5,
-     "total": 74.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.0,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 1.75,
-      "TOI": 13.133333333333333
-     },
-     "gap": -10.819473684210529,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "alex laferriere|F",
-     "name": "Alex Laferriere",
-     "team": "LA",
-     "pos": [
-      "C",
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.45,
-     "gp": 3.0,
-     "ppg": 18.32,
-     "total": 54.96,
-     "stats": {
-      "G": 0.33,
-      "A": 0.67,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 1.67,
-      "TOI": 16.466666666666665
-     },
-     "gap": -10.999473684210528,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.92
-     }
-    },
-    {
-     "key": "blake coleman|F",
-     "name": "Blake Coleman",
-     "team": "MIN",
-     "pos": [
-      "C",
-      "LW"
-     ],
-     "tag": null,
-     "own": 0.16,
-     "gp": 4.0,
-     "ppg": 18.05,
-     "total": 72.2,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": -0.49,
-      "PIM": 0.5,
-      "PPP": 0.75,
-      "SOG": 2.75,
-      "TOI": 14.833333333333334
-     },
-     "gap": -11.269473684210528,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "bobby mcmann|F",
-     "name": "Bobby McMann",
-     "team": "SEA",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.43,
-     "gp": 4.0,
-     "ppg": 17.5,
-     "total": 70.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 3.75,
-      "TOI": 16.583333333333332
-     },
-     "gap": -11.819473684210529,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.0999999999999996
-     }
-    }
-   ],
-   "RW": [
-    {
-     "key": "vasily podkolzin|F",
-     "name": "Vasily Podkolzin",
-     "team": "EDM",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.79,
-     "gp": 4.0,
-     "ppg": 39.25,
-     "total": 157.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.5,
-      "+/-": 1.5,
-      "PIM": 0.0,
-      "PPP": 0.75,
-      "SOG": 4.0,
-      "TOI": 18.733333333333334
-     },
-     "gap": 12.922727272727272,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 24.85
-     }
-    },
-    {
-     "key": "cole perfetti|F",
-     "name": "Cole Perfetti",
-     "team": "WPG",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.58,
-     "gp": 4.0,
-     "ppg": 28.55,
-     "total": 114.2,
-     "stats": {
-      "G": 0.75,
-      "A": 0.75,
-      "+/-": -0.24,
-      "PIM": 0.0,
-      "PPP": 1.0,
-      "SOG": 3.0,
-      "TOI": 18.316666666666666
-     },
-     "gap": 2.2227272727272727,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 14.15
-     }
-    },
-    {
-     "key": "victor olofsson|F",
-     "name": "Victor Olofsson",
-     "team": "VGK",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": "O",
-     "own": 0.07,
-     "gp": 4.0,
-     "ppg": 25.75,
-     "total": 103.0,
-     "stats": {
-      "G": 1.0,
-      "A": 0.25,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 2.25,
-      "TOI": 13.133333333333333
-     },
-     "gap": -0.577272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "mathieu olivier|F",
-     "name": "Mathieu Olivier",
-     "team": "CBJ",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.07,
-     "gp": 2.0,
-     "ppg": 25.25,
-     "total": 50.5,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 1.0,
-      "PIM": 3.5,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 14.95
-     },
-     "gap": -1.077272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "artturi lehkonen|F",
-     "name": "Artturi Lehkonen",
-     "team": "COL",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.67,
-     "gp": 4.0,
-     "ppg": 24.25,
-     "total": 97.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.25,
-      "+/-": 1.0,
-      "PIM": 0.0,
-      "PPP": 0.5,
-      "SOG": 1.5,
-      "TOI": 18.4
-     },
-     "gap": -2.077272727272728,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 9.85
-     }
-    },
-    {
-     "key": "kent johnson|F",
-     "name": "Kent Johnson",
-     "team": "CBJ",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.05,
-     "gp": 2.0,
-     "ppg": 23.5,
-     "total": 47.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 3.0,
-      "TOI": 16.05
-     },
-     "gap": -2.827272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "tyler toffoli|F",
-     "name": "Tyler Toffoli",
-     "team": "SJ",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.14,
-     "gp": 4.0,
-     "ppg": 23.0,
-     "total": 92.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.5,
-      "PIM": 0.5,
-      "PPP": 0.25,
-      "SOG": 2.75,
-      "TOI": 13.45
-     },
-     "gap": -3.327272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "cole sillinger|F",
-     "name": "Cole Sillinger",
-     "team": "CBJ",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 2.0,
-     "ppg": 22.5,
-     "total": 45.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 1.0,
-      "PIM": 2.0,
-      "PPP": 0.0,
-      "SOG": 2.5,
-      "TOI": 14.35
-     },
-     "gap": -3.827272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "viktor arvidsson|F",
-     "name": "Viktor Arvidsson",
-     "team": "DET",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 3.0,
-     "ppg": 22.12,
-     "total": 66.36,
-     "stats": {
-      "G": 0.67,
-      "A": 0.33,
-      "+/-": -0.32,
-      "PIM": 0.67,
-      "PPP": 0.67,
-      "SOG": 2.67,
-      "TOI": 18.333333333333332
-     },
-     "gap": -4.207272727272727,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jake debrusk|F",
-     "name": "Jake DeBrusk",
-     "team": "VAN",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.16,
-     "gp": 3.0,
-     "ppg": 22.02,
-     "total": 66.06,
-     "stats": {
-      "G": 0.67,
-      "A": 0.33,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 2.67,
-      "TOI": 16.633333333333333
-     },
-     "gap": -4.3072727272727285,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "logan stankoven|F",
-     "name": "Logan Stankoven",
-     "team": "CAR",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.64,
-     "gp": 5.0,
-     "ppg": 21.6,
-     "total": 108.0,
-     "stats": {
-      "G": 0.8,
-      "A": 0.0,
-      "+/-": 0.4,
-      "PIM": 0.4,
-      "PPP": 0.2,
-      "SOG": 2.8,
-      "TOI": 18.016666666666666
-     },
-     "gap": -4.727272727272727,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 7.200000000000001
-     }
-    },
-    {
-     "key": "nick robertson|F",
-     "name": "Nick Robertson",
-     "team": "PIT",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.08,
-     "gp": 4.0,
-     "ppg": 21.0,
-     "total": 84.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.0,
-      "+/-": 0.75,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 1.75,
-      "TOI": 13.083333333333334
-     },
-     "gap": -5.327272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jordan eberle|F",
-     "name": "Jordan Eberle",
-     "team": "SEA",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.18,
-     "gp": 4.0,
-     "ppg": 21.0,
-     "total": 84.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.75,
-      "SOG": 1.75,
-      "TOI": 16.2
-     },
-     "gap": -5.327272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ville koivunen|F",
-     "name": "Ville Koivunen",
-     "team": "PIT",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 3.0,
-     "ppg": 20.94,
-     "total": 62.82000000000001,
-     "stats": {
-      "G": 0.33,
-      "A": 0.33,
-      "+/-": 1.67,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 1.33,
-      "TOI": 13.816666666666666
-     },
-     "gap": -5.387272727272727,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jackson blake|F",
-     "name": "Jackson Blake",
-     "team": "CAR",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.47,
-     "gp": 5.0,
-     "ppg": 20.6,
-     "total": 103.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.0,
-      "+/-": 0.0,
-      "PIM": 0.4,
-      "PPP": 0.8,
-      "SOG": 2.8,
-      "TOI": 18.2
-     },
-     "gap": -5.727272727272727,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 6.200000000000001
-     }
-    },
-    {
-     "key": "ryan leonard|F",
-     "name": "Ryan Leonard",
-     "team": "WSH",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.32,
-     "gp": 3.0,
-     "ppg": 20.37,
-     "total": 61.11,
-     "stats": {
-      "G": 0.67,
-      "A": 0.0,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.33,
-      "SOG": 2.67,
-      "TOI": 13.383333333333333
-     },
-     "gap": -5.957272727272727,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.970000000000001
-     }
-    },
-    {
-     "key": "jack roslovic|F",
-     "name": "Jack Roslovic",
-     "team": "TOR",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.22,
-     "gp": 5.0,
-     "ppg": 20.2,
-     "total": 101.0,
-     "stats": {
-      "G": 0.4,
-      "A": 0.4,
-      "+/-": 0.6,
-      "PIM": 0.4,
-      "PPP": 0.2,
-      "SOG": 2.6,
-      "TOI": 16.633333333333333
-     },
-     "gap": -6.127272727272729,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 5.799999999999999
-     }
-    },
-    {
-     "key": "will cuylle|F",
-     "name": "Will Cuylle",
-     "team": "NYR",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.42,
-     "gp": 5.0,
-     "ppg": 19.15,
-     "total": 95.75,
-     "stats": {
-      "G": 0.0,
-      "A": 0.6,
-      "+/-": -0.19,
-      "PIM": 2.6,
-      "PPP": 0.4,
-      "SOG": 2.8,
-      "TOI": 15.15
-     },
-     "gap": -7.1772727272727295,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 4.749999999999998
-     }
-    },
-    {
-     "key": "nicolas roy|F",
-     "name": "Nicolas Roy",
-     "team": "COL",
-     "pos": [
-      "C",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.06,
-     "gp": 4.0,
-     "ppg": 19.0,
-     "total": 76.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.25,
-      "+/-": 0.75,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 12.816666666666666
-     },
-     "gap": -7.327272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "adam klapka|F",
-     "name": "Adam Klapka",
-     "team": "CGY",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 4.0,
-     "ppg": 18.93,
-     "total": 75.72,
-     "stats": {
-      "G": 0.25,
-      "A": 0.0,
-      "+/-": -0.74,
-      "PIM": 6.75,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 10.383333333333333
-     },
-     "gap": -7.397272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "josh anderson|F",
-     "name": "Josh Anderson",
-     "team": "MTL",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 4.0,
-     "ppg": 18.75,
-     "total": 75.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 0.25,
-      "PIM": 1.5,
-      "PPP": 0.0,
-      "SOG": 2.5,
-      "TOI": 12.983333333333333
-     },
-     "gap": -7.577272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "zachary bolduc|F",
-     "name": "Zachary Bolduc",
-     "team": "MTL",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 4.0,
-     "ppg": 18.5,
-     "total": 74.0,
-     "stats": {
-      "G": 0.75,
-      "A": 0.0,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 1.75,
-      "TOI": 13.133333333333333
-     },
-     "gap": -7.827272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "alex laferriere|F",
-     "name": "Alex Laferriere",
-     "team": "LA",
-     "pos": [
-      "C",
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.45,
-     "gp": 3.0,
-     "ppg": 18.32,
-     "total": 54.96,
-     "stats": {
-      "G": 0.33,
-      "A": 0.67,
-      "+/-": 0.33,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 1.67,
-      "TOI": 16.466666666666665
-     },
-     "gap": -8.007272727272728,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.92
-     }
-    },
-    {
-     "key": "kaapo kakko|F",
-     "name": "Kaapo Kakko",
-     "team": "SEA",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 4.0,
-     "ppg": 17.75,
-     "total": 71.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.75,
-      "+/-": 0.75,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 0.75,
-      "TOI": 14.55
-     },
-     "gap": -8.577272727272728,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "bobby mcmann|F",
-     "name": "Bobby McMann",
-     "team": "SEA",
-     "pos": [
-      "LW",
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.43,
-     "gp": 4.0,
-     "ppg": 17.5,
-     "total": 70.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 3.75,
-      "TOI": 16.583333333333332
-     },
-     "gap": -8.827272727272728,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Morgan Geekie",
-      "gain": 3.0999999999999996
-     }
-    }
-   ],
-   "D": [
-    {
-     "key": "luke schenn|D",
-     "name": "Luke Schenn",
-     "team": "VAN",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 4.0,
-     "ppg": 24.13,
-     "total": 96.52,
-     "stats": {
-      "G": 0.0,
-      "A": 0.5,
-      "+/-": 1.0,
-      "PIM": 5.25,
-      "PPP": 0.0,
-      "SOG": 0.5,
-      "TOI": 12.4
-     },
-     "gap": 7.848571428571425,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "logan stanley|D",
-     "name": "Logan Stanley",
-     "team": "NYI",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 4.0,
-     "ppg": 23.5,
-     "total": 94.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.0,
-      "+/-": 1.0,
-      "PIM": 3.0,
-      "PPP": 0.0,
-      "SOG": 0.5,
-      "TOI": 19.366666666666667
-     },
-     "gap": 7.218571428571426,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "justin faulk|D",
-     "name": "Justin Faulk",
-     "team": "DET",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.24,
-     "gp": 3.0,
-     "ppg": 21.24,
-     "total": 63.72,
-     "stats": {
-      "G": 0.33,
-      "A": 0.33,
-      "+/-": 1.0,
-      "PIM": 0.67,
-      "PPP": 0.33,
-      "SOG": 2.33,
-      "TOI": 19.783333333333335
-     },
-     "gap": 4.958571428571425,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "declan carlile|D",
-     "name": "Declan Carlile",
-     "team": "PIT",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.22,
-     "gp": 4.0,
-     "ppg": 20.25,
-     "total": 81.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.5,
-      "+/-": 0.25,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 2.0,
-      "TOI": 18.366666666666667
-     },
-     "gap": 3.968571428571426,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "jared spurgeon|D",
-     "name": "Jared Spurgeon",
-     "team": "MIN",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.07,
-     "gp": 4.0,
-     "ppg": 20.0,
-     "total": 80.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.75,
-      "+/-": 0.5,
-      "PIM": 1.0,
-      "PPP": 0.25,
-      "SOG": 1.25,
-      "TOI": 21.483333333333334
-     },
-     "gap": 3.718571428571426,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "william wallinder|D",
-     "name": "William Wallinder",
-     "team": "DET",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.01,
-     "gp": 1.0,
-     "ppg": 20.0,
-     "total": 20.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.0,
-      "+/-": 2.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 0.0,
-      "TOI": 9.116666666666667
-     },
-     "gap": 3.718571428571426,
-     "pool": false,
-     "excluded": [
-      "under 33% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "owen power|D",
-     "name": "Owen Power",
-     "team": "BUF",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.36,
-     "gp": 4.0,
-     "ppg": 18.75,
-     "total": 75.0,
-     "stats": {
-      "G": 0.25,
-      "A": 1.0,
-      "+/-": 0.5,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 1.25,
-      "TOI": 26.266666666666666
-     },
-     "gap": 2.468571428571426,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Darren Raddysh",
-      "gain": 11.9
-     }
-    },
-    {
-     "key": "brayden mcnabb|D",
-     "name": "Brayden McNabb",
-     "team": "VGK",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.3,
-     "gp": 5.0,
-     "ppg": 18.0,
-     "total": 90.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.8,
-      "+/-": 1.6,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 18.683333333333334
-     },
-     "gap": 1.7185714285714262,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "tyrel bauer|D",
-     "name": "Tyrel Bauer",
-     "team": "WPG",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 2.0,
-     "ppg": 17.5,
-     "total": 35.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 7.0,
-      "PPP": 0.0,
-      "SOG": 0.0,
-      "TOI": 7.266666666666667
-     },
-     "gap": 1.2185714285714262,
-     "pool": false,
-     "excluded": [
-      "under 33% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "thomas chabot|D",
-     "name": "Thomas Chabot",
-     "team": "OTT",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.64,
-     "gp": 4.0,
-     "ppg": 17.25,
-     "total": 69.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.25,
-      "+/-": 0.75,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 3.0,
-      "TOI": 26.7
-     },
-     "gap": 0.9685714285714262,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Darren Raddysh",
-      "gain": 10.4
-     }
-    },
-    {
-     "key": "c alexis legault|D",
-     "name": "C. Alexis Legault",
-     "team": "CAR",
-     "pos": [
-      "D"
-     ],
-     "tag": "NA",
-     "own": 0.0,
-     "gp": 2.0,
-     "ppg": 17.0,
-     "total": 34.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 6.0,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 11.883333333333333
-     },
-     "gap": 0.7185714285714262,
-     "pool": false,
-     "excluded": [
-      "under 33% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "josh manson|D",
-     "name": "Josh Manson",
-     "team": "COL",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.22,
-     "gp": 4.0,
-     "ppg": 16.25,
-     "total": 65.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 1.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 1.25,
-      "TOI": 17.116666666666667
-     },
-     "gap": -0.031428571428573804,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "kris letang|D",
-     "name": "Kris Letang",
-     "team": "PIT",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.3,
-     "gp": 4.0,
-     "ppg": 16.0,
-     "total": 64.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.75,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.25,
-      "SOG": 3.0,
-      "TOI": 19.716666666666665
-     },
-     "gap": -0.2814285714285738,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "gustav forsling|D",
-     "name": "Gustav Forsling",
-     "team": "FLA",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.13,
-     "gp": 3.0,
-     "ppg": 15.93,
-     "total": 47.79,
-     "stats": {
-      "G": 0.33,
-      "A": 0.0,
-      "+/-": 1.0,
-      "PIM": 1.33,
-      "PPP": 0.0,
-      "SOG": 1.33,
-      "TOI": 21.483333333333334
-     },
-     "gap": -0.3514285714285741,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "vladislav gavrikov|D",
-     "name": "Vladislav Gavrikov",
-     "team": "NYR",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.33,
-     "gp": 5.0,
-     "ppg": 15.8,
-     "total": 79.0,
-     "stats": {
-      "G": 0.2,
-      "A": 0.6,
-      "+/-": 0.8,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 1.4,
-      "TOI": 21.533333333333335
-     },
-     "gap": -0.4814285714285731,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Darren Raddysh",
-      "gain": 8.950000000000001
-     }
-    },
-    {
-     "key": "nolan allan|D",
-     "name": "Nolan Allan",
-     "team": "SJ",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 2.0,
-     "ppg": 15.5,
-     "total": 31.0,
-     "stats": {
-      "G": 0.5,
-      "A": 0.0,
-      "+/-": 0.5,
-      "PIM": 1.0,
-      "PPP": 0.0,
-      "SOG": 1.5,
-      "TOI": 18.366666666666667
-     },
-     "gap": -0.7814285714285738,
-     "pool": false,
-     "excluded": [
-      "under 33% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "filip hronek|D",
-     "name": "Filip Hronek",
-     "team": "VAN",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.85,
-     "gp": 5.0,
-     "ppg": 15.4,
-     "total": 77.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.0,
-      "+/-": 0.2,
-      "PIM": 0.0,
-      "PPP": 0.4,
-      "SOG": 1.2,
-      "TOI": 25.45
-     },
-     "gap": -0.8814285714285734,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Darren Raddysh",
-      "gain": 8.55
-     }
-    },
-    {
-     "key": "ryan shea|D",
-     "name": "Ryan Shea",
-     "team": "EDM",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 4.0,
-     "ppg": 15.25,
-     "total": 61.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.5,
-      "+/-": 1.0,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 0.75,
-      "TOI": 22.933333333333334
-     },
-     "gap": -1.0314285714285738,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "ville ottavainen|D",
-     "name": "Ville Ottavainen",
-     "team": "SEA",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 1.0,
-     "ppg": 15.0,
-     "total": 15.0,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 2.0,
-      "PIM": 2.0,
-      "PPP": 0.0,
-      "SOG": 0.0,
-      "TOI": 15.85
-     },
-     "gap": -1.2814285714285738,
-     "pool": false,
-     "excluded": [
-      "under 33% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "emil lilleberg|D",
-     "name": "Emil Lilleberg",
-     "team": "TB",
-     "pos": [
-      "D"
-     ],
-     "tag": "O",
-     "own": 0.0,
-     "gp": 1.0,
-     "ppg": 14.5,
-     "total": 14.5,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 5.0,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 10.5
-     },
-     "gap": -1.7814285714285738,
-     "pool": false,
-     "excluded": [
-      "under 33% owned",
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "luke hughes|D",
-     "name": "Luke Hughes",
-     "team": "NJ",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.72,
-     "gp": 3.0,
-     "ppg": 13.97,
-     "total": 41.910000000000004,
-     "stats": {
-      "G": 0.33,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 0.67,
-      "PPP": 0.0,
-      "SOG": 3.67,
-      "TOI": 24.05
-     },
-     "gap": -2.311428571428573,
-     "pool": true,
-     "excluded": [],
-     "upgrade": {
-      "over": "Darren Raddysh",
-      "gain": 7.120000000000001
-     }
-    },
-    {
-     "key": "brandon carlo|D",
-     "name": "Brandon Carlo",
-     "team": "STL",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.0,
-     "gp": 4.0,
-     "ppg": 13.88,
-     "total": 55.52,
-     "stats": {
-      "G": 0.0,
-      "A": 0.0,
-      "+/-": 0.25,
-      "PIM": 4.25,
-      "PPP": 0.0,
-      "SOG": 1.0,
-      "TOI": 17.4
-     },
-     "gap": -2.401428571428573,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "alexandre carrier|D",
-     "name": "Alexandre Carrier",
-     "team": "MTL",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 4.0,
-     "ppg": 13.75,
-     "total": 55.0,
-     "stats": {
-      "G": 0.25,
-      "A": 0.25,
-      "+/-": 0.75,
-      "PIM": 0.5,
-      "PPP": 0.0,
-      "SOG": 1.25,
-      "TOI": 17.633333333333333
-     },
-     "gap": -2.531428571428574,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "kaedan korczak|D",
-     "name": "Kaedan Korczak",
-     "team": "PIT",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.02,
-     "gp": 4.0,
-     "ppg": 13.75,
-     "total": 55.0,
-     "stats": {
-      "G": 0.0,
-      "A": 1.0,
-      "+/-": 0.25,
-      "PIM": 0.0,
-      "PPP": 0.0,
-      "SOG": 1.25,
-      "TOI": 16.716666666666665
-     },
-     "gap": -2.531428571428574,
-     "pool": false,
-     "excluded": [
-      "under 33% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "mackenzie weegar|D",
-     "name": "MacKenzie Weegar",
-     "team": "UTA",
-     "pos": [
-      "D"
-     ],
-     "tag": null,
-     "own": 0.87,
-     "gp": 5.0,
-     "ppg": 13.7,
-     "total": 68.5,
-     "stats": {
-      "G": 0.2,
-      "A": 0.0,
-      "+/-": 0.0,
-      "PIM": 3.0,
-      "PPP": 0.0,
-      "SOG": 1.6,
-      "TOI": 20.15
-     },
-     "gap": -2.5814285714285745,
-     "pool": false,
-     "excluded": [],
-     "upgrade": {
-      "over": "Darren Raddysh",
-      "gain": 6.85
-     }
-    }
-   ],
-   "G": [
-    {
-     "key": "dylan garand|G",
-     "name": "Dylan Garand",
-     "team": "NYR",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.04,
-     "gp": 1.0,
-     "ppg": 52.0,
-     "total": 52.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 0.0,
-      "SV": 22.0,
-      "SHO": 1.0,
-      "SVP": 1.0,
-      "GAA": 0.0
-     },
-     "gap": 28.2,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "dennis hildeby|G",
-     "name": "Dennis Hildeby",
-     "team": "TB",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.03,
-     "gp": 1.0,
-     "ppg": 44.0,
-     "total": 44.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 2.0,
-      "SV": 34.0,
-      "SHO": 0.0,
-      "SVP": 0.9444444444444444,
-      "GAA": 2.0128599384959465
-     },
-     "gap": 20.2,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "clay stevenson|G",
-     "name": "Clay Stevenson",
-     "team": "WPG",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.05,
-     "gp": 1.0,
-     "ppg": 39.0,
-     "total": 39.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 2.0,
-      "SV": 29.0,
-      "SHO": 0.0,
-      "SVP": 0.9354838709677419,
-      "GAA": 2.0
-     },
-     "gap": 15.2,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "alex nedeljkovic|G",
-     "name": "Alex Nedeljkovic",
-     "team": "SJ",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.06,
-     "gp": 1.0,
-     "ppg": 34.0,
-     "total": 34.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 2.0,
-      "SV": 24.0,
-      "SHO": 0.0,
-      "SVP": 0.9230769230769231,
-      "GAA": 1.9656019656019657
-     },
-     "gap": 10.2,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "anthony stolarz|G",
-     "name": "Anthony Stolarz",
-     "team": "TOR",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.24,
-     "gp": 2.0,
-     "ppg": 31.0,
-     "total": 62.0,
-     "stats": {
-      "W": 1.0,
-      "GA": 2.5,
-      "SV": 23.5,
-      "SHO": 0.0,
-      "SVP": 0.9038461538461539,
-      "GAA": 2.4363833243096913
-     },
-     "gap": 7.199999999999999,
-     "pool": false,
-     "excluded": [
-      "under 3 GP"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "stuart skinner|G",
-     "name": "Stuart Skinner",
-     "team": "WPG",
-     "pos": [
-      "G"
-     ],
-     "tag": null,
-     "own": 0.37,
+     "own": 0.38,
      "gp": 3.0,
      "ppg": 30.666666666666668,
      "total": 92.0,
@@ -16217,7 +11208,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.58,
+     "own": 0.59,
      "gp": 4.0,
      "ppg": 28.55,
      "total": 114.2,
@@ -16247,7 +11238,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.33,
+     "own": 0.34,
      "gp": 3.0,
      "ppg": 28.29,
      "total": 84.87,
@@ -16423,7 +11414,7 @@
       "LW"
      ],
      "tag": null,
-     "own": 0.41,
+     "own": 0.42,
      "gp": 4.0,
      "ppg": 25.0,
      "total": 100.0,
@@ -17005,7 +11996,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 5.0,
      "ppg": 20.2,
      "total": 101.0,
@@ -17499,7 +12490,5016 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.43,
+     "own": 0.44,
+     "gp": 4.0,
+     "ppg": 17.5,
+     "total": 70.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 3.75,
+      "TOI": 16.583333333333332
+     },
+     "gap": -12.153500000000001,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.0999999999999996
+     }
+    },
+    {
+     "key": "roope hintz|F",
+     "name": "Roope Hintz",
+     "team": "DAL",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.84,
+     "gp": 4.0,
+     "ppg": 17.0,
+     "total": 68.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 2.25,
+      "TOI": 15.866666666666667
+     },
+     "gap": -12.653500000000001,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 2.5999999999999996
+     }
+    }
+   ]
+  },
+  "l14": {
+   "C": [
+    {
+     "key": "pierre-luc dubois|F",
+     "name": "Pierre-Luc Dubois",
+     "team": "WSH",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.34,
+     "gp": 3.0,
+     "ppg": 28.29,
+     "total": 84.87,
+     "stats": {
+      "G": 0.33,
+      "A": 1.0,
+      "+/-": 1.0,
+      "PIM": 2.0,
+      "PPP": 0.0,
+      "SOG": 1.67,
+      "TOI": 16.116666666666667
+     },
+     "gap": 3.0580952380952375,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 13.889999999999999
+     }
+    },
+    {
+     "key": "jaden schwartz|F",
+     "name": "Jaden Schwartz",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.04,
+     "gp": 4.0,
+     "ppg": 28.25,
+     "total": 113.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 0.5,
+      "PPP": 0.25,
+      "SOG": 2.25,
+      "TOI": 13.533333333333333
+     },
+     "gap": 3.0180952380952384,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "elias pettersson|F",
+     "name": "Elias Pettersson",
+     "team": "VAN",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.78,
+     "gp": 5.0,
+     "ppg": 27.2,
+     "total": 136.0,
+     "stats": {
+      "G": 0.4,
+      "A": 1.2,
+      "+/-": 0.6,
+      "PIM": 0.0,
+      "PPP": 0.6,
+      "SOG": 1.6,
+      "TOI": 20.033333333333335
+     },
+     "gap": 1.9680952380952377,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 12.799999999999999
+     }
+    },
+    {
+     "key": "thomas novak|F",
+     "name": "Thomas Novak",
+     "team": "PIT",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.26,
+     "gp": 4.0,
+     "ppg": 25.25,
+     "total": 101.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 2.0,
+      "TOI": 15.3
+     },
+     "gap": 0.018095238095238386,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 10.85
+     }
+    },
+    {
+     "key": "jared mccann|F",
+     "name": "Jared McCann",
+     "team": "SEA",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.42,
+     "gp": 4.0,
+     "ppg": 25.0,
+     "total": 100.0,
+     "stats": {
+      "G": 0.25,
+      "A": 1.0,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 3.75,
+      "TOI": 15.8
+     },
+     "gap": -0.2319047619047616,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 10.6
+     }
+    },
+    {
+     "key": "brayden schenn|F",
+     "name": "Brayden Schenn",
+     "team": "NYI",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.19,
+     "gp": 4.0,
+     "ppg": 24.63,
+     "total": 98.52,
+     "stats": {
+      "G": 0.25,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 2.25,
+      "PPP": 0.25,
+      "SOG": 2.0,
+      "TOI": 15.25
+     },
+     "gap": -0.6019047619047626,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "matthew poitras|F",
+     "name": "Matthew Poitras",
+     "team": "BOS",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 2.0,
+     "ppg": 24.5,
+     "total": 49.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 1.5,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 10.65
+     },
+     "gap": -0.7319047619047616,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "charlie coyle|F",
+     "name": "Charlie Coyle",
+     "team": "CBJ",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.15,
+     "gp": 2.0,
+     "ppg": 23.5,
+     "total": 47.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.5,
+      "+/-": 1.0,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 0.5,
+      "TOI": 17.233333333333334
+     },
+     "gap": -1.7319047619047616,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ben kindel|F",
+     "name": "Ben Kindel",
+     "team": "PIT",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.14,
+     "gp": 3.0,
+     "ppg": 22.8,
+     "total": 68.4,
+     "stats": {
+      "G": 0.67,
+      "A": 0.67,
+      "+/-": -0.32,
+      "PIM": 0.0,
+      "PPP": 0.33,
+      "SOG": 3.0,
+      "TOI": 17.5
+     },
+     "gap": -2.431904761904761,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "cole sillinger|F",
+     "name": "Cole Sillinger",
+     "team": "CBJ",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 2.0,
+     "ppg": 22.5,
+     "total": 45.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 1.0,
+      "PIM": 2.0,
+      "PPP": 0.0,
+      "SOG": 2.5,
+      "TOI": 14.35
+     },
+     "gap": -2.7319047619047616,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "parker kelly|F",
+     "name": "Parker Kelly",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.05,
+     "gp": 4.0,
+     "ppg": 22.5,
+     "total": 90.0,
+     "stats": {
+      "G": 0.25,
+      "A": 1.0,
+      "+/-": 1.0,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 1.25,
+      "TOI": 13.216666666666667
+     },
+     "gap": -2.7319047619047616,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "logan stankoven|F",
+     "name": "Logan Stankoven",
+     "team": "CAR",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.64,
+     "gp": 5.0,
+     "ppg": 21.6,
+     "total": 108.0,
+     "stats": {
+      "G": 0.8,
+      "A": 0.0,
+      "+/-": 0.4,
+      "PIM": 0.4,
+      "PPP": 0.2,
+      "SOG": 2.8,
+      "TOI": 18.016666666666666
+     },
+     "gap": -3.63190476190476,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 7.200000000000001
+     }
+    },
+    {
+     "key": "marco kasper|F",
+     "name": "Marco Kasper",
+     "team": "DET",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": "IR",
+     "own": 0.03,
+     "gp": 1.0,
+     "ppg": 20.5,
+     "total": 20.5,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 5.0,
+      "PPP": 0.0,
+      "SOG": 4.0,
+      "TOI": 10.833333333333334
+     },
+     "gap": -4.731904761904762,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jack roslovic|F",
+     "name": "Jack Roslovic",
+     "team": "TOR",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.23,
+     "gp": 5.0,
+     "ppg": 20.2,
+     "total": 101.0,
+     "stats": {
+      "G": 0.4,
+      "A": 0.4,
+      "+/-": 0.6,
+      "PIM": 0.4,
+      "PPP": 0.2,
+      "SOG": 2.6,
+      "TOI": 16.633333333333333
+     },
+     "gap": -5.031904761904762,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.799999999999999
+     }
+    },
+    {
+     "key": "nazem kadri|F",
+     "name": "Nazem Kadri",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.67,
+     "gp": 4.0,
+     "ppg": 19.75,
+     "total": 79.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.75,
+      "+/-": 0.75,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 3.0,
+      "TOI": 17.933333333333334
+     },
+     "gap": -5.481904761904762,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.35
+     }
+    },
+    {
+     "key": "shane pinto|F",
+     "name": "Shane Pinto",
+     "team": "OTT",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.15,
+     "gp": 4.0,
+     "ppg": 19.5,
+     "total": 78.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 1.5,
+      "PPP": 0.25,
+      "SOG": 2.25,
+      "TOI": 19.45
+     },
+     "gap": -5.731904761904762,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jesper boqvist|F",
+     "name": "Jesper Boqvist",
+     "team": "NJ",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 1.0,
+     "ppg": 19.0,
+     "total": 19.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 9.816666666666666
+     },
+     "gap": -6.231904761904762,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "nicolas roy|F",
+     "name": "Nicolas Roy",
+     "team": "COL",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.06,
+     "gp": 4.0,
+     "ppg": 19.0,
+     "total": 76.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": 0.75,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 12.816666666666666
+     },
+     "gap": -6.231904761904762,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "frank nazar|F",
+     "name": "Frank Nazar",
+     "team": "CHI",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.13,
+     "gp": 5.0,
+     "ppg": 18.65,
+     "total": 93.25,
+     "stats": {
+      "G": 0.4,
+      "A": 0.2,
+      "+/-": -0.99,
+      "PIM": 4.4,
+      "PPP": 0.2,
+      "SOG": 1.8,
+      "TOI": 18.833333333333332
+     },
+     "gap": -6.581904761904763,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "alex laferriere|F",
+     "name": "Alex Laferriere",
+     "team": "LA",
+     "pos": [
+      "C",
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.45,
+     "gp": 3.0,
+     "ppg": 18.32,
+     "total": 54.96,
+     "stats": {
+      "G": 0.33,
+      "A": 0.67,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 1.67,
+      "TOI": 16.466666666666665
+     },
+     "gap": -6.911904761904761,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.92
+     }
+    },
+    {
+     "key": "fedor svechkov|F",
+     "name": "Fedor Svechkov",
+     "team": "COL",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 4.0,
+     "ppg": 18.25,
+     "total": 73.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 1.25,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 13.833333333333334
+     },
+     "gap": -6.981904761904762,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "blake coleman|F",
+     "name": "Blake Coleman",
+     "team": "MIN",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.16,
+     "gp": 4.0,
+     "ppg": 18.05,
+     "total": 72.2,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": -0.49,
+      "PIM": 0.5,
+      "PPP": 0.75,
+      "SOG": 2.75,
+      "TOI": 14.833333333333334
+     },
+     "gap": -7.181904761904761,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "mason mctavish|F",
+     "name": "Mason McTavish",
+     "team": "STL",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.2,
+     "gp": 4.0,
+     "ppg": 17.75,
+     "total": 71.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 3.25,
+      "TOI": 15.333333333333334
+     },
+     "gap": -7.481904761904762,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.3499999999999996
+     }
+    },
+    {
+     "key": "ridly greig|F",
+     "name": "Ridly Greig",
+     "team": "OTT",
+     "pos": [
+      "C",
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 2.0,
+     "ppg": 17.5,
+     "total": 35.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.5,
+      "+/-": 0.0,
+      "PIM": 3.0,
+      "PPP": 0.0,
+      "SOG": 2.5,
+      "TOI": 16.0
+     },
+     "gap": -7.731904761904762,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "roope hintz|F",
+     "name": "Roope Hintz",
+     "team": "DAL",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.84,
+     "gp": 4.0,
+     "ppg": 17.0,
+     "total": 68.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 2.25,
+      "TOI": 15.866666666666667
+     },
+     "gap": -8.231904761904762,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 2.5999999999999996
+     }
+    }
+   ],
+   "LW": [
+    {
+     "key": "vasily podkolzin|F",
+     "name": "Vasily Podkolzin",
+     "team": "EDM",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.79,
+     "gp": 4.0,
+     "ppg": 39.25,
+     "total": 157.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.5,
+      "+/-": 1.5,
+      "PIM": 0.0,
+      "PPP": 0.75,
+      "SOG": 4.0,
+      "TOI": 18.733333333333334
+     },
+     "gap": 9.930526315789471,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 24.85
+     }
+    },
+    {
+     "key": "filip hallander|F",
+     "name": "Filip Hallander",
+     "team": "EDM",
+     "pos": [
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 2.0,
+     "ppg": 30.5,
+     "total": 61.0,
+     "stats": {
+      "G": 0.5,
+      "A": 1.0,
+      "+/-": 2.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 1.5,
+      "TOI": 10.283333333333333
+     },
+     "gap": 1.1805263157894714,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "cole perfetti|F",
+     "name": "Cole Perfetti",
+     "team": "WPG",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.59,
+     "gp": 4.0,
+     "ppg": 28.55,
+     "total": 114.2,
+     "stats": {
+      "G": 0.75,
+      "A": 0.75,
+      "+/-": -0.24,
+      "PIM": 0.0,
+      "PPP": 1.0,
+      "SOG": 3.0,
+      "TOI": 18.316666666666666
+     },
+     "gap": -0.7694736842105279,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 14.15
+     }
+    },
+    {
+     "key": "pierre-luc dubois|F",
+     "name": "Pierre-Luc Dubois",
+     "team": "WSH",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.34,
+     "gp": 3.0,
+     "ppg": 28.29,
+     "total": 84.87,
+     "stats": {
+      "G": 0.33,
+      "A": 1.0,
+      "+/-": 1.0,
+      "PIM": 2.0,
+      "PPP": 0.0,
+      "SOG": 1.67,
+      "TOI": 16.116666666666667
+     },
+     "gap": -1.0294736842105294,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 13.889999999999999
+     }
+    },
+    {
+     "key": "jaden schwartz|F",
+     "name": "Jaden Schwartz",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.04,
+     "gp": 4.0,
+     "ppg": 28.25,
+     "total": 113.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 0.5,
+      "PPP": 0.25,
+      "SOG": 2.25,
+      "TOI": 13.533333333333333
+     },
+     "gap": -1.0694736842105286,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "victor olofsson|F",
+     "name": "Victor Olofsson",
+     "team": "VGK",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": "O",
+     "own": 0.07,
+     "gp": 4.0,
+     "ppg": 25.75,
+     "total": 103.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.25,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 2.25,
+      "TOI": 13.133333333333333
+     },
+     "gap": -3.5694736842105286,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "thomas novak|F",
+     "name": "Thomas Novak",
+     "team": "PIT",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.26,
+     "gp": 4.0,
+     "ppg": 25.25,
+     "total": 101.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 2.0,
+      "TOI": 15.3
+     },
+     "gap": -4.069473684210529,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 10.85
+     }
+    },
+    {
+     "key": "jared mccann|F",
+     "name": "Jared McCann",
+     "team": "SEA",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.42,
+     "gp": 4.0,
+     "ppg": 25.0,
+     "total": 100.0,
+     "stats": {
+      "G": 0.25,
+      "A": 1.0,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 3.75,
+      "TOI": 15.8
+     },
+     "gap": -4.319473684210529,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 10.6
+     }
+    },
+    {
+     "key": "brayden schenn|F",
+     "name": "Brayden Schenn",
+     "team": "NYI",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.19,
+     "gp": 4.0,
+     "ppg": 24.63,
+     "total": 98.52,
+     "stats": {
+      "G": 0.25,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 2.25,
+      "PPP": 0.25,
+      "SOG": 2.0,
+      "TOI": 15.25
+     },
+     "gap": -4.68947368421053,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "artturi lehkonen|F",
+     "name": "Artturi Lehkonen",
+     "team": "COL",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.67,
+     "gp": 4.0,
+     "ppg": 24.25,
+     "total": 97.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.25,
+      "+/-": 1.0,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 1.5,
+      "TOI": 18.4
+     },
+     "gap": -5.069473684210529,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 9.85
+     }
+    },
+    {
+     "key": "kent johnson|F",
+     "name": "Kent Johnson",
+     "team": "CBJ",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.05,
+     "gp": 2.0,
+     "ppg": 23.5,
+     "total": 47.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 3.0,
+      "TOI": 16.05
+     },
+     "gap": -5.819473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "tyler toffoli|F",
+     "name": "Tyler Toffoli",
+     "team": "SJ",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.14,
+     "gp": 4.0,
+     "ppg": 23.0,
+     "total": 92.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.5,
+      "PPP": 0.25,
+      "SOG": 2.75,
+      "TOI": 13.45
+     },
+     "gap": -6.319473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "paul cotter|F",
+     "name": "Paul Cotter",
+     "team": "VAN",
+     "pos": [
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.36,
+     "gp": 5.0,
+     "ppg": 22.8,
+     "total": 114.0,
+     "stats": {
+      "G": 0.8,
+      "A": 0.4,
+      "+/-": 0.6,
+      "PIM": 0.0,
+      "PPP": 0.2,
+      "SOG": 1.4,
+      "TOI": 15.1
+     },
+     "gap": -6.519473684210528,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 8.4
+     }
+    },
+    {
+     "key": "parker kelly|F",
+     "name": "Parker Kelly",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.05,
+     "gp": 4.0,
+     "ppg": 22.5,
+     "total": 90.0,
+     "stats": {
+      "G": 0.25,
+      "A": 1.0,
+      "+/-": 1.0,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 1.25,
+      "TOI": 13.216666666666667
+     },
+     "gap": -6.819473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "viktor arvidsson|F",
+     "name": "Viktor Arvidsson",
+     "team": "DET",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.15,
+     "gp": 3.0,
+     "ppg": 22.12,
+     "total": 66.36,
+     "stats": {
+      "G": 0.67,
+      "A": 0.33,
+      "+/-": -0.32,
+      "PIM": 0.67,
+      "PPP": 0.67,
+      "SOG": 2.67,
+      "TOI": 18.333333333333332
+     },
+     "gap": -7.199473684210528,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jake debrusk|F",
+     "name": "Jake DeBrusk",
+     "team": "VAN",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.16,
+     "gp": 3.0,
+     "ppg": 22.02,
+     "total": 66.06,
+     "stats": {
+      "G": 0.67,
+      "A": 0.33,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 2.67,
+      "TOI": 16.633333333333333
+     },
+     "gap": -7.299473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "marco kasper|F",
+     "name": "Marco Kasper",
+     "team": "DET",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": "IR",
+     "own": 0.03,
+     "gp": 1.0,
+     "ppg": 20.5,
+     "total": 20.5,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 5.0,
+      "PPP": 0.0,
+      "SOG": 4.0,
+      "TOI": 10.833333333333334
+     },
+     "gap": -8.819473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "nazem kadri|F",
+     "name": "Nazem Kadri",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.67,
+     "gp": 4.0,
+     "ppg": 19.75,
+     "total": 79.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.75,
+      "+/-": 0.75,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 3.0,
+      "TOI": 17.933333333333334
+     },
+     "gap": -9.569473684210529,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.35
+     }
+    },
+    {
+     "key": "will cuylle|F",
+     "name": "Will Cuylle",
+     "team": "NYR",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.42,
+     "gp": 5.0,
+     "ppg": 19.15,
+     "total": 95.75,
+     "stats": {
+      "G": 0.0,
+      "A": 0.6,
+      "+/-": -0.19,
+      "PIM": 2.6,
+      "PPP": 0.4,
+      "SOG": 2.8,
+      "TOI": 15.15
+     },
+     "gap": -10.16947368421053,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 4.749999999999998
+     }
+    },
+    {
+     "key": "jesper boqvist|F",
+     "name": "Jesper Boqvist",
+     "team": "NJ",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 1.0,
+     "ppg": 19.0,
+     "total": 19.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 9.816666666666666
+     },
+     "gap": -10.319473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "taylor hall|F",
+     "name": "Taylor Hall",
+     "team": "CAR",
+     "pos": [
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.1,
+     "gp": 5.0,
+     "ppg": 19.0,
+     "total": 95.0,
+     "stats": {
+      "G": 0.4,
+      "A": 0.4,
+      "+/-": 0.0,
+      "PIM": 1.6,
+      "PPP": 0.2,
+      "SOG": 2.0,
+      "TOI": 14.066666666666666
+     },
+     "gap": -10.319473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "zachary bolduc|F",
+     "name": "Zachary Bolduc",
+     "team": "MTL",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 4.0,
+     "ppg": 18.5,
+     "total": 74.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.0,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 1.75,
+      "TOI": 13.133333333333333
+     },
+     "gap": -10.819473684210529,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "alex laferriere|F",
+     "name": "Alex Laferriere",
+     "team": "LA",
+     "pos": [
+      "C",
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.45,
+     "gp": 3.0,
+     "ppg": 18.32,
+     "total": 54.96,
+     "stats": {
+      "G": 0.33,
+      "A": 0.67,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 1.67,
+      "TOI": 16.466666666666665
+     },
+     "gap": -10.999473684210528,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.92
+     }
+    },
+    {
+     "key": "blake coleman|F",
+     "name": "Blake Coleman",
+     "team": "MIN",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.16,
+     "gp": 4.0,
+     "ppg": 18.05,
+     "total": 72.2,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": -0.49,
+      "PIM": 0.5,
+      "PPP": 0.75,
+      "SOG": 2.75,
+      "TOI": 14.833333333333334
+     },
+     "gap": -11.269473684210528,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "bobby mcmann|F",
+     "name": "Bobby McMann",
+     "team": "SEA",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.44,
+     "gp": 4.0,
+     "ppg": 17.5,
+     "total": 70.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 3.75,
+      "TOI": 16.583333333333332
+     },
+     "gap": -11.819473684210529,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.0999999999999996
+     }
+    }
+   ],
+   "RW": [
+    {
+     "key": "vasily podkolzin|F",
+     "name": "Vasily Podkolzin",
+     "team": "EDM",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.79,
+     "gp": 4.0,
+     "ppg": 39.25,
+     "total": 157.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.5,
+      "+/-": 1.5,
+      "PIM": 0.0,
+      "PPP": 0.75,
+      "SOG": 4.0,
+      "TOI": 18.733333333333334
+     },
+     "gap": 12.922727272727272,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 24.85
+     }
+    },
+    {
+     "key": "cole perfetti|F",
+     "name": "Cole Perfetti",
+     "team": "WPG",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.59,
+     "gp": 4.0,
+     "ppg": 28.55,
+     "total": 114.2,
+     "stats": {
+      "G": 0.75,
+      "A": 0.75,
+      "+/-": -0.24,
+      "PIM": 0.0,
+      "PPP": 1.0,
+      "SOG": 3.0,
+      "TOI": 18.316666666666666
+     },
+     "gap": 2.2227272727272727,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 14.15
+     }
+    },
+    {
+     "key": "victor olofsson|F",
+     "name": "Victor Olofsson",
+     "team": "VGK",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": "O",
+     "own": 0.07,
+     "gp": 4.0,
+     "ppg": 25.75,
+     "total": 103.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.25,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 2.25,
+      "TOI": 13.133333333333333
+     },
+     "gap": -0.577272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "mathieu olivier|F",
+     "name": "Mathieu Olivier",
+     "team": "CBJ",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.07,
+     "gp": 2.0,
+     "ppg": 25.25,
+     "total": 50.5,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 1.0,
+      "PIM": 3.5,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 14.95
+     },
+     "gap": -1.077272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "artturi lehkonen|F",
+     "name": "Artturi Lehkonen",
+     "team": "COL",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.67,
+     "gp": 4.0,
+     "ppg": 24.25,
+     "total": 97.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.25,
+      "+/-": 1.0,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 1.5,
+      "TOI": 18.4
+     },
+     "gap": -2.077272727272728,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 9.85
+     }
+    },
+    {
+     "key": "kent johnson|F",
+     "name": "Kent Johnson",
+     "team": "CBJ",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.05,
+     "gp": 2.0,
+     "ppg": 23.5,
+     "total": 47.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 3.0,
+      "TOI": 16.05
+     },
+     "gap": -2.827272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "tyler toffoli|F",
+     "name": "Tyler Toffoli",
+     "team": "SJ",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.14,
+     "gp": 4.0,
+     "ppg": 23.0,
+     "total": 92.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.5,
+      "PPP": 0.25,
+      "SOG": 2.75,
+      "TOI": 13.45
+     },
+     "gap": -3.327272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "cole sillinger|F",
+     "name": "Cole Sillinger",
+     "team": "CBJ",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 2.0,
+     "ppg": 22.5,
+     "total": 45.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 1.0,
+      "PIM": 2.0,
+      "PPP": 0.0,
+      "SOG": 2.5,
+      "TOI": 14.35
+     },
+     "gap": -3.827272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "viktor arvidsson|F",
+     "name": "Viktor Arvidsson",
+     "team": "DET",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.15,
+     "gp": 3.0,
+     "ppg": 22.12,
+     "total": 66.36,
+     "stats": {
+      "G": 0.67,
+      "A": 0.33,
+      "+/-": -0.32,
+      "PIM": 0.67,
+      "PPP": 0.67,
+      "SOG": 2.67,
+      "TOI": 18.333333333333332
+     },
+     "gap": -4.207272727272727,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jake debrusk|F",
+     "name": "Jake DeBrusk",
+     "team": "VAN",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.16,
+     "gp": 3.0,
+     "ppg": 22.02,
+     "total": 66.06,
+     "stats": {
+      "G": 0.67,
+      "A": 0.33,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 2.67,
+      "TOI": 16.633333333333333
+     },
+     "gap": -4.3072727272727285,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "logan stankoven|F",
+     "name": "Logan Stankoven",
+     "team": "CAR",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.64,
+     "gp": 5.0,
+     "ppg": 21.6,
+     "total": 108.0,
+     "stats": {
+      "G": 0.8,
+      "A": 0.0,
+      "+/-": 0.4,
+      "PIM": 0.4,
+      "PPP": 0.2,
+      "SOG": 2.8,
+      "TOI": 18.016666666666666
+     },
+     "gap": -4.727272727272727,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 7.200000000000001
+     }
+    },
+    {
+     "key": "nick robertson|F",
+     "name": "Nick Robertson",
+     "team": "PIT",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.08,
+     "gp": 4.0,
+     "ppg": 21.0,
+     "total": 84.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.0,
+      "+/-": 0.75,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 1.75,
+      "TOI": 13.083333333333334
+     },
+     "gap": -5.327272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jordan eberle|F",
+     "name": "Jordan Eberle",
+     "team": "SEA",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.18,
+     "gp": 4.0,
+     "ppg": 21.0,
+     "total": 84.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.75,
+      "SOG": 1.75,
+      "TOI": 16.2
+     },
+     "gap": -5.327272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ville koivunen|F",
+     "name": "Ville Koivunen",
+     "team": "PIT",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 3.0,
+     "ppg": 20.94,
+     "total": 62.82000000000001,
+     "stats": {
+      "G": 0.33,
+      "A": 0.33,
+      "+/-": 1.67,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 1.33,
+      "TOI": 13.816666666666666
+     },
+     "gap": -5.387272727272727,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jackson blake|F",
+     "name": "Jackson Blake",
+     "team": "CAR",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.47,
+     "gp": 5.0,
+     "ppg": 20.6,
+     "total": 103.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.0,
+      "+/-": 0.0,
+      "PIM": 0.4,
+      "PPP": 0.8,
+      "SOG": 2.8,
+      "TOI": 18.2
+     },
+     "gap": -5.727272727272727,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 6.200000000000001
+     }
+    },
+    {
+     "key": "ryan leonard|F",
+     "name": "Ryan Leonard",
+     "team": "WSH",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.32,
+     "gp": 3.0,
+     "ppg": 20.37,
+     "total": 61.11,
+     "stats": {
+      "G": 0.67,
+      "A": 0.0,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.33,
+      "SOG": 2.67,
+      "TOI": 13.383333333333333
+     },
+     "gap": -5.957272727272727,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.970000000000001
+     }
+    },
+    {
+     "key": "jack roslovic|F",
+     "name": "Jack Roslovic",
+     "team": "TOR",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.23,
+     "gp": 5.0,
+     "ppg": 20.2,
+     "total": 101.0,
+     "stats": {
+      "G": 0.4,
+      "A": 0.4,
+      "+/-": 0.6,
+      "PIM": 0.4,
+      "PPP": 0.2,
+      "SOG": 2.6,
+      "TOI": 16.633333333333333
+     },
+     "gap": -6.127272727272729,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.799999999999999
+     }
+    },
+    {
+     "key": "will cuylle|F",
+     "name": "Will Cuylle",
+     "team": "NYR",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.42,
+     "gp": 5.0,
+     "ppg": 19.15,
+     "total": 95.75,
+     "stats": {
+      "G": 0.0,
+      "A": 0.6,
+      "+/-": -0.19,
+      "PIM": 2.6,
+      "PPP": 0.4,
+      "SOG": 2.8,
+      "TOI": 15.15
+     },
+     "gap": -7.1772727272727295,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 4.749999999999998
+     }
+    },
+    {
+     "key": "nicolas roy|F",
+     "name": "Nicolas Roy",
+     "team": "COL",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.06,
+     "gp": 4.0,
+     "ppg": 19.0,
+     "total": 76.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": 0.75,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 12.816666666666666
+     },
+     "gap": -7.327272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "adam klapka|F",
+     "name": "Adam Klapka",
+     "team": "CGY",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 4.0,
+     "ppg": 18.93,
+     "total": 75.72,
+     "stats": {
+      "G": 0.25,
+      "A": 0.0,
+      "+/-": -0.74,
+      "PIM": 6.75,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 10.383333333333333
+     },
+     "gap": -7.397272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "josh anderson|F",
+     "name": "Josh Anderson",
+     "team": "MTL",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 4.0,
+     "ppg": 18.75,
+     "total": 75.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 0.25,
+      "PIM": 1.5,
+      "PPP": 0.0,
+      "SOG": 2.5,
+      "TOI": 12.983333333333333
+     },
+     "gap": -7.577272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "zachary bolduc|F",
+     "name": "Zachary Bolduc",
+     "team": "MTL",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 4.0,
+     "ppg": 18.5,
+     "total": 74.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.0,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 1.75,
+      "TOI": 13.133333333333333
+     },
+     "gap": -7.827272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "alex laferriere|F",
+     "name": "Alex Laferriere",
+     "team": "LA",
+     "pos": [
+      "C",
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.45,
+     "gp": 3.0,
+     "ppg": 18.32,
+     "total": 54.96,
+     "stats": {
+      "G": 0.33,
+      "A": 0.67,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 1.67,
+      "TOI": 16.466666666666665
+     },
+     "gap": -8.007272727272728,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.92
+     }
+    },
+    {
+     "key": "kaapo kakko|F",
+     "name": "Kaapo Kakko",
+     "team": "SEA",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 4.0,
+     "ppg": 17.75,
+     "total": 71.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.75,
+      "+/-": 0.75,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 0.75,
+      "TOI": 14.55
+     },
+     "gap": -8.577272727272728,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "bobby mcmann|F",
+     "name": "Bobby McMann",
+     "team": "SEA",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.44,
+     "gp": 4.0,
+     "ppg": 17.5,
+     "total": 70.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 3.75,
+      "TOI": 16.583333333333332
+     },
+     "gap": -8.827272727272728,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.0999999999999996
+     }
+    }
+   ],
+   "D": [
+    {
+     "key": "luke schenn|D",
+     "name": "Luke Schenn",
+     "team": "VAN",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 4.0,
+     "ppg": 24.13,
+     "total": 96.52,
+     "stats": {
+      "G": 0.0,
+      "A": 0.5,
+      "+/-": 1.0,
+      "PIM": 5.25,
+      "PPP": 0.0,
+      "SOG": 0.5,
+      "TOI": 12.4
+     },
+     "gap": 7.848571428571425,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "logan stanley|D",
+     "name": "Logan Stanley",
+     "team": "NYI",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 4.0,
+     "ppg": 23.5,
+     "total": 94.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.0,
+      "+/-": 1.0,
+      "PIM": 3.0,
+      "PPP": 0.0,
+      "SOG": 0.5,
+      "TOI": 19.366666666666667
+     },
+     "gap": 7.218571428571426,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "justin faulk|D",
+     "name": "Justin Faulk",
+     "team": "DET",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.24,
+     "gp": 3.0,
+     "ppg": 21.24,
+     "total": 63.72,
+     "stats": {
+      "G": 0.33,
+      "A": 0.33,
+      "+/-": 1.0,
+      "PIM": 0.67,
+      "PPP": 0.33,
+      "SOG": 2.33,
+      "TOI": 19.783333333333335
+     },
+     "gap": 4.958571428571425,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "declan carlile|D",
+     "name": "Declan Carlile",
+     "team": "PIT",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.22,
+     "gp": 4.0,
+     "ppg": 20.25,
+     "total": 81.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.25,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 18.366666666666667
+     },
+     "gap": 3.968571428571426,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jared spurgeon|D",
+     "name": "Jared Spurgeon",
+     "team": "MIN",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.08,
+     "gp": 4.0,
+     "ppg": 20.0,
+     "total": 80.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 1.0,
+      "PPP": 0.25,
+      "SOG": 1.25,
+      "TOI": 21.483333333333334
+     },
+     "gap": 3.718571428571426,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "william wallinder|D",
+     "name": "William Wallinder",
+     "team": "DET",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 1.0,
+     "ppg": 20.0,
+     "total": 20.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.0,
+      "+/-": 2.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 0.0,
+      "TOI": 9.116666666666667
+     },
+     "gap": 3.718571428571426,
+     "pool": false,
+     "excluded": [
+      "under 33% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "owen power|D",
+     "name": "Owen Power",
+     "team": "BUF",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.36,
+     "gp": 4.0,
+     "ppg": 18.75,
+     "total": 75.0,
+     "stats": {
+      "G": 0.25,
+      "A": 1.0,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 1.25,
+      "TOI": 26.266666666666666
+     },
+     "gap": 2.468571428571426,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Darren Raddysh",
+      "gain": 11.9
+     }
+    },
+    {
+     "key": "brayden mcnabb|D",
+     "name": "Brayden McNabb",
+     "team": "VGK",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.3,
+     "gp": 5.0,
+     "ppg": 18.0,
+     "total": 90.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.8,
+      "+/-": 1.6,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 18.683333333333334
+     },
+     "gap": 1.7185714285714262,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "tyrel bauer|D",
+     "name": "Tyrel Bauer",
+     "team": "WPG",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 2.0,
+     "ppg": 17.5,
+     "total": 35.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 7.0,
+      "PPP": 0.0,
+      "SOG": 0.0,
+      "TOI": 7.266666666666667
+     },
+     "gap": 1.2185714285714262,
+     "pool": false,
+     "excluded": [
+      "under 33% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "thomas chabot|D",
+     "name": "Thomas Chabot",
+     "team": "OTT",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.64,
+     "gp": 4.0,
+     "ppg": 17.25,
+     "total": 69.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.25,
+      "+/-": 0.75,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 3.0,
+      "TOI": 26.7
+     },
+     "gap": 0.9685714285714262,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Darren Raddysh",
+      "gain": 10.4
+     }
+    },
+    {
+     "key": "c alexis legault|D",
+     "name": "C. Alexis Legault",
+     "team": "CAR",
+     "pos": [
+      "D"
+     ],
+     "tag": "NA",
+     "own": 0.0,
+     "gp": 2.0,
+     "ppg": 17.0,
+     "total": 34.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 6.0,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 11.883333333333333
+     },
+     "gap": 0.7185714285714262,
+     "pool": false,
+     "excluded": [
+      "under 33% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "josh manson|D",
+     "name": "Josh Manson",
+     "team": "COL",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.22,
+     "gp": 4.0,
+     "ppg": 16.25,
+     "total": 65.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 1.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 1.25,
+      "TOI": 17.116666666666667
+     },
+     "gap": -0.031428571428573804,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "kris letang|D",
+     "name": "Kris Letang",
+     "team": "PIT",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.3,
+     "gp": 4.0,
+     "ppg": 16.0,
+     "total": 64.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.75,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 3.0,
+      "TOI": 19.716666666666665
+     },
+     "gap": -0.2814285714285738,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "gustav forsling|D",
+     "name": "Gustav Forsling",
+     "team": "FLA",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.13,
+     "gp": 3.0,
+     "ppg": 15.93,
+     "total": 47.79,
+     "stats": {
+      "G": 0.33,
+      "A": 0.0,
+      "+/-": 1.0,
+      "PIM": 1.33,
+      "PPP": 0.0,
+      "SOG": 1.33,
+      "TOI": 21.483333333333334
+     },
+     "gap": -0.3514285714285741,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "vladislav gavrikov|D",
+     "name": "Vladislav Gavrikov",
+     "team": "NYR",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.34,
+     "gp": 5.0,
+     "ppg": 15.8,
+     "total": 79.0,
+     "stats": {
+      "G": 0.2,
+      "A": 0.6,
+      "+/-": 0.8,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 1.4,
+      "TOI": 21.533333333333335
+     },
+     "gap": -0.4814285714285731,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Darren Raddysh",
+      "gain": 8.950000000000001
+     }
+    },
+    {
+     "key": "nolan allan|D",
+     "name": "Nolan Allan",
+     "team": "SJ",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 2.0,
+     "ppg": 15.5,
+     "total": 31.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 0.5,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 1.5,
+      "TOI": 18.366666666666667
+     },
+     "gap": -0.7814285714285738,
+     "pool": false,
+     "excluded": [
+      "under 33% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "filip hronek|D",
+     "name": "Filip Hronek",
+     "team": "VAN",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.85,
+     "gp": 5.0,
+     "ppg": 15.4,
+     "total": 77.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.0,
+      "+/-": 0.2,
+      "PIM": 0.0,
+      "PPP": 0.4,
+      "SOG": 1.2,
+      "TOI": 25.45
+     },
+     "gap": -0.8814285714285734,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Darren Raddysh",
+      "gain": 8.55
+     }
+    },
+    {
+     "key": "ryan shea|D",
+     "name": "Ryan Shea",
+     "team": "EDM",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 4.0,
+     "ppg": 15.25,
+     "total": 61.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 1.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 0.75,
+      "TOI": 22.933333333333334
+     },
+     "gap": -1.0314285714285738,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ville ottavainen|D",
+     "name": "Ville Ottavainen",
+     "team": "SEA",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 1.0,
+     "ppg": 15.0,
+     "total": 15.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 2.0,
+      "PIM": 2.0,
+      "PPP": 0.0,
+      "SOG": 0.0,
+      "TOI": 15.85
+     },
+     "gap": -1.2814285714285738,
+     "pool": false,
+     "excluded": [
+      "under 33% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "emil lilleberg|D",
+     "name": "Emil Lilleberg",
+     "team": "TB",
+     "pos": [
+      "D"
+     ],
+     "tag": "O",
+     "own": 0.0,
+     "gp": 1.0,
+     "ppg": 14.5,
+     "total": 14.5,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 5.0,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 10.5
+     },
+     "gap": -1.7814285714285738,
+     "pool": false,
+     "excluded": [
+      "under 33% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "luke hughes|D",
+     "name": "Luke Hughes",
+     "team": "NJ",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.72,
+     "gp": 3.0,
+     "ppg": 13.97,
+     "total": 41.910000000000004,
+     "stats": {
+      "G": 0.33,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 3.67,
+      "TOI": 24.05
+     },
+     "gap": -2.311428571428573,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Darren Raddysh",
+      "gain": 7.120000000000001
+     }
+    },
+    {
+     "key": "brandon carlo|D",
+     "name": "Brandon Carlo",
+     "team": "STL",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 4.0,
+     "ppg": 13.88,
+     "total": 55.52,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 0.25,
+      "PIM": 4.25,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 17.4
+     },
+     "gap": -2.401428571428573,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "alexandre carrier|D",
+     "name": "Alexandre Carrier",
+     "team": "MTL",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 4.0,
+     "ppg": 13.75,
+     "total": 55.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.25,
+      "+/-": 0.75,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 1.25,
+      "TOI": 17.633333333333333
+     },
+     "gap": -2.531428571428574,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "kaedan korczak|D",
+     "name": "Kaedan Korczak",
+     "team": "PIT",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 4.0,
+     "ppg": 13.75,
+     "total": 55.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.0,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 1.25,
+      "TOI": 16.716666666666665
+     },
+     "gap": -2.531428571428574,
+     "pool": false,
+     "excluded": [
+      "under 33% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "mackenzie weegar|D",
+     "name": "MacKenzie Weegar",
+     "team": "UTA",
+     "pos": [
+      "D"
+     ],
+     "tag": null,
+     "own": 0.87,
+     "gp": 5.0,
+     "ppg": 13.7,
+     "total": 68.5,
+     "stats": {
+      "G": 0.2,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 3.0,
+      "PPP": 0.0,
+      "SOG": 1.6,
+      "TOI": 20.15
+     },
+     "gap": -2.5814285714285745,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Darren Raddysh",
+      "gain": 6.85
+     }
+    }
+   ],
+   "G": [
+    {
+     "key": "dylan garand|G",
+     "name": "Dylan Garand",
+     "team": "NYR",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.04,
+     "gp": 1.0,
+     "ppg": 52.0,
+     "total": 52.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 0.0,
+      "SV": 22.0,
+      "SHO": 1.0,
+      "SVP": 1.0,
+      "GAA": 0.0
+     },
+     "gap": 28.2,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "dennis hildeby|G",
+     "name": "Dennis Hildeby",
+     "team": "TB",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 1.0,
+     "ppg": 44.0,
+     "total": 44.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 2.0,
+      "SV": 34.0,
+      "SHO": 0.0,
+      "SVP": 0.9444444444444444,
+      "GAA": 2.0128599384959465
+     },
+     "gap": 20.2,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "clay stevenson|G",
+     "name": "Clay Stevenson",
+     "team": "WPG",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.06,
+     "gp": 1.0,
+     "ppg": 39.0,
+     "total": 39.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 2.0,
+      "SV": 29.0,
+      "SHO": 0.0,
+      "SVP": 0.9354838709677419,
+      "GAA": 2.0
+     },
+     "gap": 15.2,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "alex nedeljkovic|G",
+     "name": "Alex Nedeljkovic",
+     "team": "SJ",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.06,
+     "gp": 1.0,
+     "ppg": 34.0,
+     "total": 34.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 2.0,
+      "SV": 24.0,
+      "SHO": 0.0,
+      "SVP": 0.9230769230769231,
+      "GAA": 1.9656019656019657
+     },
+     "gap": 10.2,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "anthony stolarz|G",
+     "name": "Anthony Stolarz",
+     "team": "TOR",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.24,
+     "gp": 2.0,
+     "ppg": 31.0,
+     "total": 62.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 2.5,
+      "SV": 23.5,
+      "SHO": 0.0,
+      "SVP": 0.9038461538461539,
+      "GAA": 2.4363833243096913
+     },
+     "gap": 7.199999999999999,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "stuart skinner|G",
+     "name": "Stuart Skinner",
+     "team": "WPG",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.38,
+     "gp": 3.0,
+     "ppg": 30.666666666666668,
+     "total": 92.0,
+     "stats": {
+      "W": 0.6666666666666666,
+      "GA": 2.6666666666666665,
+      "SV": 30.666666666666668,
+      "SHO": 0.0,
+      "SVP": 0.92,
+      "GAA": 2.617943823288792
+     },
+     "gap": 6.866666666666667,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Brandon Bussi",
+      "gain": 21.71666666666667
+     }
+    },
+    {
+     "key": "colten ellis|G",
+     "name": "Colten Ellis",
+     "team": "BUF",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 1.0,
+     "ppg": 28.0,
+     "total": 28.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 2.0,
+      "SV": 18.0,
+      "SHO": 0.0,
+      "SVP": 0.9,
+      "GAA": 1.8643190056965304
+     },
+     "gap": 4.199999999999999,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "pyotr kochetkov|G",
+     "name": "Pyotr Kochetkov",
+     "team": "CAR",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.29,
+     "gp": 2.0,
+     "ppg": 27.0,
+     "total": 54.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 2.0,
+      "SV": 17.0,
+      "SHO": 0.0,
+      "SVP": 0.8947368421052632,
+      "GAA": 1.9536019536019538
+     },
+     "gap": 3.1999999999999993,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "adin hill|G",
+     "name": "Adin Hill",
+     "team": "VGK",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.14,
+     "gp": 2.0,
+     "ppg": 27.0,
+     "total": 54.0,
+     "stats": {
+      "W": 1.0,
+      "GA": 2.5,
+      "SV": 19.5,
+      "SHO": 0.0,
+      "SVP": 0.8863636363636364,
+      "GAA": 2.406417112299465
+     },
+     "gap": 3.1999999999999993,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "joey daccord|G",
+     "name": "Joey Daccord",
+     "team": "SEA",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.49,
+     "gp": 3.0,
+     "ppg": 25.666666666666668,
+     "total": 77.0,
+     "stats": {
+      "W": 0.6666666666666666,
+      "GA": 2.3333333333333335,
+      "SV": 24.0,
+      "SHO": 0.0,
+      "SVP": 0.9113924050632911,
+      "GAA": 2.635156331695075
+     },
+     "gap": 1.8666666666666671,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Brandon Bussi",
+      "gain": 16.71666666666667
+     }
+    },
+    {
+     "key": "carter hart|G",
+     "name": "Carter Hart",
+     "team": "VGK",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.85,
+     "gp": 3.0,
+     "ppg": 21.666666666666668,
+     "total": 65.0,
+     "stats": {
+      "W": 0.6666666666666666,
+      "GA": 2.6666666666666665,
+      "SV": 21.666666666666668,
+      "SHO": 0.0,
+      "SVP": 0.8904109589041096,
+      "GAA": 2.7024490944918833
+     },
+     "gap": -2.133333333333333,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Brandon Bussi",
+      "gain": 12.716666666666669
+     }
+    },
+    {
+     "key": "joseph woll|G",
+     "name": "Joseph Woll",
+     "team": "PHI",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.21,
+     "gp": 3.0,
+     "ppg": 20.666666666666668,
+     "total": 62.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 2.6666666666666665,
+      "SV": 34.0,
+      "SHO": 0.0,
+      "SVP": 0.9272727272727272,
+      "GAA": 2.610587382160986
+     },
+     "gap": -3.133333333333333,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Brandon Bussi",
+      "gain": 11.716666666666669
+     }
+    },
+    {
+     "key": "arturs silovs|G",
+     "name": "Arturs Silovs",
+     "team": "PIT",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.37,
+     "gp": 3.0,
+     "ppg": 20.333333333333332,
+     "total": 61.0,
+     "stats": {
+      "W": 0.6666666666666666,
+      "GA": 3.3333333333333335,
+      "SV": 20.333333333333332,
+      "SHO": 0.3333333333333333,
+      "SVP": 0.8591549295774648,
+      "GAA": 3.378061368114854
+     },
+     "gap": -3.4666666666666686,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Brandon Bussi",
+      "gain": 11.383333333333333
+     }
+    },
+    {
+     "key": "leevi merilainen|G",
+     "name": "Leevi Meriläinen",
+     "team": "VAN",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 3.0,
+     "ppg": 17.666666666666668,
+     "total": 53.0,
+     "stats": {
+      "W": 0.3333333333333333,
+      "GA": 1.0,
+      "SV": 16.0,
+      "SHO": 0.0,
+      "SVP": 0.9411764705882353,
+      "GAA": 1.6262611052552325
+     },
+     "gap": -6.133333333333333,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Brandon Bussi",
+      "gain": 8.716666666666669
+     }
+    },
+    {
+     "key": "sergei murashov|G",
+     "name": "Sergei Murashov",
+     "team": "PIT",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.27,
+     "gp": 1.0,
+     "ppg": 17.0,
+     "total": 17.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 3.0,
+      "SV": 32.0,
+      "SHO": 0.0,
+      "SVP": 0.9142857142857143,
+      "GAA": 3.1367993029334884
+     },
+     "gap": -6.800000000000001,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "charlie lindgren|G",
+     "name": "Charlie Lindgren",
+     "team": "WSH",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.04,
+     "gp": 1.0,
+     "ppg": 17.0,
+     "total": 17.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 2.0,
+      "SV": 27.0,
+      "SHO": 0.0,
+      "SVP": 0.9310344827586207,
+      "GAA": 2.0833333333333335
+     },
+     "gap": -6.800000000000001,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "casey desmith|G",
+     "name": "Casey DeSmith",
+     "team": "DAL",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.07,
+     "gp": 1.0,
+     "ppg": 14.0,
+     "total": 14.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 2.0,
+      "SV": 24.0,
+      "SHO": 0.0,
+      "SVP": 0.9230769230769231,
+      "GAA": 2.0547945205479454
+     },
+     "gap": -9.8,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "sebastian cossa|G",
+     "name": "Sebastian Cossa",
+     "team": "UTA",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.06,
+     "gp": 2.0,
+     "ppg": 11.5,
+     "total": 23.0,
+     "stats": {
+      "W": 0.5,
+      "GA": 2.0,
+      "SV": 11.5,
+      "SHO": 0.0,
+      "SVP": 0.8518518518518519,
+      "GAA": 3.1641397495056034
+     },
+     "gap": -12.3,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "michael dipietro|G",
+     "name": "Michael DiPietro",
+     "team": "BOS",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 1.0,
+     "ppg": 11.0,
+     "total": 11.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 3.0,
+      "SV": 26.0,
+      "SHO": 0.0,
+      "SVP": 0.896551724137931,
+      "GAA": 3.109703426432479
+     },
+     "gap": -12.8,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "akira schmid|G",
+     "name": "Akira Schmid",
+     "team": "FLA",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.06,
+     "gp": 1.0,
+     "ppg": 8.0,
+     "total": 8.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 4.0,
+      "SV": 28.0,
+      "SHO": 0.0,
+      "SVP": 0.875,
+      "GAA": 3.7954665260938323
+     },
+     "gap": -15.8,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "samuel ersson|G",
+     "name": "Samuel Ersson",
+     "team": "OTT",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 2.0,
+     "ppg": 7.0,
+     "total": 14.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 2.5,
+      "SV": 19.5,
+      "SHO": 0.0,
+      "SVP": 0.8863636363636364,
+      "GAA": 3.849443969204448
+     },
+     "gap": -16.8,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "philipp grubauer|G",
+     "name": "Philipp Grubauer",
+     "team": "SEA",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.04,
+     "gp": 2.0,
+     "ppg": 7.0,
+     "total": 14.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 1.5,
+      "SV": 14.5,
+      "SHO": 0.0,
+      "SVP": 0.90625,
+      "GAA": 2.2756005056890016
+     },
+     "gap": -16.8,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "dan vladar|G",
+     "name": "Dan Vladar",
+     "team": "PHI",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.5,
+     "gp": 2.0,
+     "ppg": 6.5,
+     "total": 13.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 5.0,
+      "SV": 31.5,
+      "SHO": 0.0,
+      "SVP": 0.863013698630137,
+      "GAA": 5.124555160142349
+     },
+     "gap": -17.3,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "semyon varlamov|G",
+     "name": "Semyon Varlamov",
+     "team": "NYI",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 1.0,
+     "ppg": 4.0,
+     "total": 4.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 3.0,
+      "SV": 19.0,
+      "SHO": 0.0,
+      "SVP": 0.8636363636363636,
+      "GAA": 3.028603477285474
+     },
+     "gap": -19.8,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ville husso|G",
+     "name": "Ville Husso",
+     "team": "ANA",
+     "pos": [
+      "G"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 1.0,
+     "ppg": 2.0,
+     "total": 2.0,
+     "stats": {
+      "W": 0.0,
+      "GA": 0.0,
+      "SV": 2.0,
+      "SHO": 0.0,
+      "SVP": 1.0,
+      "GAA": 0.0
+     },
+     "gap": -21.8,
+     "pool": false,
+     "excluded": [
+      "under 3 GP"
+     ],
+     "upgrade": null
+    }
+   ],
+   "F": [
+    {
+     "key": "vasily podkolzin|F",
+     "name": "Vasily Podkolzin",
+     "team": "EDM",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.79,
+     "gp": 4.0,
+     "ppg": 39.25,
+     "total": 157.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.5,
+      "+/-": 1.5,
+      "PIM": 0.0,
+      "PPP": 0.75,
+      "SOG": 4.0,
+      "TOI": 18.733333333333334
+     },
+     "gap": 9.596499999999999,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 24.85
+     }
+    },
+    {
+     "key": "filip hallander|F",
+     "name": "Filip Hallander",
+     "team": "EDM",
+     "pos": [
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 2.0,
+     "ppg": 30.5,
+     "total": 61.0,
+     "stats": {
+      "G": 0.5,
+      "A": 1.0,
+      "+/-": 2.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 1.5,
+      "TOI": 10.283333333333333
+     },
+     "gap": 0.8464999999999989,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "cole perfetti|F",
+     "name": "Cole Perfetti",
+     "team": "WPG",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.59,
+     "gp": 4.0,
+     "ppg": 28.55,
+     "total": 114.2,
+     "stats": {
+      "G": 0.75,
+      "A": 0.75,
+      "+/-": -0.24,
+      "PIM": 0.0,
+      "PPP": 1.0,
+      "SOG": 3.0,
+      "TOI": 18.316666666666666
+     },
+     "gap": -1.1035000000000004,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 14.15
+     }
+    },
+    {
+     "key": "pierre-luc dubois|F",
+     "name": "Pierre-Luc Dubois",
+     "team": "WSH",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.34,
+     "gp": 3.0,
+     "ppg": 28.29,
+     "total": 84.87,
+     "stats": {
+      "G": 0.33,
+      "A": 1.0,
+      "+/-": 1.0,
+      "PIM": 2.0,
+      "PPP": 0.0,
+      "SOG": 1.67,
+      "TOI": 16.116666666666667
+     },
+     "gap": -1.363500000000002,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 13.889999999999999
+     }
+    },
+    {
+     "key": "jaden schwartz|F",
+     "name": "Jaden Schwartz",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.04,
+     "gp": 4.0,
+     "ppg": 28.25,
+     "total": 113.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 0.5,
+      "PPP": 0.25,
+      "SOG": 2.25,
+      "TOI": 13.533333333333333
+     },
+     "gap": -1.403500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "elias pettersson|F",
+     "name": "Elias Pettersson",
+     "team": "VAN",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.78,
+     "gp": 5.0,
+     "ppg": 27.2,
+     "total": 136.0,
+     "stats": {
+      "G": 0.4,
+      "A": 1.2,
+      "+/-": 0.6,
+      "PIM": 0.0,
+      "PPP": 0.6,
+      "SOG": 1.6,
+      "TOI": 20.033333333333335
+     },
+     "gap": -2.453500000000002,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 12.799999999999999
+     }
+    },
+    {
+     "key": "victor olofsson|F",
+     "name": "Victor Olofsson",
+     "team": "VGK",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": "O",
+     "own": 0.07,
+     "gp": 4.0,
+     "ppg": 25.75,
+     "total": 103.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.25,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 2.25,
+      "TOI": 13.133333333333333
+     },
+     "gap": -3.903500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "thomas novak|F",
+     "name": "Thomas Novak",
+     "team": "PIT",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.26,
+     "gp": 4.0,
+     "ppg": 25.25,
+     "total": 101.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 2.0,
+      "TOI": 15.3
+     },
+     "gap": -4.403500000000001,
+     "pool": true,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 10.85
+     }
+    },
+    {
+     "key": "mathieu olivier|F",
+     "name": "Mathieu Olivier",
+     "team": "CBJ",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.07,
+     "gp": 2.0,
+     "ppg": 25.25,
+     "total": 50.5,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 1.0,
+      "PIM": 3.5,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 14.95
+     },
+     "gap": -4.403500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jared mccann|F",
+     "name": "Jared McCann",
+     "team": "SEA",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.42,
+     "gp": 4.0,
+     "ppg": 25.0,
+     "total": 100.0,
+     "stats": {
+      "G": 0.25,
+      "A": 1.0,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 3.75,
+      "TOI": 15.8
+     },
+     "gap": -4.653500000000001,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 10.6
+     }
+    },
+    {
+     "key": "brayden schenn|F",
+     "name": "Brayden Schenn",
+     "team": "NYI",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.19,
+     "gp": 4.0,
+     "ppg": 24.63,
+     "total": 98.52,
+     "stats": {
+      "G": 0.25,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 2.25,
+      "PPP": 0.25,
+      "SOG": 2.0,
+      "TOI": 15.25
+     },
+     "gap": -5.023500000000002,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "matthew poitras|F",
+     "name": "Matthew Poitras",
+     "team": "BOS",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 2.0,
+     "ppg": 24.5,
+     "total": 49.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 1.5,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 10.65
+     },
+     "gap": -5.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "artturi lehkonen|F",
+     "name": "Artturi Lehkonen",
+     "team": "COL",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.67,
+     "gp": 4.0,
+     "ppg": 24.25,
+     "total": 97.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.25,
+      "+/-": 1.0,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 1.5,
+      "TOI": 18.4
+     },
+     "gap": -5.403500000000001,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 9.85
+     }
+    },
+    {
+     "key": "charlie coyle|F",
+     "name": "Charlie Coyle",
+     "team": "CBJ",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.15,
+     "gp": 2.0,
+     "ppg": 23.5,
+     "total": 47.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.5,
+      "+/-": 1.0,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 0.5,
+      "TOI": 17.233333333333334
+     },
+     "gap": -6.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "kent johnson|F",
+     "name": "Kent Johnson",
+     "team": "CBJ",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.05,
+     "gp": 2.0,
+     "ppg": 23.5,
+     "total": 47.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 3.0,
+      "TOI": 16.05
+     },
+     "gap": -6.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "tyler toffoli|F",
+     "name": "Tyler Toffoli",
+     "team": "SJ",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.14,
+     "gp": 4.0,
+     "ppg": 23.0,
+     "total": 92.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.5,
+      "PIM": 0.5,
+      "PPP": 0.25,
+      "SOG": 2.75,
+      "TOI": 13.45
+     },
+     "gap": -6.653500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ben kindel|F",
+     "name": "Ben Kindel",
+     "team": "PIT",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.14,
+     "gp": 3.0,
+     "ppg": 22.8,
+     "total": 68.4,
+     "stats": {
+      "G": 0.67,
+      "A": 0.67,
+      "+/-": -0.32,
+      "PIM": 0.0,
+      "PPP": 0.33,
+      "SOG": 3.0,
+      "TOI": 17.5
+     },
+     "gap": -6.8535,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "paul cotter|F",
+     "name": "Paul Cotter",
+     "team": "VAN",
+     "pos": [
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.36,
+     "gp": 5.0,
+     "ppg": 22.8,
+     "total": 114.0,
+     "stats": {
+      "G": 0.8,
+      "A": 0.4,
+      "+/-": 0.6,
+      "PIM": 0.0,
+      "PPP": 0.2,
+      "SOG": 1.4,
+      "TOI": 15.1
+     },
+     "gap": -6.8535,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 8.4
+     }
+    },
+    {
+     "key": "cole sillinger|F",
+     "name": "Cole Sillinger",
+     "team": "CBJ",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 2.0,
+     "ppg": 22.5,
+     "total": 45.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.0,
+      "+/-": 1.0,
+      "PIM": 2.0,
+      "PPP": 0.0,
+      "SOG": 2.5,
+      "TOI": 14.35
+     },
+     "gap": -7.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "parker kelly|F",
+     "name": "Parker Kelly",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.05,
+     "gp": 4.0,
+     "ppg": 22.5,
+     "total": 90.0,
+     "stats": {
+      "G": 0.25,
+      "A": 1.0,
+      "+/-": 1.0,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 1.25,
+      "TOI": 13.216666666666667
+     },
+     "gap": -7.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "viktor arvidsson|F",
+     "name": "Viktor Arvidsson",
+     "team": "DET",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.15,
+     "gp": 3.0,
+     "ppg": 22.12,
+     "total": 66.36,
+     "stats": {
+      "G": 0.67,
+      "A": 0.33,
+      "+/-": -0.32,
+      "PIM": 0.67,
+      "PPP": 0.67,
+      "SOG": 2.67,
+      "TOI": 18.333333333333332
+     },
+     "gap": -7.5335,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jake debrusk|F",
+     "name": "Jake DeBrusk",
+     "team": "VAN",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.16,
+     "gp": 3.0,
+     "ppg": 22.02,
+     "total": 66.06,
+     "stats": {
+      "G": 0.67,
+      "A": 0.33,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 2.67,
+      "TOI": 16.633333333333333
+     },
+     "gap": -7.6335000000000015,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "logan stankoven|F",
+     "name": "Logan Stankoven",
+     "team": "CAR",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.64,
+     "gp": 5.0,
+     "ppg": 21.6,
+     "total": 108.0,
+     "stats": {
+      "G": 0.8,
+      "A": 0.0,
+      "+/-": 0.4,
+      "PIM": 0.4,
+      "PPP": 0.2,
+      "SOG": 2.8,
+      "TOI": 18.016666666666666
+     },
+     "gap": -8.0535,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 7.200000000000001
+     }
+    },
+    {
+     "key": "nick robertson|F",
+     "name": "Nick Robertson",
+     "team": "PIT",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.08,
+     "gp": 4.0,
+     "ppg": 21.0,
+     "total": 84.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.0,
+      "+/-": 0.75,
+      "PIM": 1.0,
+      "PPP": 0.0,
+      "SOG": 1.75,
+      "TOI": 13.083333333333334
+     },
+     "gap": -8.653500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jordan eberle|F",
+     "name": "Jordan Eberle",
+     "team": "SEA",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.18,
+     "gp": 4.0,
+     "ppg": 21.0,
+     "total": 84.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.5,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.75,
+      "SOG": 1.75,
+      "TOI": 16.2
+     },
+     "gap": -8.653500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ville koivunen|F",
+     "name": "Ville Koivunen",
+     "team": "PIT",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 3.0,
+     "ppg": 20.94,
+     "total": 62.82000000000001,
+     "stats": {
+      "G": 0.33,
+      "A": 0.33,
+      "+/-": 1.67,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 1.33,
+      "TOI": 13.816666666666666
+     },
+     "gap": -8.7135,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "jackson blake|F",
+     "name": "Jackson Blake",
+     "team": "CAR",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.47,
+     "gp": 5.0,
+     "ppg": 20.6,
+     "total": 103.0,
+     "stats": {
+      "G": 0.0,
+      "A": 1.0,
+      "+/-": 0.0,
+      "PIM": 0.4,
+      "PPP": 0.8,
+      "SOG": 2.8,
+      "TOI": 18.2
+     },
+     "gap": -9.0535,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 6.200000000000001
+     }
+    },
+    {
+     "key": "marco kasper|F",
+     "name": "Marco Kasper",
+     "team": "DET",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": "IR",
+     "own": 0.03,
+     "gp": 1.0,
+     "ppg": 20.5,
+     "total": 20.5,
+     "stats": {
+      "G": 0.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 5.0,
+      "PPP": 0.0,
+      "SOG": 4.0,
+      "TOI": 10.833333333333334
+     },
+     "gap": -9.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ryan leonard|F",
+     "name": "Ryan Leonard",
+     "team": "WSH",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.32,
+     "gp": 3.0,
+     "ppg": 20.37,
+     "total": 61.11,
+     "stats": {
+      "G": 0.67,
+      "A": 0.0,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.33,
+      "SOG": 2.67,
+      "TOI": 13.383333333333333
+     },
+     "gap": -9.2835,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.970000000000001
+     }
+    },
+    {
+     "key": "jack roslovic|F",
+     "name": "Jack Roslovic",
+     "team": "TOR",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.23,
+     "gp": 5.0,
+     "ppg": 20.2,
+     "total": 101.0,
+     "stats": {
+      "G": 0.4,
+      "A": 0.4,
+      "+/-": 0.6,
+      "PIM": 0.4,
+      "PPP": 0.2,
+      "SOG": 2.6,
+      "TOI": 16.633333333333333
+     },
+     "gap": -9.453500000000002,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.799999999999999
+     }
+    },
+    {
+     "key": "nazem kadri|F",
+     "name": "Nazem Kadri",
+     "team": "COL",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.67,
+     "gp": 4.0,
+     "ppg": 19.75,
+     "total": 79.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.75,
+      "+/-": 0.75,
+      "PIM": 0.0,
+      "PPP": 0.5,
+      "SOG": 3.0,
+      "TOI": 17.933333333333334
+     },
+     "gap": -9.903500000000001,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 5.35
+     }
+    },
+    {
+     "key": "shane pinto|F",
+     "name": "Shane Pinto",
+     "team": "OTT",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.15,
+     "gp": 4.0,
+     "ppg": 19.5,
+     "total": 78.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.75,
+      "+/-": 0.5,
+      "PIM": 1.5,
+      "PPP": 0.25,
+      "SOG": 2.25,
+      "TOI": 19.45
+     },
+     "gap": -10.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "will cuylle|F",
+     "name": "Will Cuylle",
+     "team": "NYR",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.42,
+     "gp": 5.0,
+     "ppg": 19.15,
+     "total": 95.75,
+     "stats": {
+      "G": 0.0,
+      "A": 0.6,
+      "+/-": -0.19,
+      "PIM": 2.6,
+      "PPP": 0.4,
+      "SOG": 2.8,
+      "TOI": 15.15
+     },
+     "gap": -10.503500000000003,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 4.749999999999998
+     }
+    },
+    {
+     "key": "jesper boqvist|F",
+     "name": "Jesper Boqvist",
+     "team": "NJ",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 1.0,
+     "ppg": 19.0,
+     "total": 19.0,
+     "stats": {
+      "G": 1.0,
+      "A": 0.0,
+      "+/-": 0.0,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 9.816666666666666
+     },
+     "gap": -10.653500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "nicolas roy|F",
+     "name": "Nicolas Roy",
+     "team": "COL",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.06,
+     "gp": 4.0,
+     "ppg": 19.0,
+     "total": 76.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": 0.75,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 2.0,
+      "TOI": 12.816666666666666
+     },
+     "gap": -10.653500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "taylor hall|F",
+     "name": "Taylor Hall",
+     "team": "CAR",
+     "pos": [
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.1,
+     "gp": 5.0,
+     "ppg": 19.0,
+     "total": 95.0,
+     "stats": {
+      "G": 0.4,
+      "A": 0.4,
+      "+/-": 0.0,
+      "PIM": 1.6,
+      "PPP": 0.2,
+      "SOG": 2.0,
+      "TOI": 14.066666666666666
+     },
+     "gap": -10.653500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "adam klapka|F",
+     "name": "Adam Klapka",
+     "team": "CGY",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 4.0,
+     "ppg": 18.93,
+     "total": 75.72,
+     "stats": {
+      "G": 0.25,
+      "A": 0.0,
+      "+/-": -0.74,
+      "PIM": 6.75,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 10.383333333333333
+     },
+     "gap": -10.723500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "josh anderson|F",
+     "name": "Josh Anderson",
+     "team": "MTL",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 4.0,
+     "ppg": 18.75,
+     "total": 75.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 0.25,
+      "PIM": 1.5,
+      "PPP": 0.0,
+      "SOG": 2.5,
+      "TOI": 12.983333333333333
+     },
+     "gap": -10.903500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "frank nazar|F",
+     "name": "Frank Nazar",
+     "team": "CHI",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.13,
+     "gp": 5.0,
+     "ppg": 18.65,
+     "total": 93.25,
+     "stats": {
+      "G": 0.4,
+      "A": 0.2,
+      "+/-": -0.99,
+      "PIM": 4.4,
+      "PPP": 0.2,
+      "SOG": 1.8,
+      "TOI": 18.833333333333332
+     },
+     "gap": -11.003500000000003,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "zachary bolduc|F",
+     "name": "Zachary Bolduc",
+     "team": "MTL",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.03,
+     "gp": 4.0,
+     "ppg": 18.5,
+     "total": 74.0,
+     "stats": {
+      "G": 0.75,
+      "A": 0.0,
+      "+/-": 0.5,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 1.75,
+      "TOI": 13.133333333333333
+     },
+     "gap": -11.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "alex laferriere|F",
+     "name": "Alex Laferriere",
+     "team": "LA",
+     "pos": [
+      "C",
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.45,
+     "gp": 3.0,
+     "ppg": 18.32,
+     "total": 54.96,
+     "stats": {
+      "G": 0.33,
+      "A": 0.67,
+      "+/-": 0.33,
+      "PIM": 0.67,
+      "PPP": 0.0,
+      "SOG": 1.67,
+      "TOI": 16.466666666666665
+     },
+     "gap": -11.3335,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.92
+     }
+    },
+    {
+     "key": "fedor svechkov|F",
+     "name": "Fedor Svechkov",
+     "team": "COL",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.0,
+     "gp": 4.0,
+     "ppg": 18.25,
+     "total": 73.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.5,
+      "+/-": 1.25,
+      "PIM": 0.5,
+      "PPP": 0.0,
+      "SOG": 1.0,
+      "TOI": 13.833333333333334
+     },
+     "gap": -11.403500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "blake coleman|F",
+     "name": "Blake Coleman",
+     "team": "MIN",
+     "pos": [
+      "C",
+      "LW"
+     ],
+     "tag": null,
+     "own": 0.16,
+     "gp": 4.0,
+     "ppg": 18.05,
+     "total": 72.2,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": -0.49,
+      "PIM": 0.5,
+      "PPP": 0.75,
+      "SOG": 2.75,
+      "TOI": 14.833333333333334
+     },
+     "gap": -11.6035,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "mason mctavish|F",
+     "name": "Mason McTavish",
+     "team": "STL",
+     "pos": [
+      "C"
+     ],
+     "tag": null,
+     "own": 0.2,
+     "gp": 4.0,
+     "ppg": 17.75,
+     "total": 71.0,
+     "stats": {
+      "G": 0.5,
+      "A": 0.25,
+      "+/-": 0.25,
+      "PIM": 0.0,
+      "PPP": 0.0,
+      "SOG": 3.25,
+      "TOI": 15.333333333333334
+     },
+     "gap": -11.903500000000001,
+     "pool": false,
+     "excluded": [],
+     "upgrade": {
+      "over": "Morgan Geekie",
+      "gain": 3.3499999999999996
+     }
+    },
+    {
+     "key": "kaapo kakko|F",
+     "name": "Kaapo Kakko",
+     "team": "SEA",
+     "pos": [
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.02,
+     "gp": 4.0,
+     "ppg": 17.75,
+     "total": 71.0,
+     "stats": {
+      "G": 0.25,
+      "A": 0.75,
+      "+/-": 0.75,
+      "PIM": 0.0,
+      "PPP": 0.25,
+      "SOG": 0.75,
+      "TOI": 14.55
+     },
+     "gap": -11.903500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "ridly greig|F",
+     "name": "Ridly Greig",
+     "team": "OTT",
+     "pos": [
+      "C",
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.01,
+     "gp": 2.0,
+     "ppg": 17.5,
+     "total": 35.0,
+     "stats": {
+      "G": 0.0,
+      "A": 0.5,
+      "+/-": 0.0,
+      "PIM": 3.0,
+      "PPP": 0.0,
+      "SOG": 2.5,
+      "TOI": 16.0
+     },
+     "gap": -12.153500000000001,
+     "pool": false,
+     "excluded": [
+      "under 20% owned",
+      "under 3 GP"
+     ],
+     "upgrade": null
+    },
+    {
+     "key": "bobby mcmann|F",
+     "name": "Bobby McMann",
+     "team": "SEA",
+     "pos": [
+      "LW",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.44,
      "gp": 4.0,
      "ppg": 17.5,
      "total": 70.0,
