@@ -1,340 +1,427 @@
 """
-td-my-team: fetch_data.py
+gb-my-team: fetch_data.py
 
-Downloads the published Google Sheet (.xlsx), parses the Yahoo IMPORTHTML tables,
-matches players by name, computes replacement baselines and the two lenses
-(FOR ME = team log starts, OVERALL = all games), and writes data/data.json.
+Downloads the published Google Sheet (.xlsx), reads the Config tab, parses the
+Yahoo IMPORTHTML tables, matches players by name, computes replacement lines
+and the two lenses (FOR ME = team log starts, OVERALL = all games), and writes
+data/data.json.
 
-Run in GitHub Actions:   python fetch_data.py
-Test against a local file: python fetch_data.py --file path/to/workbook.xlsx
+Run in GitHub Actions:      python fetch_data.py
+Test against a local file:  python fetch_data.py --file path/to/workbook.xlsx
 
 No Yahoo API, no cookies. Python never contacts Yahoo. See SPEC.md.
 """
 
 import io
 import json
+import math
 import os
 import re
 import sys
 import time
 import unicodedata
 import urllib.request
-from datetime import datetime, timezone, timedelta, time as dtime
+from datetime import datetime, date, timedelta, time as dtime
+from zoneinfo import ZoneInfo
 
 import openpyxl
 
 # ----------------------------------------------------------------------------
-# CONFIG (see SPEC.md sections 2, 3, 6, 8)
+# FIXED SETTINGS (everything tunable lives in the sheet's Config tab)
 # ----------------------------------------------------------------------------
 
 SHEET_URL = (
     "https://docs.google.com/spreadsheets/d/e/"
-    "2PACX-1vQWduNAcz_oG_y6og2MHut-t4mmCTZe8_n6Od2Gzzg7_xHJycjqNlG2ydKUImdaXJpphHxiBvhcESHP"
+    "2PACX-1vTL-UN55CMJ7OxsyjMrsnX1zQWZsBOgq6LpdQpQvKL-buXcVKGbaT-AL-5p-1llxnGmkpUUwth2l1sn"
     "/pub?output=xlsx"
 )
 OUT_PATH = os.path.join("data", "data.json")
-
-MY_TEAM_NAME = "Soft Dump in Corner"
-SEASON_LABEL = "2026-27"
-
-SKATER_WEIGHTS = {"G": 15, "A": 10, "+/-": 5, "PIM": 2.5, "PPP": 5, "SOG": 2}
-GOALIE_WEIGHTS = {"W": 20, "GA": -5, "SV": 1, "SHO": 10}
+NY = ZoneInfo("America/New_York")
 
 WINDOWS = ["season", "l30", "l14"]
-WINDOW_TAB = {"season": "Season", "l30": "L30", "l14": "L14"}
-POSITIONS = ["C", "LW", "RW", "D", "G"]
-BASE_POSITIONS = ["C", "LW", "RW", "FWD", "D", "G"]
-FORWARDS = {"C", "LW", "RW"}
+WINDOW_LABEL = {"forme": "For me", "season": "Season", "l30": "L30", "l14": "L14"}
+POSITIONS = ["G", "F", "C"]
+LINES = ["G", "F", "C", "ALL"]
+STATS = ["PTS", "REB", "AST", "ST", "BLK", "TO"]
 
-OWN_FLOOR = {"C": 0.20, "LW": 0.20, "RW": 0.20, "FWD": 0.20, "D": 0.33, "G": 0.0}
-MIN_GP = {"season": 10, "l30": 3, "l14": 3}
-EARLY_SEASON_MIN_GP = 3
-POOL_SIZE = 5
-SMALL_SAMPLE_STARTS = 5
-REPLACE_PTS = -50
-TREND_PCT = 0.15
-INJURED_TAGS = {"IR", "IR-LT", "IR-NR", "O"}
-STATUS_ALIASES = {  # Status Overrides tab values -> site status
-    "active": "Active", "injured": "Injured", "ir": "Injured",
-    "cut": "Cut", "inactive": "Cut", "dropped": "Cut",
+INJURED_TAGS = {"INJ", "O"}
+TAGS = ["SUSP", "INJ", "GTD", "DTD", "NA", "O", "Q", "P"]  # longest first
+NOTE_TEXT = ["No new player Notes", "New Player Note", "Player Note"]
+STATUS_ALIASES = {
+    "active": "Active", "injured": "Injured", "inj": "Injured", "il": "Injured",
+    "cut": "Cut", "dropped": "Cut", "inactive": "Cut",
 }
-STALE_DAYS = 2
-MAX_GP = 82
+NBA_TEAMS = {
+    "ATL", "BOS", "BKN", "BRK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GS", "GSW",
+    "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NO", "NOP", "NY", "NYK",
+    "OKC", "ORL", "PHI", "PHO", "PHX", "POR", "SA", "SAS", "SAC", "TOR", "UTA", "UTAH",
+    "WAS", "WSH",
+}
 
-TAB_TEAMLOG = {"skater": "Import My Skaters", "goalie": "Import My Goalies"}
-TAB_MYTEAM = {
-    "season": "Import My Team Season Avg",
-    "l30": "Import My Team L30 Avg",
-    "l14": "Import My Team L14 Avg",
-}
 TAB_OVERRIDES = "Status Overrides"
 TAB_NAMEFIX = "Name Fixes"
+TAB_CONFIG = "Config"
 
-
-def fa_tab(pos, window):
-    if pos == "G":
-        return f"Import FA Goalies-{WINDOW_TAB[window]} Total"
-    return f"Import FA {pos}-{WINDOW_TAB[window]} Avg"
-
-
-TABLE_LABEL = {"skater": "Forwards/Defensemen", "goalie": "Goaltenders"}
-REQUIRED_COLS = {
-    "skater": ["GP*"] + list(SKATER_WEIGHTS),
-    "goalie": ["GP*"] + list(GOALIE_WEIGHTS),
+DEFAULTS = {
+    "team_name": "Marion HoF 2027",
+    "masthead": "Marion Hall of Fame",
+    "season_label": "2026-27",
+    "tab_my_season": "My Team Season",
+    "tab_my_l30": "My Team L30",
+    "tab_my_l14": "My Team L14",
+    "tab_team_log": "My Team Game Log",
+    "tab_fa_season_1": "FA Season 1-25",
+    "tab_fa_season_2": "FA Season 26-50",
+    "tab_fa_l30_1": "FA L30 1-25",
+    "tab_fa_l30_2": "FA L30 26-50",
+    "tab_fa_l14_1": "FA L14 1-25",
+    "tab_fa_l14_2": "FA L14 26-50",
+    "w_PTS": 1, "w_REB": 1.2, "w_AST": 1.5, "w_ST": 3, "w_BLK": 3, "w_TO": -1,
+    "pool_size": 5,
+    "min_gp_pct": 0.5,
+    "flag_window": "L30",
+    "replace_threshold": -50,
+    "ppg_trend_pct": 0.15,
+    "mpg_trend_pct": 0.10,
+    "small_sample_starts": 5,
+    "stale_days": 2,
+    "max_gp": 82,
 }
+NUMERIC_KEYS = {k for k, v in DEFAULTS.items() if isinstance(v, (int, float))}
 
-# Yahoo team abbreviations (several variants, longest tried first)
-TEAMS = {
-    "ANA", "ARI", "BOS", "BUF", "CGY", "CAR", "CHI", "COL", "CBJ", "CLS", "DAL",
-    "DET", "EDM", "FLA", "LA", "LAK", "MIN", "MTL", "MON", "NJ", "NJD", "NSH",
-    "NAS", "NYI", "NYR", "OTT", "PHI", "PIT", "SJ", "SJS", "SEA", "STL", "TB",
-    "TBL", "TOR", "UTA", "UTAH", "VAN", "VGK", "VEG", "WSH", "WAS", "WPG",
-}
-TEAMS_BY_LEN = sorted(TEAMS, key=len, reverse=True)
+WARNINGS = []
 
-NOTE_SUFFIXES = ["No new player Notes", "New Player Note", "Player Note"]
-TAG_RE = re.compile(r"(IR-LT|IR-NR|IR|DTD|NA|O)$")
-POS_RE = re.compile(r" - ((?:C|LW|RW|D|G)(?:,(?:C|LW|RW|D|G))*)\s*$")
-PUA_RE = re.compile(r"[\ue000-\uf8ff]")
+
+def warn(msg):
+    if msg not in WARNINGS:
+        WARNINGS.append(msg)
+    print("WARNING:", msg)
 
 
 # ----------------------------------------------------------------------------
-# HELPERS
+# SMALL HELPERS
 # ----------------------------------------------------------------------------
 
 def clean_text(v):
     if v is None:
         return ""
-    return PUA_RE.sub("", str(v)).strip()
+    return str(v).strip()
 
 
 def to_num(v):
-    """Yahoo cells: numbers, '-', '', or '33%'. Blank or '-' = 0."""
+    """Yahoo cells: numbers, '-' for none, sometimes strings."""
     if v is None:
         return 0.0
     if isinstance(v, bool):
         return float(v)
     if isinstance(v, (int, float)):
         return float(v)
-    s = clean_text(v).replace(",", "")
+    s = str(v).strip().replace(",", "")
     if s in ("", "-", "--", "N/A"):
         return 0.0
-    pct = s.endswith("%")
-    s = s.rstrip("%")
+    if s.endswith("%"):
+        try:
+            return float(s[:-1]) / 100.0
+        except ValueError:
+            return 0.0
     try:
-        x = float(s)
+        return float(s)
     except ValueError:
         return 0.0
-    return x / 100.0 if pct else x
 
 
 def to_own(v):
+    """% Ros arrives as a fraction (0.87) or a percent (87). Return percent."""
     x = to_num(v)
-    return x / 100.0 if x > 1.0 else x
+    return round(x * 100 if x <= 1 else x, 1)
+
+
+def to_minutes(v):
+    """MPG / MIN*: Google reads Yahoo's 'mm:ss' as hours:minutes.
+    A '34:00' cell arrives as 1 day 10 hours, so minutes = the value in hours."""
+    if v is None:
+        return 0.0
+    if isinstance(v, timedelta):
+        return v.total_seconds() / 3600.0
+    if isinstance(v, dtime):
+        return v.hour + v.minute / 60.0 + v.second / 3600.0
+    if isinstance(v, datetime):
+        # 1899-12-31 style serial dates: hours past the epoch day
+        base = datetime(1899, 12, 30)
+        return (v - base).total_seconds() / 3600.0
+    if isinstance(v, (int, float)):
+        return float(v) * 24.0  # fraction of a day
+    s = str(v).strip()
+    m = re.match(r"^(\d+):(\d{1,2})$", s)
+    if m:
+        return int(m.group(1)) + int(m.group(2)) / 60.0
+    return to_num(s)
 
 
 def fold(s):
+    """Accent-folded, lowercase, no periods/apostrophes, single spaces."""
     s = unicodedata.normalize("NFKD", s)
     s = "".join(ch for ch in s if not unicodedata.combining(ch))
-    s = s.lower().replace(".", "").replace("'", "").replace("\u2019", "")
-    return re.sub(r"\s+", " ", s).strip()
+    s = s.replace("ı", "i").replace("ø", "o").replace("đ", "d").replace("ł", "l")
+    s = s.lower()
+    s = re.sub(r"[.'\u2019]", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
 
 
-def pos_group(positions):
-    if not positions:
-        return "F"
-    first = positions[0]
-    if first == "G":
-        return "G"
-    if first == "D":
-        return "D"
-    return "F"
+NAME_SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "v"}
 
 
-NAME_FIXES = {}  # folded raw name -> replacement name (filled from Name Fixes tab)
+def last_name(name):
+    """Last name for the mismatch check, ignoring suffixes like Jr. or III."""
+    parts = fold(name).split()
+    while len(parts) > 1 and parts[-1] in NAME_SUFFIXES:
+        parts.pop()
+    return parts[-1] if parts else ""
 
 
-def parse_name(raw):
-    """'Sebastian AhoPlayer NoteCAR - C\\n7:00 pm vs VAN' -> dict, or None."""
-    if not isinstance(raw, str):
-        return None
-    line = PUA_RE.sub("", raw.split("\n")[0]).strip()
-    m = POS_RE.search(line)
-    if not m:
-        return None
-    positions = m.group(1).split(",")
-    head = line[: m.start()]
+def r1(x):
+    return None if x is None else round(x, 1)
 
-    team = None
-    for ab in TEAMS_BY_LEN:
-        if head.upper().endswith(ab) and head[-len(ab):].isalpha():
-            team = ab
-            break
-    if team is None:
-        mt = re.search(r"([A-Z]{2,4})$", head)
-        if not mt:
-            return None
-        team = mt.group(1)
-    name = head[: -len(team)]
 
-    tag = None
-    for _ in range(2):
-        for suf in NOTE_SUFFIXES:
-            if name.lower().endswith(suf.lower()):
-                name = name[: -len(suf)]
-        mt = TAG_RE.search(name)
-        if mt and tag is None:
-            before = name[: mt.start()]
-            if before and (before[-1].islower() or before[-1] in ".'"):
-                tag = mt.group(1)
-                name = before
-    name = re.sub(r"\s+", " ", name).strip()
-    if not name:
-        return None
-
-    fixed = NAME_FIXES.get(fold(name))
-    if fixed:
-        name = fixed
-    group = pos_group(positions)
-    return {
-        "name": name,
-        "team": team,
-        "pos": positions,
-        "group": group,
-        "tag": tag,
-        "key": f"{fold(name)}|{group}",
-    }
+def r2(x):
+    return None if x is None else round(x, 2)
 
 
 # ----------------------------------------------------------------------------
-# WORKBOOK READING
+# NAME PARSING (SPEC section 5)
+# ----------------------------------------------------------------------------
+
+def strip_tail(name):
+    """Remove trailing note text and injury tag. Runs twice (tag can sit
+    before or after the note text)."""
+    tag = ""
+    for _ in range(2):
+        for note in NOTE_TEXT:
+            if name.endswith(note):
+                name = name[: -len(note)].rstrip()
+        for t in TAGS:
+            if name.endswith(t) and len(name) > len(t):
+                prev = name[-len(t) - 1]
+                if prev.islower() or prev in ".'\u2019":
+                    tag = tag or t
+                    name = name[: -len(t)].rstrip()
+                    break
+    return name.strip(), tag
+
+
+def parse_name(raw):
+    """Returns dict(name, team, pos[list], tag) or None."""
+    if raw is None:
+        return None
+    s = str(raw).split("\n")[0]
+    s = re.sub(r"[\ue000-\uf8ff]", "", s).strip()
+    m = re.search(r"([A-Z]+)\s*-\s*([GFC](?:\s*,\s*[GFC])*)\s*$", s)
+    if not m:
+        return None
+    caps = m.group(1)
+    team = ""
+    for n in range(min(4, len(caps)), 1, -1):
+        if caps[-n:] in NBA_TEAMS:
+            team = caps[-n:]
+            break
+    if not team:
+        team = caps[-3:]
+    head = s[: m.start(1)] + caps[: len(caps) - len(team)]
+    pos = [p.strip() for p in m.group(2).split(",") if p.strip()]
+    name, tag = strip_tail(head.strip())
+    if not name:
+        return None
+    return {"name": name, "team": team, "pos": pos, "tag": tag}
+
+
+# ----------------------------------------------------------------------------
+# WORKBOOK ACCESS
 # ----------------------------------------------------------------------------
 
 def download(url, tries=3):
     last = None
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "td-my-team/1.0"})
-            with urllib.request.urlopen(req, timeout=120) as r:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=60) as r:
                 data = r.read()
             if data[:2] != b"PK":
-                raise ValueError("Response is not an .xlsx file (sheet not published?)")
+                raise ValueError("Download is not an .xlsx file")
             return data
         except Exception as e:  # noqa: BLE001
             last = e
             print(f"Download attempt {i + 1} failed: {e}")
             time.sleep(5 * (i + 1))
-    raise SystemExit(f"ERROR: could not download sheet: {last}")
+    raise RuntimeError(f"Sheet download failed: {last}")
 
 
-def sheet_rows(wb, title):
-    if title not in wb.sheetnames:
-        return None
-    return [list(r) for r in wb[title].iter_rows(values_only=True)]
+def norm_tab(s):
+    return clean_text(s).lower()[:31]
 
 
-def cell(rows, r, c):
-    if r < 0 or r >= len(rows):
-        return None
-    row = rows[r]
-    return row[c] if 0 <= c < len(row) else None
-
-
-def find_table(rows, kind):
-    """Find the first complete Yahoo table of this kind.
-
-    Avg/total layout: label cell and column names on the same row ('GP*' nearby).
-    Team log layout:  label row, then a names row with 'Name' one column right.
-    Helper columns ('3 lines', 'Clean 1', ...) and mirrored copies are skipped
-    because they lack the required stat columns.
-    Returns (records, column_map, pull_date_text) or (None, None, None).
-    """
-    if not rows:
-        return None, None, None
-    label = TABLE_LABEL[kind]
-    for r, row in enumerate(rows):
-        for c, v in enumerate(row):
-            if clean_text(v) != label:
-                continue
-            same_row = [clean_text(cell(rows, r, j)) for j in range(c, c + 7)]
-            if "GP*" in same_row:
-                hdr, namecol = r, c
-            elif clean_text(cell(rows, r + 1, c + 1)) == "Name":
-                hdr, namecol = r + 1, c + 1
-            else:
-                continue
-            cmap, opp = {}, None
-            for j in range(c, c + 25):
-                h = clean_text(cell(rows, hdr, j))
-                if not h:
-                    continue
-                if h in ("3 lines", "2 lines", "Prelim") or h.startswith("Clean"):
-                    break
-                if h.startswith("Opp:"):
-                    opp = h
-                if h in cmap:
-                    break
-                cmap[h] = j
-            if any(k not in cmap for k in REQUIRED_COLS[kind]):
-                continue
-            recs, started = [], False
-            for i in range(hdr + 1, len(rows)):
-                raw = cell(rows, i, namecol)
-                if isinstance(raw, str) and " - " in raw:
-                    started = True
-                    rec = {"raw": raw}
-                    for h, j in cmap.items():
-                        rec[h] = cell(rows, i, j)
-                    recs.append(rec)
-                elif started:
-                    break
-                elif i > hdr + 3:
-                    break
-            return recs, cmap, opp
-    return None, None, None
-
-
-def fan_pts_from_stats(rec, kind):
-    w = SKATER_WEIGHTS if kind == "skater" else GOALIE_WEIGHTS
-    return sum(to_num(rec.get(k)) * wt for k, wt in w.items())
-
-
-def toi_minutes(v):
-    """Yahoo 'mm:ss' arrives from Google as a time or duration read as h:mm.
-    Returns minutes, or None if blank."""
-    if v is None or v == "":
-        return None
-    if isinstance(v, timedelta):
-        return v.total_seconds() / 3600.0
-    if isinstance(v, dtime):
-        return v.hour + v.minute / 60.0 + v.second / 3600.0
-    if isinstance(v, datetime):
-        return v.hour + v.minute / 60.0 + v.second / 3600.0
-    if isinstance(v, (int, float)):
-        return float(v) * 24.0 if float(v) < 5 else float(v)
-    m = re.match(r"^\s*(\d+):(\d{1,2})", str(v))
-    if m:
-        return int(m.group(1)) + int(m.group(2)) / 60.0
+def find_sheet(wb, wanted):
+    """Match ignoring case, outer spaces, and the 31-character xlsx limit."""
+    target = norm_tab(wanted)
+    for ws in wb.worksheets:
+        if norm_tab(ws.title) == target:
+            return ws
     return None
 
 
-def stat_line(rec, kind, per_game_source, gp):
-    """Per-game stat line. per_game_source=True when the tab already holds averages.
-    Goalie TOI* is always a season total in Yahoo's tables."""
-    if gp <= 0:
+def read_config(wb):
+    cfg = dict(DEFAULTS)
+    ws = find_sheet(wb, TAB_CONFIG)
+    if ws is None:
+        warn("No Config tab found. Using built-in defaults.")
+        return cfg
+    for row in ws.iter_rows(values_only=True):
+        if not row or row[0] is None:
+            continue
+        k = clean_text(row[0])
+        if k.lower() == "key" or k not in DEFAULTS:
+            continue
+        v = row[1] if len(row) > 1 else None
+        if v is None or clean_text(v) == "":
+            continue
+        if k in NUMERIC_KEYS:
+            cfg[k] = to_num(v)
+        else:
+            cfg[k] = clean_text(v)
+    return cfg
+
+
+def get_tab(wb, cfg, key, required=True):
+    """Config name first; fall back to the default name with a warning."""
+    name = cfg[key]
+    ws = find_sheet(wb, name)
+    if ws is None and name != DEFAULTS[key]:
+        ws = find_sheet(wb, DEFAULTS[key])
+        if ws is not None:
+            warn(f"Config {key} says '{name}', which isn't a tab. "
+                 f"Used '{DEFAULTS[key]}'. Update the Config tab.")
+    if ws is None and required:
+        warn(f"Missing tab: '{name}' ({key}).")
+    return ws
+
+
+def find_table(ws):
+    """Locate the header row by text (a 'GP*' cell), never fixed positions.
+    Returns (header_row_index, colmap, opp_header) or None."""
+    rows = list(ws.iter_rows(values_only=True))
+    for ri, row in enumerate(rows):
+        cells = [clean_text(c) for c in row]
+        if "GP*" not in cells:
+            continue
+        cmap = {}
+        opp = ""
+        for ci, c in enumerate(cells):
+            if not c:
+                continue
+            key = None
+            if c in ("Players", "Name"):
+                key = "name"
+            elif c == "GP*":
+                key = "gp"
+            elif c.startswith("Fan Pts"):
+                key = "fp"
+            elif c == "% Ros":
+                key = "own"
+            elif c in ("MPG", "MIN*"):
+                key = "mpg"
+            elif c == "Roster Status":
+                key = "rstatus"
+            elif c.startswith("Opp:"):
+                key = "opp"
+                opp = c
+            elif c in STATS:
+                key = c
+            if key and key not in cmap:
+                cmap[key] = ci
+        if "name" in cmap and all(s in cmap for s in STATS):
+            return rows, ri, cmap, opp
+    return None
+
+
+def read_players(ws, label, name_fixes, is_log=False):
+    """Return list of player records from one tab."""
+    out = []
+    if ws is None:
+        return out, ""
+    found = find_table(ws)
+    if not found:
+        warn(f"Tab '{ws.title}' has no readable player table.")
+        return out, ""
+    rows, hr, cmap, opp = found
+    seen_keys = {}
+    for row in rows[hr + 1:]:
+        if cmap["name"] >= len(row):
+            continue
+        raw = row[cmap["name"]]
+        txt = clean_text(raw)
+        if not txt:
+            continue
+        if txt.lower().startswith("totals"):
+            break
+        p = parse_name(raw)
+        if p is None:
+            warn(f"Unreadable name on '{ws.title}': {txt.splitlines()[0][:60]}")
+            continue
+        fixed = name_fixes.get(fold(p["name"]))
+        if fixed:
+            p["name"] = fixed
+        p["key"] = fold(p["name"])
+
+        def g(k):
+            ci = cmap.get(k)
+            return row[ci] if ci is not None and ci < len(row) else None
+
+        p["gp"] = to_num(g("gp"))
+        p["st"] = {s: to_num(g(s)) for s in STATS}
+        p["fp_yahoo"] = to_num(g("fp")) if "fp" in cmap else None
+        p["own"] = to_own(g("own")) if "own" in cmap else None
+        p["min_total"] = None
+        mv = to_minutes(g("mpg")) if "mpg" in cmap else 0.0
+        if is_log:
+            p["min_total"] = None  # team log MIN* is usually '-'
+        p["mpg"] = mv if not is_log else None
+        p["rstatus"] = clean_text(g("rstatus")) if "rstatus" in cmap else ""
+        if p["key"] in seen_keys and seen_keys[p["key"]] != (p["team"], tuple(p["pos"])):
+            warn(f"Two different players share the name key '{p['name']}' on "
+                 f"'{ws.title}'. Add a Name Fixes row for one of them.")
+        seen_keys[p["key"]] = (p["team"], tuple(p["pos"]))
+        p["src"] = label
+        out.append(p)
+    return out, opp
+
+
+def read_two_col(wb, title):
+    ws = find_sheet(wb, title)
+    out = {}
+    if ws is None:
+        return out
+    for row in ws.iter_rows(values_only=True):
+        if not row or len(row) < 2 or row[0] is None or row[1] is None:
+            continue
+        a, b = clean_text(row[0]), clean_text(row[1])
+        if not a or not b or a.lower() in ("player", "raw name"):
+            continue
+        out[fold(a)] = b
+    return out
+
+
+def pull_date_from(opp, today):
+    m = re.search(r"(\d{1,2})/(\d{1,2})", opp or "")
+    if not m:
         return None
-    keys = SKATER_WEIGHTS if kind == "skater" else GOALIE_WEIGHTS
-    div = 1.0 if per_game_source else gp
-    line = {k: to_num(rec.get(k)) / div for k in keys}
-    if kind == "skater":
-        toi = toi_minutes(rec.get("TOI/G*"))
-        line["TOI"] = toi
-    else:
-        ga_tot, sv_tot = line["GA"] * gp, line["SV"] * gp
-        line["SVP"] = sv_tot / (sv_tot + ga_tot) if (sv_tot + ga_tot) > 0 else None
-        toi = toi_minutes(rec.get("TOI*"))
-        line["GAA"] = (ga_tot * 60.0 / toi) if toi else None
-    return line
+    mo, dy = int(m.group(1)), int(m.group(2))
+    try:
+        d = date(today.year, mo, dy)
+    except ValueError:
+        return None
+    if d > today + timedelta(days=31):
+        d = date(today.year - 1, mo, dy)
+    return d
 
 
 # ----------------------------------------------------------------------------
@@ -342,359 +429,241 @@ def stat_line(rec, kind, per_game_source, gp):
 # ----------------------------------------------------------------------------
 
 def main():
-    args = sys.argv[1:]
-    if "--file" in args:
-        path = args[args.index("--file") + 1]
-        with open(path, "rb") as f:
-            blob = f.read()
-        source = os.path.basename(path)
-    else:
-        blob = download(SHEET_URL)
-        source = "published Google Sheet"
+    local = None
+    if "--file" in sys.argv:
+        local = sys.argv[sys.argv.index("--file") + 1]
+    try:
+        data = open(local, "rb").read() if local else download(SHEET_URL)
+    except Exception as e:  # noqa: BLE001
+        print(f"STOP: {e}. Live site left unchanged.")
+        sys.exit(1)
 
-    wb = openpyxl.load_workbook(io.BytesIO(blob), data_only=True, read_only=True)
-    health = {"tabs": [], "warnings": [], "unparsed": [], "name_checks": []}
-    pull_dates = set()
+    wb = openpyxl.load_workbook(io.BytesIO(data), data_only=True)
+    cfg = read_config(wb)
+    W = {s: float(cfg["w_" + s]) for s in STATS}
+    pool_size = int(cfg["pool_size"])
+    flag_w = {"season": "season", "l30": "l30", "l14": "l14"}.get(
+        clean_text(cfg["flag_window"]).lower(), "l30")
 
-    def note_tab(title, kind, n, required=True):
-        health["tabs"].append({"tab": title, "kind": kind, "rows": n})
-        if n is None:
-            if required:
-                health["warnings"].append(f"Missing tab: {title}")
-        elif n == 0:
-            health["warnings"].append(f"Empty table: {title} ({kind})")
+    name_fixes = read_two_col(wb, TAB_NAMEFIX)
+    overrides = {k: STATUS_ALIASES.get(v.lower()) for k, v in
+                 read_two_col(wb, TAB_OVERRIDES).items()}
 
-    def parsed(recs, title):
-        out = []
-        for rec in recs or []:
-            p = parse_name(rec["raw"])
-            if p is None:
-                health["unparsed"].append({"tab": title, "raw": clean_text(rec["raw"])[:80]})
-                continue
-            p["rec"] = rec
-            out.append(p)
-        return out
+    def fp_of(st):
+        return sum(st[s] * W[s] for s in STATS)
 
-    # ---- optional tabs -----------------------------------------------------
-    overrides = {}
-    rows = sheet_rows(wb, TAB_NAMEFIX)
-    if rows:
-        for r in rows[1:]:
-            if len(r) >= 2 and r[0] and r[1]:
-                NAME_FIXES[fold(clean_text(r[0]))] = clean_text(r[1])
-    rows = sheet_rows(wb, TAB_OVERRIDES)
-    if rows:
-        for r in rows[1:]:
-            if len(r) >= 2 and r[0] and r[1]:
-                overrides[fold(clean_text(r[0]))] = clean_text(r[1]).title()
+    now_ny = datetime.now(NY)
+    today = now_ny.date()
 
-    # ---- my team (OVERALL) -------------------------------------------------
-    players = {}
-
-    def get_player(p):
-        pl = players.get(p["key"])
-        if pl is None:
-            pl = {
-                "key": p["key"], "name": p["name"], "team": p["team"],
-                "pos": p["pos"], "group": p["group"], "tag": p["tag"],
-                "on_roster": False, "overall": {}, "forme": None,
-            }
-            players[p["key"]] = pl
-        return pl
-
-    scoring_mismatch = 0
+    # ---- My team tabs -------------------------------------------------------
+    mine = {}
+    opp_hdr = ""
     for w in WINDOWS:
-        title = TAB_MYTEAM[w]
-        rows = sheet_rows(wb, title)
-        for kind in ("skater", "goalie"):
-            recs, cmap, opp = find_table(rows, kind)
-            note_tab(title, kind, None if rows is None else len(recs or []))
-            if opp:
-                pull_dates.add(opp)
-            for p in parsed(recs, title):
-                rec = p["rec"]
-                gp = to_num(rec.get("GP*"))
-                ppg = to_num(rec.get("Fan Pts"))
-                if gp > 0 and abs(fan_pts_from_stats(rec, kind) - ppg) > 0.5:
-                    scoring_mismatch += 1
-                if w == "season" and gp > MAX_GP:
-                    health["warnings"].append(
-                        f"{title}: {p['name']} shows {int(gp)} GP. Season link may point to last season.")
-                pl = get_player(p)
-                pl["on_roster"] = True
-                # roster row is the freshest source for team / tag / positions
-                pl.update({"team": p["team"], "pos": p["pos"], "tag": p["tag"]})
-                pl["overall"][w] = {
-                    "gp": gp,
-                    "ppg": ppg if gp > 0 else None,
-                    "own": to_own(rec.get("% Ros")),
-                    "stats": stat_line(rec, kind, True, gp),
-                }
-    if scoring_mismatch:
-        health["warnings"].append(
-            f"{scoring_mismatch} my-team rows where Yahoo Fan Pts differ from the scoring weights. "
-            "Check league scoring settings.")
+        recs, opp = read_players(get_tab(wb, cfg, f"tab_my_{w}"), w, name_fixes)
+        mine[w] = {r["key"]: r for r in recs}
+        if w == "season":
+            opp_hdr = opp
+        for r in recs:
+            calc = fp_of(r["st"])
+            if r["fp_yahoo"] is not None and abs(calc - r["fp_yahoo"]) > 0.5:
+                warn(f"Scoring mismatch: {r['name']} ({WINDOW_LABEL[w]}) Yahoo "
+                     f"{r['fp_yahoo']:.1f} vs weights {calc:.1f}.")
+            if w == "season" and r["gp"] > cfg["max_gp"]:
+                warn(f"{r['name']} shows {int(r['gp'])} GP on the Season tab. "
+                     f"Check the season year in the link.")
+            if cfg["team_name"] and r["rstatus"] and r["rstatus"] != cfg["team_name"]:
+                warn(f"{r['name']} on '{WINDOW_LABEL[w]}' tab shows roster "
+                     f"'{r['rstatus']}', not '{cfg['team_name']}'.")
 
-    # ---- team log (FOR ME) -------------------------------------------------
-    for kind, title in TAB_TEAMLOG.items():
-        rows = sheet_rows(wb, title)
-        recs, _, _ = find_table(rows, kind)
-        note_tab(title, kind, None if rows is None else len(recs or []))
-        for p in parsed(recs, title):
-            rec = p["rec"]
-            gp = to_num(rec.get("GP*"))
-            pts = fan_pts_from_stats(rec, kind)
-            pl = get_player(p)
-            pl["forme"] = {"gp": gp, "pts": pts, "ppg": pts / gp if gp > 0 else None,
-                           "stats": stat_line(rec, kind, False, gp)}
+    if not mine["season"]:
+        print("STOP: My Team Season table is empty or missing. Live site left unchanged.")
+        sys.exit(1)
 
-    roster_count = sum(1 for p in players.values() if p["on_roster"])
-    if roster_count == 0:
-        raise SystemExit("ERROR: no players found on the my-team tabs. Not overwriting the site.")
+    log_recs, _ = read_players(get_tab(wb, cfg, "tab_team_log"), "forme",
+                               name_fixes, is_log=True)
+    log = {r["key"]: r for r in log_recs}
 
-    # ---- free agents + baselines ------------------------------------------
-    fa = {w: {} for w in WINDOWS}  # fa[w][pos] = list of rows
-    for w in WINDOWS:
-        for pos in POSITIONS:
-            title = fa_tab(pos, w)
-            kind = "goalie" if pos == "G" else "skater"
-            rows = sheet_rows(wb, title)
-            recs, cmap, opp = find_table(rows, kind)
-            note_tab(title, kind, None if rows is None else len(recs or []))
-            if opp:
-                pull_dates.add(opp)
-            out = []
-            for p in parsed(recs, title):
-                rec = p["rec"]
-                gp = to_num(rec.get("GP*"))
-                fp = to_num(rec.get("Fan Pts"))
-                if pos == "G":          # goalie tabs are totals
-                    total, ppg = fp, (fp / gp if gp > 0 else 0.0)
-                else:                   # skater tabs are per-game averages
-                    ppg, total = fp, fp * gp
-                if w == "season" and gp > MAX_GP:
-                    health["warnings"].append(
-                        f"{title}: {p['name']} shows {int(gp)} GP. Season link may point to last season.")
-                out.append({
-                    "key": p["key"], "name": p["name"], "team": p["team"], "pos": p["pos"],
-                    "tag": p["tag"], "own": to_own(rec.get("% Ros")),
-                    "gp": gp, "ppg": ppg, "total": total,
-                    "stats": stat_line(rec, kind, pos != "G", gp),
-                })
-            fa[w][pos] = out
-
-    baselines = {w: {} for w in WINDOWS}
-    for w in WINDOWS:
-        for bpos in BASE_POSITIONS:
-            if bpos == "FWD":
-                seen, rows_ = set(), []
-                for p in ("C", "LW", "RW"):
-                    for r in fa[w].get(p, []):
-                        if r["key"] not in seen:
-                            seen.add(r["key"])
-                            rows_.append(r)
-            else:
-                rows_ = fa[w].get(bpos, [])
-            floor = OWN_FLOOR[bpos]
-            min_gp, early = MIN_GP[w], False
-            qual = [r for r in rows_ if r["own"] >= floor and r["gp"] >= min_gp]
-            if w == "season" and len(qual) < POOL_SIZE:
-                min_gp, early = EARLY_SEASON_MIN_GP, True
-                qual = [r for r in rows_ if r["own"] >= floor and r["gp"] >= min_gp]
-            pool = sorted(qual, key=lambda r: r["ppg"], reverse=True)[:POOL_SIZE]
-            gp_sum = sum(r["gp"] for r in pool)
-            baselines[w][bpos] = {
-                "ppg": (sum(r["total"] for r in pool) / gp_sum) if gp_sum else None,
-                "n": len(pool),
-                "min_gp": min_gp,
-                "floor": floor,
-                "early": early,
-                "members": [r["key"] for r in pool],
-            }
-
-    # ---- comparisons (per eligible position + all forwards) ---------------
-    def compare(pl, w, ppg, gp):
-        """Returns {pos: {base, gap, pts}} for every eligible position with a line,
-        plus 'FWD' for forwards. The site picks the one matching the row it shows."""
-        if ppg is None or not gp:
-            return {}
-        out = {}
-        keys = [p for p in pl["pos"] if p in POSITIONS]
-        if pl["group"] == "F":
-            keys.append("FWD")
-        for k in keys:
-            base = baselines[w].get(k, {}).get("ppg")
-            if base is not None:
-                out[k] = {"base": base, "gap": ppg - base, "pts": (ppg - base) * gp}
-        return out
-
-    out_players = []
-    for pl in players.values():
-        fkey = fold(pl["name"])
-        if fkey in overrides:
-            status = overrides[fkey]
-        elif pl["on_roster"]:
-            status = "Injured" if pl["tag"] in INJURED_TAGS else "Active"
-        else:
-            status = "Cut"
-        status = STATUS_ALIASES.get(status.lower(), "Active")
-
-        forme = None
-        if pl["forme"] and pl["forme"]["gp"] > 0:
-            f = dict(pl["forme"])
-            f["cmp"] = compare(pl, "season", f["ppg"], f["gp"])
-            forme = f
-
-        overall = None
-        if pl["on_roster"]:
-            overall = {}
-            for w in WINDOWS:
-                o = pl["overall"].get(w)
-                if not o:
-                    overall[w] = None
-                    continue
-                o = dict(o)
-                o["cmp"] = compare(pl, w, o["ppg"], o["gp"])
-                overall[w] = o
-
-        # flags per comparison key (row-level: Tkachuk can be flagged at LW, not RW)
-        flags_by = {}
-        l30 = overall.get("l30") if overall else None
-        if l30:
-            for k, c in l30["cmp"].items():
-                fl = []
-                if c["gap"] < 0:
-                    fl.append("poor")
-                if c["pts"] < REPLACE_PTS:
-                    fl.append("replace")
-                flags_by[k] = fl
-        trend = None
-        if overall:
-            ssn = overall.get("season")
-            if l30 and ssn and l30.get("ppg") is not None and ssn.get("ppg"):
-                trend = l30["ppg"] / ssn["ppg"] - 1
-        pflags = []
-        if forme and forme["gp"] < SMALL_SAMPLE_STARTS:
-            pflags.append("small")
-        if not forme and pl["on_roster"]:
-            pflags.append("nostarts")
-
-        out_players.append({
-            "key": pl["key"], "name": pl["name"], "team": pl["team"], "pos": pl["pos"],
-            "group": pl["group"], "tag": pl["tag"], "status": status,
-            "forme": forme, "overall": overall, "trend": trend,
-            "flags_by": flags_by, "pflags": pflags,
-        })
-
-    # possible name mismatches: a Cut player sharing a last name + group with a roster player
-    roster_last = {}
-    for p in out_players:
-        if p["status"] != "Cut":
-            roster_last.setdefault((fold(p["name"]).split(" ")[-1], p["group"]), []).append(p["name"])
-    for p in out_players:
-        if p["status"] == "Cut":
-            hits = roster_last.get((fold(p["name"]).split(" ")[-1], p["group"]))
-            if hits:
-                health["name_checks"].append(
-                    f"Team log '{p['name']}' may be the same player as roster '{hits[0]}'. "
-                    "If so, add a row to a 'Name Fixes' tab.")
-
-    # ---- waiver wire (C, LW, RW, F, D, G) ---------------------------------
-    active = [p for p in out_players if p["status"] == "Active" and p["overall"]]
-    waiver = {w: {} for w in WINDOWS}
-    for w in WINDOWS:
-        for wpos in POSITIONS + ["F"]:
-            bkey = "FWD" if wpos == "F" else wpos
-            b = baselines[w][bkey]
-            if wpos == "F":
-                seen, src = set(), []
-                for p in ("C", "LW", "RW"):
-                    for r in fa[w].get(p, []):
-                        if r["key"] not in seen:
-                            seen.add(r["key"])
-                            src.append(r)
-                elig = lambda p: p["group"] == "F"
-            else:
-                src = fa[w].get(wpos, [])
-                elig = lambda p, wp=wpos: wp in p["pos"]
-            mine = [p for p in active if elig(p)
-                    and p["overall"].get(w) and p["overall"][w]["ppg"] is not None]
-            weakest = min(mine, key=lambda p: p["overall"][w]["ppg"]) if mine else None
-            rows_ = []
-            for r in sorted(src, key=lambda r: r["ppg"], reverse=True):
-                reasons = []
-                if r["own"] < b["floor"]:
-                    reasons.append(f"under {int(round(b['floor'] * 100))}% owned")
-                if r["gp"] < b["min_gp"]:
-                    reasons.append(f"under {b['min_gp']} GP")
-                upgrade = None
-                if not reasons and weakest:
-                    gain = r["ppg"] - weakest["overall"][w]["ppg"]
-                    if gain > 0:
-                        upgrade = {"over": weakest["name"], "gain": gain}
-                rows_.append({
-                    **r,
-                    "gap": (r["ppg"] - b["ppg"]) if b["ppg"] is not None else None,
-                    "pool": r["key"] in b["members"],
-                    "excluded": reasons,
-                    "upgrade": upgrade,
-                })
-            waiver[w][wpos] = rows_
-
-    # ---- health ------------------------------------------------------------
-    now_utc = datetime.now(timezone.utc)
-    now_et = now_utc - timedelta(hours=4)  # display only; DST drift of 1h is harmless
-    pull = None
-    if pull_dates:
-        txt = sorted(pull_dates)[0]
-        m = re.search(r"(\d{1,2})/(\d{1,2})", txt)
-        if m:
-            mo, dy = int(m.group(1)), int(m.group(2))
-            yr = now_et.year - (1 if mo > now_et.month + 1 else 0)
-            pull = datetime(yr, mo, dy).date()
-        if len(pull_dates) > 1:
-            health["warnings"].append(
-                f"Tabs show different pull dates ({', '.join(sorted(pull_dates))}). Some imports may be stale.")
+    pull = pull_date_from(opp_hdr, today)
     if pull is None:
-        health["warnings"].append("Could not read the pull date from the 'Opp:' header.")
-    elif (now_et.date() - pull).days > STALE_DAYS:
-        health["warnings"].append(
-            f"Sheet data is from {pull.isoformat()}, more than {STALE_DAYS} days old. Open the sheet to refresh imports.")
+        warn("Couldn't read the pull date (Opp: M/D header) on My Team Season.")
+    elif (today - pull).days > cfg["stale_days"]:
+        warn(f"Data looks stale: sheet pulled {pull:%b %d}, "
+             f"{(today - pull).days} days ago.")
 
-    data = {
-        "generated_utc": now_utc.isoformat(timespec="seconds"),
-        "generated_et": now_et.strftime("%Y-%m-%d %H:%M"),
-        "pull_date": pull.isoformat() if pull else None,
-        "source": source,
-        "team_name": MY_TEAM_NAME,
-        "season": SEASON_LABEL,
-        "config": {
-            "own_floor": OWN_FLOOR, "min_gp": MIN_GP, "early_min_gp": EARLY_SEASON_MIN_GP,
-            "pool_size": POOL_SIZE, "small_sample": SMALL_SAMPLE_STARTS,
-            "replace_pts": REPLACE_PTS, "trend_pct": TREND_PCT,
-            "skater_weights": SKATER_WEIGHTS, "goalie_weights": GOALIE_WEIGHTS,
+    # ---- Free agents and replacement lines ---------------------------------
+    fa = {}
+    lines = {}
+    for w in WINDOWS:
+        allrecs = []
+        for page in ("1", "2"):
+            recs, _ = read_players(get_tab(wb, cfg, f"tab_fa_{w}_{page}"), w, name_fixes)
+            allrecs.extend(recs)
+        seen = set()
+        recs = []
+        for r in allrecs:
+            if r["key"] in seen:
+                continue
+            seen.add(r["key"])
+            r["fp"] = r["fp_yahoo"] if r["fp_yahoo"] is not None else fp_of(r["st"])
+            r["ppg"] = r["fp"] / r["gp"] if r["gp"] > 0 else None
+            if w == "season" and r["gp"] > cfg["max_gp"]:
+                warn(f"Free agent {r['name']} shows {int(r['gp'])} GP on the Season "
+                     f"tab. Check the season year in the link.")
+            recs.append(r)
+        max_gp = max([r["gp"] for r in recs], default=0)
+        min_gp = max(1, math.ceil(cfg["min_gp_pct"] * max_gp - 1e-9))
+        for r in recs:
+            r["q"] = r["gp"] >= min_gp
+            r["why"] = "" if r["q"] else f"GP {int(r['gp'])} < {min_gp}"
+        lines[w] = {}
+        for L in LINES:
+            elig = [r for r in recs if r["q"] and (L == "ALL" or L in r["pos"])]
+            elig.sort(key=lambda r: r["ppg"] or 0, reverse=True)
+            pool = elig[:pool_size]
+            gp = sum(r["gp"] for r in pool)
+            ppg = sum(r["fp"] for r in pool) / gp if gp else None
+            lines[w][L] = {
+                "ppg": r2(ppg), "n": len(pool), "min_gp": min_gp,
+                "max_gp": int(max_gp),
+                "members": [r["name"] for r in pool],
+            }
+            for r in pool:
+                r.setdefault("pool", []).append(L)
+            if len(pool) < pool_size:
+                warn(f"{WINDOW_LABEL[w]} {L} line uses only {len(pool)} "
+                     f"free agents (min GP {min_gp}).")
+        fa[w] = [{
+            "name": r["name"], "team": r["team"], "pos": r["pos"], "tag": r["tag"],
+            "wv": r["rstatus"].startswith("W") if r["rstatus"] else False,
+            "own": r["own"], "gp": int(r["gp"]), "fp": r1(r["fp"]),
+            "ppg": r2(r["ppg"]), "mpg": r1(r["mpg"]) if r["gp"] else None,
+            "st": r["st"], "q": r["q"], "why": r["why"], "pool": r.get("pool", []),
+        } for r in recs]
+
+    # ---- Players: roster + team log ----------------------------------------
+    roster_keys = list(mine["season"].keys())
+    for w in ("l30", "l14"):
+        for k in mine[w]:
+            if k not in roster_keys:
+                roster_keys.append(k)
+    keys = roster_keys + [k for k in log if k not in roster_keys]
+
+    roster_last = {}
+    for k in roster_keys:
+        r = mine["season"].get(k) or mine["l30"].get(k) or mine["l14"].get(k)
+        roster_last.setdefault(last_name(r["name"]), []).append(r["name"])
+
+    players = []
+    for k in keys:
+        base = mine["season"].get(k) or mine["l30"].get(k) or mine["l14"].get(k)
+        lg = log.get(k)
+        src = base or lg
+        p = {"name": src["name"], "team": src["team"], "pos": src["pos"],
+             "tag": (base or {}).get("tag", "")}
+        if base is None:
+            p["status"] = "Cut"
+            for other in roster_last.get(last_name(p["name"]), []):
+                warn(f"Possible name mismatch: '{p['name']}' (team log, Cut) vs "
+                     f"'{other}' (roster). Add a Name Fixes row if same player.")
+        elif p["tag"] in INJURED_TAGS:
+            p["status"] = "Injured"
+        else:
+            p["status"] = "Active"
+        if overrides.get(k):
+            p["status"] = overrides[k]
+        p["nostarts"] = base is not None and lg is None
+        p["w"] = {}
+        if lg and lg["gp"] > 0:
+            p["w"]["forme"] = {"gp": int(lg["gp"]), "fp": r1(fp_of(lg["st"])),
+                               "mpg": None, "st": lg["st"]}
+        for w in WINDOWS:
+            r = mine[w].get(k)
+            if r and r["gp"] > 0:
+                p["w"][w] = {"gp": int(r["gp"]), "fp": r1(fp_of(r["st"])),
+                             "mpg": r1(r["mpg"]), "st": r["st"], "own": r["own"]}
+        players.append(p)
+
+    # ---- Comparison rows ----------------------------------------------------
+    def lens(p, lens_key, L):
+        d = p["w"].get(lens_key)
+        line_w = "season" if lens_key == "forme" else lens_key
+        line = lines[line_w][L]["ppg"]
+        if not d or d["gp"] <= 0:
+            return None
+        ppg = d["fp"] / d["gp"]
+        gap = ppg - line if line is not None else None
+        return {"gp": d["gp"], "ppg": r2(ppg), "fp": d["fp"],
+                "gap": r2(gap), "pts": r1(gap * d["gp"]) if gap is not None else None}
+
+    def ratio(a, b):
+        return r2(a / b - 1) if a is not None and b else None
+
+    def make_row(i, p, L, shown_pos):
+        c = {lk: lens(p, lk, L) for lk in ["forme"] + WINDOWS}
+        flags = []
+        fl = c.get(flag_w)
+        if p["status"] != "Cut" and fl:
+            if fl["pts"] is not None and fl["pts"] < cfg["replace_threshold"]:
+                flags.append("Replace?")
+            if fl["gap"] is not None and fl["gap"] < 0:
+                flags.append("Poor performer")
+        notes = list(flags)
+        fm = c["forme"]
+        if fm and fm["gp"] < cfg["small_sample_starts"]:
+            notes.append("Small sample")
+        if p["nostarts"]:
+            notes.append("No starts yet")
+        s, l30, l14 = (p["w"].get(x) for x in WINDOWS)
+        return {
+            "p": i, "pos": shown_pos, "line": L, "c": c, "flags": flags,
+            "notes": notes, "small": bool(fm and fm["gp"] < cfg["small_sample_starts"]),
+            "pt": ratio(l30 and l30["fp"] / l30["gp"], s and s["fp"] / s["gp"]),
+            "mt": ratio(l14 and l14["mpg"], s and s["mpg"]),
+        }
+
+    rows_pos, rows_all = [], []
+    for i, p in enumerate(players):
+        for L in p["pos"]:
+            if L in POSITIONS:
+                rows_pos.append(make_row(i, p, L, L))
+        rows_all.append(make_row(i, p, "ALL", ",".join(p["pos"])))
+
+    # ---- Upgrade over: my weakest Active player per window and line ---------
+    weakest = {}
+    for w in WINDOWS:
+        weakest[w] = {}
+        for L in LINES:
+            cands = [(p["w"][w]["fp"] / p["w"][w]["gp"], p["name"]) for p in players
+                     if p["status"] == "Active" and w in p["w"]
+                     and (L == "ALL" or L in p["pos"])]
+            if cands:
+                ppg, nm = min(cands)
+                weakest[w][L] = {"name": nm, "ppg": r2(ppg)}
+
+    out = {
+        "meta": {
+            "masthead": cfg["masthead"], "team": cfg["team_name"],
+            "season_label": cfg["season_label"],
+            "updated": now_ny.strftime("%a %b %-d, %-I:%M %p ET"),
+            "pull_date": pull.strftime("%a %b %-d") if pull else None,
+            "weights": W, "flag_window": flag_w,
+            "replace_threshold": cfg["replace_threshold"],
+            "ppg_trend_pct": cfg["ppg_trend_pct"], "mpg_trend_pct": cfg["mpg_trend_pct"],
+            "pool_size": pool_size, "min_gp_pct": cfg["min_gp_pct"],
         },
-        "baselines": baselines,
-        "players": out_players,
-        "waiver": waiver,
-        "health": health,
+        "warnings": WARNINGS,
+        "lines": lines,
+        "players": players,
+        "rows": {"pos": rows_pos, "all": rows_all},
+        "fa": fa,
+        "weakest": weakest,
     }
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=1)
-
-    print(f"Source: {source}")
-    print(f"Players: {len(out_players)} ({roster_count} on roster)")
-    for w in WINDOWS:
-        line = ", ".join(
-            f"{p} {baselines[w][p]['ppg']:.1f}" if baselines[w][p]["ppg"] is not None else f"{p} n/a"
-            for p in BASE_POSITIONS)
-        print(f"Baselines {w}: {line}")
-    for msg in health["warnings"] + health["name_checks"]:
-        print("WARNING:", msg)
-    for u in health["unparsed"]:
-        print("UNPARSED:", u)
-    print(f"Wrote {OUT_PATH}")
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    print(f"Wrote {OUT_PATH}: {len(players)} players, "
+          f"{sum(len(v) for v in fa.values())} free agent rows, "
+          f"{len(WARNINGS)} warnings.")
 
 
 if __name__ == "__main__":
