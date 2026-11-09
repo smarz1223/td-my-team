@@ -68,6 +68,16 @@ button{font:inherit; color:inherit}
 #pages button:hover{border-color:#fff; color:#fff}
 #pages button[aria-pressed="true"]{background:#fff; color:var(--navy); border-color:#fff; box-shadow:3px 3px 0 var(--red)}
 tr.mine td{background:#e6eeff}
+.chartwrap{background:#fff; border:1px solid var(--grid); padding:6px 6px 2px; position:relative}
+.chartwrap svg{display:block; width:100%; height:auto; touch-action:manipulation}
+.legend{display:flex; flex-wrap:wrap; gap:4px 16px; font-size:12.5px; margin:0 0 6px}
+.legend span{display:inline-flex; align-items:center; gap:5px}
+.legend i{display:inline-block; width:11px; height:11px; border-radius:50%}
+.tip{position:absolute; pointer-events:none; background:#fff; border:1px solid #9fb0cc; box-shadow:0 2px 8px rgba(14,37,87,.18); padding:6px 9px; font-size:12.5px; line-height:1.45; z-index:4; min-width:170px}
+.tip b{font-size:13px}
+.tip .k{color:var(--soft)}
+svg .dot{cursor:pointer}
+svg .dot:hover, svg .dot.hot{stroke:#0e2557; stroke-width:2.5}
 tr.mine td.name{background:#d6e2fc}
 .tag.mine{color:var(--blue)}
 .clear{border:0; background:none; color:var(--blue); text-decoration:underline; cursor:pointer; font-size:12.5px; padding:3px 0}
@@ -149,6 +159,14 @@ h2.tt{font-size:13px; margin:12px 0 4px; color:var(--soft)}
       Notes: <b>Replace?</b> = Last 30 more than <span id="f-rep"></span> pts under the line. <b>Poor performer</b> = Last 30 PPG under the line.
       <b>Small sample</b> = fewer than <span id="f-small"></span> starts for you. Color scales run against the largest value in each column of the rows shown.
     </p>
+  </section>
+
+  <section id="pg-scatter" hidden>
+    <p class="wireline" id="scatline"></p>
+    <div class="legend" id="scatlegend"></div>
+    <div class="chartwrap" id="scatwrap"><div class="tip" id="tip" hidden></div><div id="scatsvg"></div></div>
+    <p class="foot">X = total fantasy points in the window. Y = fantasy points per game. Dashed line = replacement line for this position and window.
+      Labels show your players and the top 5 qualified free agents by PPG. Hover or tap any dot for details. Turning off "Show my team" or "Disqualified" grays those dots out instead of removing them.</p>
   </section>
 
   <section id="pg-wire" hidden>
@@ -486,6 +504,160 @@ function renderWire(){
     `<div class="wrap">${renderGrid("wire", cols, rows, {col:"ppg", dir:-1}, r => r.mine ? "mine" : "")}</div>`;
 }
 
+/* ============ scatter ============ */
+const SC = {pts:[]};
+function niceStep(range, target){
+  const raw = range / Math.max(1, target);
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const n = raw / mag;
+  return (n < 1.5 ? 1 : n < 3 ? 2 : n < 7 ? 5 : 10) * mag;
+}
+function ticks(lo, hi, target){
+  const st = niceStep(hi - lo, target), out = [];
+  for (let v = Math.ceil(lo/st)*st; v <= hi + 1e-9; v += st) out.push(Math.round(v*1000)/1000);
+  return out;
+}
+function renderScatter(){
+  const w = S.wwin, wp = S.wpos;
+  const bkey = wp === "F" ? "FWD" : wp;
+  const b = DATA.baselines[w][bkey];
+  const fa = (DATA.waiver[w][wp] || []).filter(r => isNum(r.ppg) && r.gp > 0);
+  const mine = myWireRows(w, wp, b);
+  const posName = wp === "F" ? "Forwards" : wp;
+
+  // category + grayed state for every dot
+  const qualified = fa.filter(r => !r.excluded.length);
+  const top5 = new Set(qualified.slice().sort((a,c)=>c.ppg-a.ppg).slice(0,5).map(r=>r.key));
+  const pts = [];
+  for (const r of fa){
+    const dq = r.excluded.length > 0;
+    pts.push({r, cat: dq ? "dq" : (r.pool ? "pool" : "fa"), gray: dq && !S.wshow, label: !dq && top5.has(r.key)});
+  }
+  for (const r of mine) pts.push({r, cat:"mine", gray: !S.wmine, label: S.wmine});
+  SC.pts = pts;
+
+  const n = k => pts.filter(p => p.cat === k).length;
+  document.getElementById("scatline").innerHTML =
+    `<b>${WIN[w]}, ${posName}:</b> replacement line ${b.ppg===null ? "n/a" : f1(b.ppg)+" PPG"} from ${b.n} free agent${b.n===1?"":"s"}${b.early?" (early season, min "+b.min_gp+" GP)":""}.`;
+  document.getElementById("scatlegend").innerHTML =
+    `<span><i style="background:var(--blue)"></i>My team (${n("mine")})${S.wmine?"":" grayed"}</span>` +
+    `<span><i style="background:var(--red)"></i>&#9733; Replacement pool (${n("pool")})</span>` +
+    `<span><i style="background:#8a93a3"></i>Other free agents (${n("fa")})</span>` +
+    `<span><i style="background:#fff; border:2px solid #8a93a3; width:9px; height:9px"></i>Disqualified (${n("dq")})${S.wshow?"":" grayed"}</span>`;
+
+  const host = document.getElementById("scatsvg");
+  if (!pts.length){ host.innerHTML = `<p class="empty">No players to plot for this position and window.</p>`; return; }
+
+  // geometry: draw at the container's real width so text stays readable on phones
+  const W = Math.max(320, Math.round(document.getElementById("scatwrap").clientWidth - 12));
+  const H = Math.round(Math.min(620, Math.max(360, W < 600 ? W * 1.05 : W * 0.58)));
+  const m = {l:52, r:18, t:14, b:44};
+  const xs = pts.map(p=>p.r.total), ys = pts.map(p=>p.r.ppg);
+  if (b.ppg !== null) ys.push(b.ppg);
+  let x0 = 0, x1 = Math.max(...xs) * 1.06 || 10;
+  // y axis zooms to the data (it does not force 0) so clustered dots spread out
+  let y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const pad = (y1 - y0) * 0.08 || 2; y1 += pad; y0 -= pad;
+  const ys0 = niceStep(y1 - y0, 6); y0 = Math.floor(y0 / ys0) * ys0;
+  const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r);
+  const Y = v => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
+
+  let g = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Total fantasy points versus points per game">`;
+  // grid + axes
+  for (const t of ticks(y0, y1, 6)) g += `<line x1="${m.l}" x2="${W-m.r}" y1="${Y(t)}" y2="${Y(t)}" stroke="#e3e8f0"/><text x="${m.l-6}" y="${Y(t)+4}" text-anchor="end" font-size="11" fill="#5d6778">${t}</text>`;
+  for (const t of ticks(x0, x1, W < 600 ? 5 : 8)) g += `<line y1="${m.t}" y2="${H-m.b}" x1="${X(t)}" x2="${X(t)}" stroke="#eef1f6"/><text x="${X(t)}" y="${H-m.b+16}" text-anchor="middle" font-size="11" fill="#5d6778">${t}</text>`;
+  g += `<line x1="${m.l}" x2="${W-m.r}" y1="${H-m.b}" y2="${H-m.b}" stroke="#9fb0cc"/><line x1="${m.l}" x2="${m.l}" y1="${m.t}" y2="${H-m.b}" stroke="#9fb0cc"/>`;
+  g += `<text x="${(m.l+W-m.r)/2}" y="${H-6}" text-anchor="middle" font-size="12" font-weight="700" fill="#1d2533">Total fantasy points</text>`;
+  g += `<text transform="translate(14 ${(m.t+H-m.b)/2}) rotate(-90)" text-anchor="middle" font-size="12" font-weight="700" fill="#1d2533">Fantasy points per game</text>`;
+  // replacement line
+  const placed = [];
+  if (b.ppg !== null){
+    const yy = Y(b.ppg), txt = `Replacement line ${f1(b.ppg)}`, tw = txt.length * 6.3, th = 13;
+    // label goes top-right of the line, unless a dot sits there; then try top-left, then below
+    const nearDot = box => pts.some(p => { if (p.gray) return false; const dx=X(p.r.total), dy=Y(p.r.ppg); return dx > box.x-8 && dx < box.x+box.w+8 && dy > box.y-8 && dy < box.y+box.h+8; });
+    const opts = [{x:W-m.r-4-tw, y:yy-5-th}, {x:m.l+6, y:yy-5-th}, {x:W-m.r-4-tw, y:yy+4}, {x:m.l+6, y:yy+4}];
+    const box = Object.assign({w:tw, h:th}, opts.find(o => !nearDot(Object.assign({w:tw, h:th}, o))) || opts[0]);
+    placed.push(box);
+    g += `<line x1="${m.l}" x2="${W-m.r}" y1="${yy}" y2="${yy}" stroke="#d42a1e" stroke-width="1.5" stroke-dasharray="6 4"/>`;
+    g += `<text x="${box.x}" y="${box.y+th-2}" font-size="11.5" font-weight="700" fill="#d42a1e" paint-order="stroke" stroke="#fff" stroke-width="3">${txt}</text>`;
+  }
+  // dots: grayed first, then FA, pool, mine on top
+  const order = {gray:0, dq:1, fa:2, pool:3, mine:4};
+  const idx = pts.map((p,i)=>i).sort((a,c)=>{
+    const pa = pts[a].gray ? 0 : order[pts[a].cat], pc = pts[c].gray ? 0 : order[pts[c].cat];
+    return pa - pc;
+  });
+  for (const i of idx){
+    const p = pts[i], cx = X(p.r.total), cy = Y(p.r.ppg);
+    let fill, stroke, sw = 1, op = 1, rad = 5.5;
+    if (p.gray){ fill = "#cfd5df"; stroke = "#cfd5df"; op = 0.45; rad = 4.5; }
+    else if (p.cat === "mine"){ fill = "#2350c4"; stroke = "#fff"; sw = 1.5; rad = 7; }
+    else if (p.cat === "pool"){ fill = "#d42a1e"; stroke = "#fff"; sw = 1.5; rad = 6; }
+    else if (p.cat === "dq"){ fill = "#fff"; stroke = "#8a93a3"; sw = 2; }
+    else { fill = "#8a93a3"; stroke = "#fff"; }
+    g += `<circle class="dot" data-i="${i}" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${rad}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" opacity="${op}"/>`;
+  }
+  // labels with simple collision avoidance (replacement line label already reserved)
+  const hit = (a) => placed.some(q => a.x < q.x+q.w && a.x+a.w > q.x && a.y < q.y+q.h && a.y+a.h > q.y)
+                      || pts.some(p => { if (p.gray) return false; const dx=X(p.r.total), dy=Y(p.r.ppg); return dx > a.x-3 && dx < a.x+a.w+3 && dy > a.y-3 && dy < a.y+a.h+3; });
+  const lab = idx.filter(i => pts[i].label && !pts[i].gray).reverse();
+  for (const i of lab){
+    const p = pts[i], cx = X(p.r.total), cy = Y(p.r.ppg);
+    const txt = p.r.name.split(" ").slice(-1)[0], tw = txt.length * 6.6 + 4, th = 13;
+    const cands = [[cx+9, cy-th/2], [cx-9-tw, cy-th/2], [cx-tw/2, cy-9-th], [cx-tw/2, cy+9], [cx+9, cy-th-4], [cx+9, cy+4], [cx-9-tw, cy-th-4], [cx-9-tw, cy+4]];
+    let pick = null;
+    for (const [x,y] of cands){
+      const box = {x, y, w:tw, h:th};
+      if (x < m.l || x+tw > W-m.r || y < m.t || y+th > H-m.b) continue;
+      if (!hit(box)){ pick = box; break; }
+    }
+    if (!pick){
+      if (p.cat !== "mine") continue;  // crowded: drop free agent labels (hover still works), always label my players
+      const [x,y] = cands[0]; pick = {x: Math.min(x, W-m.r-tw), y, w:tw, h:th};
+    }
+    placed.push(pick);
+    const col = p.cat === "mine" ? "#2350c4" : "#a81f15";
+    g += `<text x="${pick.x+2}" y="${pick.y+th-3}" font-size="11.5" font-weight="700" fill="${col}" paint-order="stroke" stroke="#fff" stroke-width="3" pointer-events="none">${esc(txt)}</text>`;
+  }
+  g += `</svg>`;
+  host.innerHTML = g;
+  document.getElementById("tip").hidden = true;
+}
+
+function showTip(i, evt){
+  const p = SC.pts[i]; if (!p) return;
+  const r = p.r, tip = document.getElementById("tip"), wrap = document.getElementById("scatwrap");
+  const kind = p.cat === "mine" ? "My team" : p.cat === "pool" ? "&#9733; Replacement pool" : p.cat === "dq" ? "Disqualified: " + esc(r.excluded.join(", ")) : "Free agent";
+  tip.innerHTML = `<b>${esc(r.name)}</b>${r.tag?` <span class="tag ${r.tag==="DTD"?"grey":"red"}">${esc(r.tag)}</span>`:""}<br>
+    <span class="k">${esc(r.team)} ${esc(r.pos.join(", "))} | ${kind}</span><br>
+    <span class="k">Own</span> ${isNum(r.own)?Math.round(r.own*100)+"%":""} &nbsp; <span class="k">GP</span> ${f0(r.gp)}<br>
+    <span class="k">PPG</span> <b>${f1(r.ppg)}</b> &nbsp; <span class="k">Total FP</span> <b>${f0(r.total)}</b><br>
+    <span class="k">vs line</span> ${sg(r.gap)} PPG` + (r.upgrade ? `<br><span class="k">Upgrade over</span> ${esc(r.upgrade.over)} <b>${sg(r.upgrade.gain)}</b>` : "");
+  tip.hidden = false;
+  const wr = wrap.getBoundingClientRect();
+  let x = evt.clientX - wr.left + 14, y = evt.clientY - wr.top + 14;
+  const tw = tip.offsetWidth, th = tip.offsetHeight;
+  if (x + tw > wr.width - 4) x = evt.clientX - wr.left - tw - 14;
+  if (y + th > wr.height - 4) y = evt.clientY - wr.top - th - 14;
+  tip.style.left = Math.max(4, x) + "px"; tip.style.top = Math.max(4, y) + "px";
+  document.querySelectorAll("svg .dot.hot").forEach(d => d.classList.remove("hot"));
+  const dot = document.querySelector(`svg .dot[data-i="${i}"]`); if (dot) dot.classList.add("hot");
+}
+document.addEventListener("mousemove", e => {
+  if (S.page !== "scatter") return;
+  const d = e.target.closest && e.target.closest("svg .dot");
+  if (d) showTip(+d.dataset.i, e);
+  else if (!e.target.closest || !e.target.closest(".tip")) { const t = document.getElementById("tip"); if (t && !t.hidden && !SC.pinned){ t.hidden = true; document.querySelectorAll("svg .dot.hot").forEach(x=>x.classList.remove("hot")); } }
+});
+document.addEventListener("click", e => {
+  if (S.page !== "scatter") return;
+  const d = e.target.closest && e.target.closest("svg .dot");
+  if (d){ SC.pinned = true; showTip(+d.dataset.i, e); }
+  else if (!e.target.closest("button")){ SC.pinned = false; const t = document.getElementById("tip"); if (t) t.hidden = true; }
+});
+let scatTimer = null;
+window.addEventListener("resize", () => { if (S.page !== "scatter") return; clearTimeout(scatTimer); scatTimer = setTimeout(renderScatter, 150); });
+
 /* ============ controls ============ */
 function btns(group, items, isOn, extraCls=""){
   return `<div class="btns ${extraCls}">` + items.map(([v,l]) =>
@@ -494,7 +666,7 @@ function btns(group, items, isOn, extraCls=""){
 function slicer(label, inner){ return `<div class="slicer"><span>${label}</span>${inner}</div>`; }
 
 function renderPanel(){
-  document.getElementById("pages").innerHTML = btns("page", [["team","My Team"],["wire","Waiver Wire"]], v=>S.page===v, "pages");
+  document.getElementById("pages").innerHTML = btns("page", [["team","My Team"],["wire","Waiver Wire"],["scatter","Scatter"]], v=>S.page===v, "pages");
   let h = "";
   if (S.page === "team"){
     h += slicer("View", btns("view", [["rep","vs Replacement"],["stat","Stat line"]], v=>S.view===v));
@@ -510,8 +682,10 @@ function renderPanel(){
   } else {
     h += slicer("Position", btns("wpos", [["C","C"],["LW","LW"],["RW","RW"],["F","Forwards"],["D","D"],["G","G"]], v=>S.wpos===v));
     h += slicer("Window", btns("wwin", [["season","Season"],["l30","Last 30"],["l14","Last 14"]], v=>S.wwin===v));
-    h += slicer("Show", btns("wtot", [["pg","Per game"],["tot","Totals"]], v=>S.wtot===v));
-    h += slicer("Stats as", btns("as", [["raw","Stats"],["pts","Fantasy pts"]], v=>S.as===v));
+    if (S.page === "wire"){
+      h += slicer("Show", btns("wtot", [["pg","Per game"],["tot","Totals"]], v=>S.wtot===v));
+      h += slicer("Stats as", btns("as", [["raw","Stats"],["pts","Fantasy pts"]], v=>S.as===v));
+    }
     h += slicer("My team", btns("wmine", [["1","Show my team"]], v=>S.wmine));
     h += slicer("Disqualified", btns("wshow", [["1","Show"]], v=>S.wshow));
   }
@@ -522,7 +696,10 @@ function renderAll(){
   renderPanel();
   document.getElementById("pg-team").hidden = S.page !== "team";
   document.getElementById("pg-wire").hidden = S.page !== "wire";
-  if (S.page === "team") renderTeam(); else renderWire();
+  document.getElementById("pg-scatter").hidden = S.page !== "scatter";
+  if (S.page === "team") renderTeam();
+  else if (S.page === "wire") renderWire();
+  else renderScatter();
 }
 
 function toggleSet(set, v){ if (set.has(v)) set.delete(v); else set.add(v); }
@@ -538,7 +715,7 @@ document.addEventListener("click", e => {
   const b = e.target.closest("button[data-g]");
   if (!b) return;
   const g = b.dataset.g, v = b.dataset.v;
-  if (g === "page"){ S.page = v; history.replaceState(null,"", v==="wire"?"#wire":"#"); }
+  if (g === "page"){ S.page = v; history.replaceState(null,"", v==="team" ? "#" : "#"+v); }
   else if (g === "view") S.view = v;
   else if (g === "vs") S.vs = v;
   else if (g === "win") S.win = v;
@@ -567,6 +744,7 @@ document.getElementById("f-small").textContent = DATA.config.small_sample;
 })();
 renderLine();
 if (location.hash === "#wire") S.page = "wire";
+if (location.hash === "#scatter") S.page = "scatter";
 renderAll();
 </script>
 </body>

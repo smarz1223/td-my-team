@@ -1,4 +1,4 @@
-# td-my-team SPEC (v1.2, 2026-10-09)
+# td-my-team SPEC (v1.3, 2026-11-09)
 
 Personal fantasy hockey analysis for Marz's Type Disgusting team ("Soft Dump in Corner").
 Masthead: **The Morning Soft Dump**
@@ -52,7 +52,7 @@ Only source: the published Google Sheet (.xlsx export). The sheet's IMPORTHTML f
 - Find each table by header text (`Forwards/Defensemen` or `Goaltenders`), never fixed rows or columns. Tabs may hold two tables, and some tabs also hold a mirrored copy of the import: take the first complete table per header and dedupe players.
 - Read raw Yahoo columns only: name string, Roster Status, GP*, Fan Pts, % Ros, stat columns. Ignore helper columns ("3 lines", "Clean 1-5", "Final", lookups) and any `#REF!` in them.
 - Pull date comes from the `Opp: M/D` header (staleness check).
-- A missing optional tab is fine. A missing required tab shows in the Health box; the rest of the site still builds.
+- A missing optional tab is fine. A missing required tab shows in the data-check bar; the rest of the site still builds.
 
 ## 3. Scoring
 
@@ -139,7 +139,7 @@ Trend column: L30 PPG / Season PPG - 1, arrows beyond +/-15%.
 
 ## 9. Pages and controls
 
-Page buttons (My Team, Waiver Wire) sit in the navy title bar. Slicers sit in one panel below it. Tables redraw in place.
+Page buttons (My Team, Waiver Wire, Scatter) sit in the navy title bar. Slicers sit in one panel below it. Tables redraw in place.
 
 **Total FP** column (PPG x GP) appears next to PPG on every table (each lens group on My Team vs Replacement).
 
@@ -156,6 +156,16 @@ Page buttons (My Team, Waiver Wire) sit in the navy title bar. Slicers sit in on
 - Columns: pool star, player, pos, team, own %, GP, PPG, +/- line, per-game stats, Upgrade over.
 - Skater stats: G, A, +/-, PIM, PPP, SOG, TOI/G. Goalie stats: W, GA, SV, SHO, SV% (SV / (SV + GA)), GAA (GA x 60 / TOI). Team log has no TOI, so For me goalie GAA is blank.
 - Upgrade over = my weakest Active player eligible at the position, same window, PPG gain (positive only).
+
+**Scatter**
+- Same data as the Waiver Wire: free agents at the selected position and window plus my Active and Injured players (Cut and 0-GP players excluded). Position and Window selections are shared with the Waiver Wire page.
+- Slicers: Position (C, LW, RW, Forwards, D, G), Window (Season, L30, L14), Show my team, Disqualified. Per game / Totals and Stats as are hidden (they do not change either axis).
+- X = total fantasy points in the window. Y = fantasy points per game. Y axis zooms to the data range (does not force 0); X starts at 0.
+- Dots: my players NES blue, replacement pool free agents red, other free agents gray, disqualified hollow gray. Turning off Show my team or Disqualified grays those dots out (faded, no labels) instead of removing them.
+- Dashed red horizontal line at the replacement line PPG, labeled; the label moves to avoid dots.
+- Labels: my players (always) plus the top 5 qualified free agents by PPG (last name). Free agent labels are dropped when there is no clear spot; hover still works.
+- Hover (or tap on phones) shows name, team, pos, status type, own %, GP, PPG, total FP, PPG vs line, and Upgrade over.
+- Hand-drawn SVG (no chart library), redrawn at the container width; taller on phones.
 
 **All tables**
 - Click any column header to sort; click again to reverse.
@@ -191,6 +201,9 @@ No snapshots, no This Week page, no "since dropped" tracking, no Day by Day, no 
 - If the sheet download fails or the roster tables are empty, the run stops and the live site is left unchanged.
 - Fan Pts on my-team rows are checked against the scoring weights; mismatches are reported.
 - A Cut player sharing a last name and position group with a roster player is flagged as a possible name mismatch.
+
+### Known issue
+- "Updated ... ET" and the stale-data check use a fixed UTC-4 offset. During standard time (Nov to Mar) the displayed time is 1 hour ahead. Fix in `fetch_data.py` by using the America/New_York timezone.
 
 ## 14. Season rollover checklist
 
