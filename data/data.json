@@ -1,6 +1,6 @@
 {
- "generated_utc": "2026-11-24T20:52:48+00:00",
- "generated_et": "2026-11-24 16:52",
+ "generated_utc": "2026-11-24T21:26:45+00:00",
+ "generated_et": "2026-11-24 17:26",
  "pull_date": "2026-11-24",
  "source": "published Google Sheet",
  "team_name": "Soft Dump in Corner",
@@ -2311,159 +2311,6 @@
    "pflags": []
   },
   {
-   "key": "mathew barzal|F",
-   "name": "Mathew Barzal",
-   "team": "NYI",
-   "pos": [
-    "C",
-    "RW"
-   ],
-   "group": "F",
-   "tag": null,
-   "status": "Active",
-   "forme": {
-    "gp": 4.0,
-    "pts": 53.0,
-    "ppg": 13.25,
-    "stats": {
-     "G": 0.25,
-     "A": 0.5,
-     "+/-": -0.25,
-     "PIM": 0.0,
-     "PPP": 0.25,
-     "SOG": 2.25,
-     "TOI": null
-    },
-    "cmp": {
-     "C": {
-      "base": 18.59515463917526,
-      "gap": -5.345154639175259,
-      "pts": -21.380618556701037
-     },
-     "RW": {
-      "base": 18.866990291262134,
-      "gap": -5.616990291262134,
-      "pts": -22.467961165048536
-     },
-     "FWD": {
-      "base": 19.42721153846154,
-      "gap": -6.177211538461538,
-      "pts": -24.708846153846153
-     }
-    }
-   },
-   "overall": {
-    "season": {
-     "gp": 5.0,
-     "ppg": 14.25,
-     "own": 0.68,
-     "stats": {
-      "G": 0.2,
-      "A": 0.6,
-      "+/-": -0.19,
-      "PIM": 0.0,
-      "PPP": 0.2,
-      "SOG": 2.6,
-      "TOI": 16.4
-     },
-     "cmp": {
-      "C": {
-       "base": 18.59515463917526,
-       "gap": -4.345154639175259,
-       "pts": -21.725773195876297
-      },
-      "RW": {
-       "base": 18.866990291262134,
-       "gap": -4.616990291262134,
-       "pts": -23.08495145631067
-      },
-      "FWD": {
-       "base": 19.42721153846154,
-       "gap": -5.177211538461538,
-       "pts": -25.88605769230769
-      }
-     }
-    },
-    "l30": {
-     "gp": 5.0,
-     "ppg": 14.25,
-     "own": 0.68,
-     "stats": {
-      "G": 0.2,
-      "A": 0.6,
-      "+/-": -0.19,
-      "PIM": 0.0,
-      "PPP": 0.2,
-      "SOG": 2.6,
-      "TOI": 16.4
-     },
-     "cmp": {
-      "C": {
-       "base": 19.223548387096773,
-       "gap": -4.973548387096773,
-       "pts": -24.867741935483867
-      },
-      "RW": {
-       "base": 20.24560606060606,
-       "gap": -5.995606060606061,
-       "pts": -29.978030303030305
-      },
-      "FWD": {
-       "base": 20.80548387096774,
-       "gap": -6.555483870967741,
-       "pts": -32.777419354838706
-      }
-     }
-    },
-    "l14": {
-     "gp": 5.0,
-     "ppg": 14.25,
-     "own": 0.68,
-     "stats": {
-      "G": 0.2,
-      "A": 0.6,
-      "+/-": -0.19,
-      "PIM": 0.0,
-      "PPP": 0.2,
-      "SOG": 2.6,
-      "TOI": 16.4
-     },
-     "cmp": {
-      "C": {
-       "base": 27.645,
-       "gap": -13.395,
-       "pts": -66.975
-      },
-      "RW": {
-       "base": 26.9340625,
-       "gap": -12.6840625,
-       "pts": -63.420312499999994
-      },
-      "FWD": {
-       "base": 29.404999999999998,
-       "gap": -15.154999999999998,
-       "pts": -75.77499999999999
-      }
-     }
-    }
-   },
-   "trend": 0.0,
-   "flags_by": {
-    "C": [
-     "poor"
-    ],
-    "RW": [
-     "poor"
-    ],
-    "FWD": [
-     "poor"
-    ]
-   },
-   "pflags": [
-    "small"
-   ]
-  },
-  {
    "key": "pyotr kochetkov|G",
    "name": "Pyotr Kochetkov",
    "team": "CAR",
@@ -3337,6 +3184,55 @@
    ]
   },
   {
+   "key": "mathew barzal|F",
+   "name": "Mathew Barzal",
+   "team": "NYI",
+   "pos": [
+    "C",
+    "RW"
+   ],
+   "group": "F",
+   "tag": null,
+   "status": "Cut",
+   "forme": {
+    "gp": 4.0,
+    "pts": 53.0,
+    "ppg": 13.25,
+    "stats": {
+     "G": 0.25,
+     "A": 0.5,
+     "+/-": -0.25,
+     "PIM": 0.0,
+     "PPP": 0.25,
+     "SOG": 2.25,
+     "TOI": null
+    },
+    "cmp": {
+     "C": {
+      "base": 18.59515463917526,
+      "gap": -5.345154639175259,
+      "pts": -21.380618556701037
+     },
+     "RW": {
+      "base": 18.866990291262134,
+      "gap": -5.616990291262134,
+      "pts": -22.467961165048536
+     },
+     "FWD": {
+      "base": 19.42721153846154,
+      "gap": -6.177211538461538,
+      "pts": -24.708846153846153
+     }
+    }
+   },
+   "overall": null,
+   "trend": null,
+   "flags_by": {},
+   "pflags": [
+    "small"
+   ]
+  },
+  {
    "key": "charle-edouard dastous|D",
    "name": "Charle-Edouard D'Astous",
    "team": "TB",
@@ -3551,8 +3447,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 5.399999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 1.3299999999999983
      }
     },
     {
@@ -3580,8 +3476,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.59
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.5199999999999996
      }
     },
     {
@@ -3610,8 +3506,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.18
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.10999999999999943
      }
     },
     {
@@ -3639,10 +3535,7 @@
      "gap": -0.8951546391752601,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.4499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "pierre-luc dubois|F",
@@ -3669,10 +3562,7 @@
      "gap": -1.0051546391752595,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.34
-     }
+     "upgrade": null
     },
     {
      "key": "berkly catton|F",
@@ -3729,10 +3619,7 @@
      "gap": -1.4351546391752592,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.91
-     }
+     "upgrade": null
     },
     {
      "key": "alex laferriere|F",
@@ -3760,10 +3647,7 @@
      "gap": -2.515154639175261,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.8299999999999983
-     }
+     "upgrade": null
     },
     {
      "key": "ryan oreilly|F",
@@ -3789,10 +3673,7 @@
      "gap": -2.6351546391752585,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.7100000000000009
-     }
+     "upgrade": null
     },
     {
      "key": "brayden schenn|F",
@@ -3819,10 +3700,7 @@
      "gap": -2.705154639175259,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.6400000000000006
-     }
+     "upgrade": null
     },
     {
      "key": "brock nelson|F",
@@ -3848,10 +3726,7 @@
      "gap": -2.7651546391752593,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.58
-     }
+     "upgrade": null
     },
     {
      "key": "james hagens|F",
@@ -3879,10 +3754,7 @@
      "gap": -2.89515463917526,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.4499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "fraser minten|F",
@@ -3908,10 +3780,7 @@
      "gap": -2.9251546391752594,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.42
-     }
+     "upgrade": null
     },
     {
      "key": "pavel zacha|F",
@@ -3938,10 +3807,7 @@
      "gap": -2.935154639175259,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.4100000000000001
-     }
+     "upgrade": null
     },
     {
      "key": "frank nazar|F",
@@ -3967,10 +3833,7 @@
      "gap": -2.9651546391752586,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.3800000000000008
-     }
+     "upgrade": null
     },
     {
      "key": "dylan cozens|F",
@@ -3997,10 +3860,7 @@
      "gap": -3.4151546391752596,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.9299999999999997
-     }
+     "upgrade": null
     },
     {
      "key": "gabriel vilardi|F",
@@ -4027,10 +3887,7 @@
      "gap": -3.47515463917526,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.8699999999999992
-     }
+     "upgrade": null
     },
     {
      "key": "shane pinto|F",
@@ -4056,10 +3913,7 @@
      "gap": -3.80515463917526,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.5399999999999991
-     }
+     "upgrade": null
     },
     {
      "key": "blake coleman|F",
@@ -4086,10 +3940,7 @@
      "gap": -4.16515463917526,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.17999999999999972
-     }
+     "upgrade": null
     },
     {
      "key": "tommy novak|F",
@@ -4144,10 +3995,36 @@
      "gap": -4.31515463917526,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.02999999999999936
-     }
+     "upgrade": null
+    },
+    {
+     "key": "mathew barzal|F",
+     "name": "Mathew Barzal",
+     "team": "NYI",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.68,
+     "gp": 5.0,
+     "ppg": 14.25,
+     "total": 71.25,
+     "stats": {
+      "G": 0.2,
+      "A": 0.6,
+      "+/-": -0.19,
+      "PIM": 0.0,
+      "PPP": 0.2,
+      "SOG": 2.6,
+      "TOI": 16.4
+     },
+     "gap": -4.345154639175259,
+     "pool": false,
+     "excluded": [
+      "under 10 GP"
+     ],
+     "upgrade": null
     },
     {
      "key": "vincent trocheck|F",
@@ -4225,34 +4102,6 @@
       "TOI": 18.583333333333332
      },
      "gap": -4.865154639175259,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
-    },
-    {
-     "key": "charlie coyle|F",
-     "name": "Charlie Coyle",
-     "team": "CBJ",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 22.0,
-     "ppg": 13.59,
-     "total": 298.98,
-     "stats": {
-      "G": 0.18,
-      "A": 0.5,
-      "+/-": -0.22,
-      "PIM": 0.55,
-      "PPP": 0.23,
-      "SOG": 2.23,
-      "TOI": 20.083333333333332
-     },
-     "gap": -5.0051546391752595,
      "pool": false,
      "excluded": [
       "under 20% owned"
@@ -5012,10 +4861,7 @@
      "gap": 2.093009708737867,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 6.710000000000001
-     }
+     "upgrade": null
     },
     {
      "key": "kent johnson|F",
@@ -5042,10 +4888,7 @@
      "gap": 0.35300970873786497,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.969999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "jimmy snuggerud|F",
@@ -5071,10 +4914,7 @@
      "gap": 0.3330097087378654,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.949999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "jack roslovic|F",
@@ -5101,10 +4941,7 @@
      "gap": -0.4369902912621342,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.18
-     }
+     "upgrade": null
     },
     {
      "key": "ryan leonard|F",
@@ -5131,10 +4968,7 @@
      "gap": -1.4469902912621322,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.1700000000000017
-     }
+     "upgrade": null
     },
     {
      "key": "connor brown|F",
@@ -5190,10 +5024,7 @@
      "gap": -1.7069902912621338,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.91
-     }
+     "upgrade": null
     },
     {
      "key": "jake neighbours|F",
@@ -5220,10 +5051,7 @@
      "gap": -2.0769902912621347,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.539999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "josh anderson|F",
@@ -5279,10 +5107,7 @@
      "gap": -2.7869902912621356,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.8299999999999983
-     }
+     "upgrade": null
     },
     {
      "key": "kailer yamamoto|F",
@@ -5338,10 +5163,7 @@
      "gap": -3.1669902912621346,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.4499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "arseny gritsyuk|F",
@@ -5368,10 +5190,7 @@
      "gap": -3.236990291262133,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.3800000000000008
-     }
+     "upgrade": null
     },
     {
      "key": "joel farabee|F",
@@ -5398,10 +5217,7 @@
      "gap": -3.2569902912621345,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.3599999999999994
-     }
+     "upgrade": null
     },
     {
      "key": "dylan cozens|F",
@@ -5428,10 +5244,7 @@
      "gap": -3.686990291262134,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.9299999999999997
-     }
+     "upgrade": null
     },
     {
      "key": "gabriel vilardi|F",
@@ -5458,10 +5271,7 @@
      "gap": -3.7469902912621347,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.8699999999999992
-     }
+     "upgrade": null
     },
     {
      "key": "viktor arvidsson|F",
@@ -5488,10 +5298,7 @@
      "gap": -3.906990291262133,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.7100000000000009
-     }
+     "upgrade": null
     },
     {
      "key": "simon holmstrom|F",
@@ -5518,10 +5325,7 @@
      "gap": -3.9969902912621347,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.6199999999999992
-     }
+     "upgrade": null
     },
     {
      "key": "william eklund|F",
@@ -5606,10 +5410,36 @@
      "gap": -4.406990291262133,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.21000000000000085
-     }
+     "upgrade": null
+    },
+    {
+     "key": "mathew barzal|F",
+     "name": "Mathew Barzal",
+     "team": "NYI",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.68,
+     "gp": 5.0,
+     "ppg": 14.25,
+     "total": 71.25,
+     "stats": {
+      "G": 0.2,
+      "A": 0.6,
+      "+/-": -0.19,
+      "PIM": 0.0,
+      "PPP": 0.2,
+      "SOG": 2.6,
+      "TOI": 16.4
+     },
+     "gap": -4.616990291262134,
+     "pool": false,
+     "excluded": [
+      "under 10 GP"
+     ],
+     "upgrade": null
     },
     {
      "key": "vincent trocheck|F",
@@ -5647,7 +5477,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 24.0,
      "ppg": 13.81,
      "total": 331.44,
@@ -5661,32 +5491,6 @@
       "TOI": 18.416666666666668
      },
      "gap": -5.056990291262133,
-     "pool": false,
-     "excluded": [],
-     "upgrade": null
-    },
-    {
-     "key": "patrick kane|F",
-     "name": "Patrick Kane",
-     "team": "CHI",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.37,
-     "gp": 21.0,
-     "ppg": 13.73,
-     "total": 288.33,
-     "stats": {
-      "G": 0.1,
-      "A": 0.71,
-      "+/-": -0.66,
-      "PIM": 0.86,
-      "PPP": 0.38,
-      "SOG": 2.19,
-      "TOI": 18.066666666666666
-     },
-     "gap": -5.1369902912621335,
      "pool": false,
      "excluded": [],
      "upgrade": null
@@ -7123,8 +6927,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 6.710000000000001
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 2.6400000000000006
      }
     },
     {
@@ -7152,8 +6956,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 5.399999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 1.3299999999999983
      }
     },
     {
@@ -7182,8 +6986,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.969999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.8999999999999986
      }
     },
     {
@@ -7211,8 +7015,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.949999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.879999999999999
      }
     },
     {
@@ -7269,8 +7073,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.59
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.5199999999999996
      }
     },
     {
@@ -7299,8 +7103,8 @@
      "pool": false,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.18
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.10999999999999943
      }
     },
     {
@@ -7328,10 +7132,7 @@
      "gap": -1.727211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.4499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "pierre-luc dubois|F",
@@ -7358,10 +7159,7 @@
      "gap": -1.8372115384615384,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.34
-     }
+     "upgrade": null
     },
     {
      "key": "taylor hall|F",
@@ -7445,10 +7243,7 @@
      "gap": -2.0072115384615365,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.1700000000000017
-     }
+     "upgrade": null
     },
     {
      "key": "connor brown|F",
@@ -7504,10 +7299,7 @@
      "gap": -2.267211538461538,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.91
-     }
+     "upgrade": null
     },
     {
      "key": "jake neighbours|F",
@@ -7534,10 +7326,7 @@
      "gap": -2.637211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.539999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "josh anderson|F",
@@ -7593,10 +7382,7 @@
      "gap": -3.34721153846154,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.8299999999999983
-     }
+     "upgrade": null
     },
     {
      "key": "ryan oreilly|F",
@@ -7622,10 +7408,7 @@
      "gap": -3.4672115384615374,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.7100000000000009
-     }
+     "upgrade": null
     },
     {
      "key": "brayden schenn|F",
@@ -7652,10 +7435,7 @@
      "gap": -3.5372115384615377,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.6400000000000006
-     }
+     "upgrade": null
     },
     {
      "key": "kailer yamamoto|F",
@@ -7709,10 +7489,7 @@
      "gap": -3.597211538461538,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.58
-     }
+     "upgrade": null
     },
     {
      "key": "james hagens|F",
@@ -7740,10 +7517,7 @@
      "gap": -3.727211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.4499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "fraser minten|F",
@@ -7769,10 +7543,7 @@
      "gap": -3.7572115384615383,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.42
-     }
+     "upgrade": null
     },
     {
      "key": "pavel zacha|F",
@@ -7799,10 +7570,7 @@
      "gap": -3.767211538461538,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.4100000000000001
-     }
+     "upgrade": null
     },
     {
      "key": "frank nazar|F",
@@ -7828,10 +7596,7 @@
      "gap": -3.7972115384615375,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.3800000000000008
-     }
+     "upgrade": null
     },
     {
      "key": "arseny gritsyuk|F",
@@ -7858,10 +7623,7 @@
      "gap": -3.7972115384615375,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.3800000000000008
-     }
+     "upgrade": null
     },
     {
      "key": "joel farabee|F",
@@ -7888,10 +7650,7 @@
      "gap": -3.817211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.3599999999999994
-     }
+     "upgrade": null
     },
     {
      "key": "dylan cozens|F",
@@ -7918,10 +7677,7 @@
      "gap": -4.2472115384615385,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.9299999999999997
-     }
+     "upgrade": null
     },
     {
      "key": "gabriel vilardi|F",
@@ -7948,10 +7704,7 @@
      "gap": -4.307211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.8699999999999992
-     }
+     "upgrade": null
     },
     {
      "key": "aj greer|F",
@@ -8006,10 +7759,7 @@
      "gap": -4.467211538461537,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.7100000000000009
-     }
+     "upgrade": null
     },
     {
      "key": "simon holmstrom|F",
@@ -8036,10 +7786,7 @@
      "gap": -4.557211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.6199999999999992
-     }
+     "upgrade": null
     },
     {
      "key": "shane pinto|F",
@@ -8065,10 +7812,7 @@
      "gap": -4.637211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.5399999999999991
-     }
+     "upgrade": null
     },
     {
      "key": "easton cowan|F",
@@ -8094,10 +7838,7 @@
      "gap": -4.9172115384615385,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.2599999999999998
-     }
+     "upgrade": null
     },
     {
      "key": "william eklund|F",
@@ -8182,10 +7923,7 @@
      "gap": -4.967211538461537,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.21000000000000085
-     }
+     "upgrade": null
     },
     {
      "key": "blake coleman|F",
@@ -8212,10 +7950,7 @@
      "gap": -4.9972115384615385,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.17999999999999972
-     }
+     "upgrade": null
     },
     {
      "key": "tommy novak|F",
@@ -8270,10 +8005,36 @@
      "gap": -5.147211538461539,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.02999999999999936
-     }
+     "upgrade": null
+    },
+    {
+     "key": "mathew barzal|F",
+     "name": "Mathew Barzal",
+     "team": "NYI",
+     "pos": [
+      "C",
+      "RW"
+     ],
+     "tag": null,
+     "own": 0.68,
+     "gp": 5.0,
+     "ppg": 14.25,
+     "total": 71.25,
+     "stats": {
+      "G": 0.2,
+      "A": 0.6,
+      "+/-": -0.19,
+      "PIM": 0.0,
+      "PPP": 0.2,
+      "SOG": 2.6,
+      "TOI": 16.4
+     },
+     "gap": -5.177211538461538,
+     "pool": false,
+     "excluded": [
+      "under 10 GP"
+     ],
+     "upgrade": null
     },
     {
      "key": "vincent trocheck|F",
@@ -8337,7 +8098,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 24.0,
      "ppg": 13.81,
      "total": 331.44,
@@ -8383,60 +8144,6 @@
       "under 20% owned"
      ],
      "upgrade": null
-    },
-    {
-     "key": "patrick kane|F",
-     "name": "Patrick Kane",
-     "team": "CHI",
-     "pos": [
-      "RW"
-     ],
-     "tag": null,
-     "own": 0.37,
-     "gp": 21.0,
-     "ppg": 13.73,
-     "total": 288.33,
-     "stats": {
-      "G": 0.1,
-      "A": 0.71,
-      "+/-": -0.66,
-      "PIM": 0.86,
-      "PPP": 0.38,
-      "SOG": 2.19,
-      "TOI": 18.066666666666666
-     },
-     "gap": -5.697211538461538,
-     "pool": false,
-     "excluded": [],
-     "upgrade": null
-    },
-    {
-     "key": "charlie coyle|F",
-     "name": "Charlie Coyle",
-     "team": "CBJ",
-     "pos": [
-      "C"
-     ],
-     "tag": null,
-     "own": 0.15,
-     "gp": 22.0,
-     "ppg": 13.59,
-     "total": 298.98,
-     "stats": {
-      "G": 0.18,
-      "A": 0.5,
-      "+/-": -0.22,
-      "PIM": 0.55,
-      "PPP": 0.23,
-      "SOG": 2.23,
-      "TOI": 20.083333333333332
-     },
-     "gap": -5.837211538461538,
-     "pool": false,
-     "excluded": [
-      "under 20% owned"
-     ],
-     "upgrade": null
     }
    ]
   },
@@ -8467,8 +8174,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 7.629999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 2.879999999999999
      }
     },
     {
@@ -8555,8 +8262,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.879999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.129999999999999
      }
     },
     {
@@ -8612,10 +8319,7 @@
      "gap": -0.42354838709677267,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.550000000000001
-     }
+     "upgrade": null
     },
     {
      "key": "nazem kadri|F",
@@ -8643,10 +8347,7 @@
      "gap": -0.4535483870967738,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.52
-     }
+     "upgrade": null
     },
     {
      "key": "jack roslovic|F",
@@ -8673,10 +8374,7 @@
      "gap": -1.533548387096772,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.4400000000000013
-     }
+     "upgrade": null
     },
     {
      "key": "curtis douglas|F",
@@ -8731,10 +8429,7 @@
      "gap": -1.7535483870967745,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.219999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "ryan oreilly|F",
@@ -8760,10 +8455,7 @@
      "gap": -1.8435483870967744,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.129999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "alex laferriere|F",
@@ -8791,10 +8483,7 @@
      "gap": -1.8435483870967744,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.129999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "shane pinto|F",
@@ -8820,10 +8509,7 @@
      "gap": -1.873548387096772,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.1000000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "frank nazar|F",
@@ -8849,10 +8535,7 @@
      "gap": -2.023548387096774,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.9499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "brock nelson|F",
@@ -8878,10 +8561,7 @@
      "gap": -2.0535483870967717,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.9200000000000017
-     }
+     "upgrade": null
     },
     {
      "key": "vincent trocheck|F",
@@ -8908,10 +8588,7 @@
      "gap": -2.4335483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.539999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "pierre-luc dubois|F",
@@ -8938,10 +8615,7 @@
      "gap": -2.5935483870967744,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.379999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "anthony cirelli|F",
@@ -8967,10 +8641,7 @@
      "gap": -2.623548387096772,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.3500000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "brayden schenn|F",
@@ -8997,10 +8668,7 @@
      "gap": -2.6335483870967735,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.34
-     }
+     "upgrade": null
     },
     {
      "key": "rickard rakell|F",
@@ -9028,10 +8696,7 @@
      "gap": -3.123548387096772,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.8500000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "jiri kulich|F",
@@ -9245,7 +8910,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 14.0,
      "ppg": 19.96,
      "total": 279.44,
@@ -9909,8 +9574,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 7.359999999999999
+      "over": "Vasily Podkolzin",
+      "gain": 1.0399999999999991
      }
     },
     {
@@ -9966,8 +9631,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 6.84
+      "over": "Vasily Podkolzin",
+      "gain": 0.5199999999999996
      }
     },
     {
@@ -9979,7 +9644,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 14.0,
      "ppg": 19.96,
      "total": 279.44,
@@ -9995,10 +9660,7 @@
      "gap": -0.2856060606060602,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 5.710000000000001
-     }
+     "upgrade": null
     },
     {
      "key": "connor brown|F",
@@ -10052,10 +9714,7 @@
      "gap": -0.7256060606060615,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 5.27
-     }
+     "upgrade": null
     },
     {
      "key": "gabriel vilardi|F",
@@ -10082,10 +9741,7 @@
      "gap": -1.115606060606062,
      "pool": true,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.879999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "dylan cozens|F",
@@ -10112,10 +9768,7 @@
      "gap": -1.4456060606060603,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.550000000000001
-     }
+     "upgrade": null
     },
     {
      "key": "jake neighbours|F",
@@ -10142,10 +9795,7 @@
      "gap": -1.4756060606060615,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.52
-     }
+     "upgrade": null
     },
     {
      "key": "nazem kadri|F",
@@ -10173,10 +9823,7 @@
      "gap": -1.4756060606060615,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.52
-     }
+     "upgrade": null
     },
     {
      "key": "victor olofsson|F",
@@ -10203,10 +9850,7 @@
      "gap": -1.6356060606060616,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.359999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "simon holmstrom|F",
@@ -10233,10 +9877,7 @@
      "gap": -1.9156060606060628,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.079999999999998
-     }
+     "upgrade": null
     },
     {
      "key": "jonathan marchessault|F",
@@ -10292,10 +9933,7 @@
      "gap": -2.5556060606060598,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.4400000000000013
-     }
+     "upgrade": null
     },
     {
      "key": "alex laferriere|F",
@@ -10323,10 +9961,7 @@
      "gap": -2.865606060606062,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.129999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "josh anderson|F",
@@ -10439,10 +10074,7 @@
      "gap": -3.455606060606062,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.539999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "ryan leonard|F",
@@ -10469,10 +10101,7 @@
      "gap": -4.045606060606062,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.9499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "rickard rakell|F",
@@ -10500,10 +10129,7 @@
      "gap": -4.14560606060606,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.8500000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "martin pospisil|F",
@@ -10586,10 +10212,7 @@
      "gap": -4.405606060606061,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.5899999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "jordan martinook|F",
@@ -12051,8 +11674,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 7.629999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 2.879999999999999
      }
     },
     {
@@ -12081,8 +11704,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 7.359999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 2.6099999999999994
      }
     },
     {
@@ -12167,8 +11790,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 6.84
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 2.09
      }
     },
     {
@@ -12209,7 +11832,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 14.0,
      "ppg": 19.96,
      "total": 279.44,
@@ -12226,8 +11849,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 5.710000000000001
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.9600000000000009
      }
     },
     {
@@ -12283,8 +11906,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 5.27
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.5199999999999996
      }
     },
     {
@@ -12313,8 +11936,8 @@
      "pool": false,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.879999999999999
+      "over": "Ryan Nugent-Hopkins",
+      "gain": 0.129999999999999
      }
     },
     {
@@ -12399,10 +12022,7 @@
      "gap": -2.0054838709677405,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.550000000000001
-     }
+     "upgrade": null
     },
     {
      "key": "nazem kadri|F",
@@ -12430,10 +12050,7 @@
      "gap": -2.0354838709677416,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.52
-     }
+     "upgrade": null
     },
     {
      "key": "jake neighbours|F",
@@ -12460,10 +12077,7 @@
      "gap": -2.0354838709677416,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.52
-     }
+     "upgrade": null
     },
     {
      "key": "victor olofsson|F",
@@ -12490,10 +12104,7 @@
      "gap": -2.195483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.359999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "simon holmstrom|F",
@@ -12520,10 +12131,7 @@
      "gap": -2.475483870967743,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 4.079999999999998
-     }
+     "upgrade": null
     },
     {
      "key": "taylor hall|F",
@@ -12607,10 +12215,7 @@
      "gap": -3.11548387096774,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.4400000000000013
-     }
+     "upgrade": null
     },
     {
      "key": "curtis douglas|F",
@@ -12665,10 +12270,7 @@
      "gap": -3.3354838709677423,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.219999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "ryan oreilly|F",
@@ -12694,10 +12296,7 @@
      "gap": -3.425483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.129999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "alex laferriere|F",
@@ -12725,10 +12324,7 @@
      "gap": -3.425483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.129999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "shane pinto|F",
@@ -12754,10 +12350,7 @@
      "gap": -3.45548387096774,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.1000000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "frank nazar|F",
@@ -12783,10 +12376,7 @@
      "gap": -3.605483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.9499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "aliaksei protas|F",
@@ -12869,10 +12459,7 @@
      "gap": -3.6354838709677395,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.9200000000000017
-     }
+     "upgrade": null
     },
     {
      "key": "jared wright|F",
@@ -12928,10 +12515,7 @@
      "gap": -4.015483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.539999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "pierre-luc dubois|F",
@@ -12958,10 +12542,7 @@
      "gap": -4.175483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.379999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "anthony cirelli|F",
@@ -12987,10 +12568,7 @@
      "gap": -4.20548387096774,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.3500000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "brayden schenn|F",
@@ -13017,10 +12595,7 @@
      "gap": -4.215483870967741,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.34
-     }
+     "upgrade": null
     },
     {
      "key": "ryan leonard|F",
@@ -13047,10 +12622,7 @@
      "gap": -4.605483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.9499999999999993
-     }
+     "upgrade": null
     },
     {
      "key": "rickard rakell|F",
@@ -13078,10 +12650,7 @@
      "gap": -4.70548387096774,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.8500000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "jiri kulich|F",
@@ -13192,10 +12761,7 @@
      "gap": -4.965483870967741,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.5899999999999999
-     }
+     "upgrade": null
     },
     {
      "key": "christian dvorak|F",
@@ -13420,10 +12986,7 @@
      "gap": -5.765483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.7899999999999991
-     }
+     "upgrade": null
     },
     {
      "key": "colton dach|F",
@@ -13479,10 +13042,7 @@
      "gap": -5.865483870967742,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 0.6899999999999995
-     }
+     "upgrade": null
     },
     {
      "key": "michael amadio|F",
@@ -14342,7 +13902,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 6.0,
      "ppg": 24.05,
      "total": 144.3,
@@ -15007,8 +14567,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 17.1
+      "over": "Vasily Podkolzin",
+      "gain": 11.650000000000002
      }
     },
     {
@@ -15066,8 +14626,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 14.530000000000001
+      "over": "Vasily Podkolzin",
+      "gain": 9.080000000000002
      }
     },
     {
@@ -15125,8 +14685,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 11.2
+      "over": "Vasily Podkolzin",
+      "gain": 5.75
      }
     },
     {
@@ -15154,8 +14714,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 10.43
+      "over": "Vasily Podkolzin",
+      "gain": 4.98
      }
     },
     {
@@ -15167,7 +14727,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 6.0,
      "ppg": 24.05,
      "total": 144.3,
@@ -15184,8 +14744,8 @@
      "pool": true,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 9.8
+      "over": "Vasily Podkolzin",
+      "gain": 4.350000000000001
      }
     },
     {
@@ -15272,8 +14832,8 @@
      "pool": false,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 7.969999999999999
+      "over": "Vasily Podkolzin",
+      "gain": 2.5199999999999996
      }
     },
     {
@@ -15302,8 +14862,8 @@
      "pool": false,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 7.850000000000001
+      "over": "Vasily Podkolzin",
+      "gain": 2.400000000000002
      }
     },
     {
@@ -15388,8 +14948,8 @@
      "pool": false,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 6.690000000000001
+      "over": "Vasily Podkolzin",
+      "gain": 1.240000000000002
      }
     },
     {
@@ -15418,8 +14978,8 @@
      "pool": false,
      "excluded": [],
      "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 5.460000000000001
+      "over": "Vasily Podkolzin",
+      "gain": 0.010000000000001563
      }
     },
     {
@@ -15534,10 +15094,7 @@
      "gap": -8.694062500000001,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.9899999999999984
-     }
+     "upgrade": null
     },
     {
      "key": "nazem kadri|F",
@@ -15565,10 +15122,7 @@
      "gap": -9.084062499999998,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 3.6000000000000014
-     }
+     "upgrade": null
     },
     {
      "key": "will cuylle|F",
@@ -15595,10 +15149,7 @@
      "gap": -10.4340625,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 2.25
-     }
+     "upgrade": null
     },
     {
      "key": "ryan hartman|F",
@@ -15654,10 +15205,7 @@
      "gap": -10.7140625,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.9699999999999989
-     }
+     "upgrade": null
     },
     {
      "key": "shane wright|F",
@@ -15713,10 +15261,7 @@
      "gap": -11.0040625,
      "pool": false,
      "excluded": [],
-     "upgrade": {
-      "over": "Mathew Barzal",
-      "gain": 1.6799999999999997
-     }
+     "upgrade": null
     }
    ],
    "D": [
@@ -17396,7 +16941,7 @@
       "RW"
      ],
      "tag": null,
-     "own": 0.22,
+     "own": 0.23,
      "gp": 6.0,
      "ppg": 24.05,
      "total": 144.3,
@@ -18555,7 +18100,7 @@
    {
     "tab": "Import My Team Season Avg",
     "kind": "skater",
-    "rows": 17
+    "rows": 16
    },
    {
     "tab": "Import My Team Season Avg",
@@ -18565,7 +18110,7 @@
    {
     "tab": "Import My Team L30 Avg",
     "kind": "skater",
-    "rows": 17
+    "rows": 16
    },
    {
     "tab": "Import My Team L30 Avg",
@@ -18575,7 +18120,7 @@
    {
     "tab": "Import My Team L14 Avg",
     "kind": "skater",
-    "rows": 17
+    "rows": 16
    },
    {
     "tab": "Import My Team L14 Avg",
